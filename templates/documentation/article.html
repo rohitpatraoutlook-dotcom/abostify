@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ article.summary }}">
+  <title>{{ article.title }} | ABOSTIFY Academy</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
+  <style>
+    .doc-wrap{max-width:900px;margin:auto;padding:25px 18px 70px}
+    .doc-crumbs{display:flex;gap:9px;flex-wrap:wrap;font-size:.9rem;margin:15px 0 25px}
+    .doc-hero{padding:clamp(24px,5vw,44px);border:1px solid var(--ui-border,#e1e6ef);border-radius:22px;background:var(--card-bg,#fff)}
+    .doc-category{font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:#5269aa}
+    .doc-hero h1{font-size:clamp(1.8rem,5vw,3rem);line-height:1.2;margin:12px 0}
+    .doc-summary{font-size:1.05rem;line-height:1.8;color:var(--text-muted,#657087)}
+    .doc-layout{display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:28px;margin-top:28px}
+    .doc-content{min-width:0}
+    .doc-section{padding:23px 0;border-bottom:1px solid var(--ui-border,#e1e6ef);scroll-margin-top:20px}
+    .doc-section h2{font-size:1.35rem;line-height:1.4}
+    .doc-section p,.doc-section li{line-height:1.85}
+    .doc-section li{margin:7px 0}
+    .doc-aside{align-self:start;position:sticky;top:20px;padding:18px;border:1px solid var(--ui-border,#e1e6ef);border-radius:16px}
+    .doc-aside a{display:block;margin:10px 0;line-height:1.5}
+    .doc-pagination{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px 0}
+    .doc-pager{padding:17px;border:1px solid var(--ui-border,#e1e6ef);border-radius:15px;text-decoration:none;overflow-wrap:anywhere}
+    .doc-pager.next{text-align:right}
+    .doc-related{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .doc-related a{padding:15px;border:1px solid var(--ui-border,#e1e6ef);border-radius:13px;text-decoration:none}
+    @media(max-width:700px){.doc-layout{grid-template-columns:1fr}.doc-aside{position:static;order:-1}.doc-pagination{grid-template-columns:1fr}.doc-pager.next{text-align:left}.doc-related{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a class="active" href="{{ url_for('academy_home') }}">Academy</a>
+      {% if current_user.is_authenticated %}
+        <a href="{{ url_for('dashboard') }}">Workspace</a>
+      {% else %}
+        <a href="{{ url_for('auth.login') }}">Login</a>
+      {% endif %}
+    </div>
+  </nav>
+</header>
+
+<main class="doc-wrap">
+  <div class="doc-crumbs">
+    <a href="{{ url_for('home') }}">Home</a><span>›</span>
+    <a href="{{ url_for('academy_home') }}">Academy</a><span>›</span>
+    <span>{{ article.title }}</span>
+  </div>
+
+  <header class="doc-hero">
+    <span class="doc-category">{{ article.get('category', 'General') }}</span>
+    <h1>{{ article.title }}</h1>
+    <p class="doc-summary">{{ article.summary }}</p>
+    <div style="font-size:.9rem;color:var(--text-muted,#657087)">
+      Guide {{ article_number }} of {{ total_articles }} · {{ article.get('reading_time', '4 min') }} read
+    </div>
+  </header>
+
+  <div class="doc-layout">
+    <article class="doc-content">
+      {% for section in article.get('sections', []) %}
+        <section class="doc-section" id="section-{{ loop.index }}">
+          <h2>{{ section.get('heading', 'Guide') }}</h2>
+
+          {% for paragraph in section.get('paragraphs', []) %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
+
+          {% if section.get('bullets') %}
+            <ul>
+              {% for bullet in section.get('bullets', []) %}
+                <li>{{ bullet }}</li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+
+          {% if section.get('steps') %}
+            <ol>
+              {% for step in section.get('steps', []) %}
+                <li>{{ step }}</li>
+              {% endfor %}
+            </ol>
+          {% endif %}
+        </section>
+      {% endfor %}
+
+      <div class="doc-pagination">
+        {% if previous_article %}
+          <a class="doc-pager" href="{{ url_for('academy_article', slug=previous_article.slug) }}">
+            <small>← PREVIOUS GUIDE</small><br><strong>{{ previous_article.title }}</strong>
+          </a>
+        {% else %}
+          <a class="doc-pager" href="{{ url_for('academy_home') }}">
+            <small>← BACK TO LIBRARY</small><br><strong>All Academy guides</strong>
+          </a>
+        {% endif %}
+
+        {% if next_article %}
+          <a class="doc-pager next" href="{{ url_for('academy_article', slug=next_article.slug) }}">
+            <small>NEXT GUIDE →</small><br><strong>{{ next_article.title }}</strong>
+          </a>
+        {% else %}
+          <a class="doc-pager next" href="{{ url_for('academy_home') }}">
+            <small>FINISHED?</small><br><strong>Explore all guides →</strong>
+          </a>
+        {% endif %}
+      </div>
+
+      {% if related_articles %}
+        <section class="doc-section">
+          <h2>Related guides</h2>
+          <div class="doc-related">
+            {% for related in related_articles %}
+              <a href="{{ url_for('academy_article', slug=related.slug) }}">
+                <strong>{{ related.title }}</strong>
+                <p>{{ related.summary }}</p>
+              </a>
+            {% endfor %}
+          </div>
+        </section>
+      {% endif %}
+    </article>
+
+    <aside class="doc-aside">
+      <strong>On this page</strong>
+      {% for section in article.get('sections', []) %}
+        <a href="#section-{{ loop.index }}">{{ section.get('heading', 'Guide') }}</a>
+      {% endfor %}
+      <hr>
+      <a href="{{ url_for('academy_home') }}">← All Academy guides</a>
+    </aside>
+  </div>
+</main>
+</body>
+</html>

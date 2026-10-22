@@ -1,0 +1,4477 @@
+[
+  {
+    "id": 1,
+    "slug": "what-is-abostify",
+    "title": "What Is ABOSTIFY?",
+    "category": "Getting Started",
+    "summary": "Learn about ABOSTIFY and how to get started.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Introduction",
+        "paragraphs": [
+          "ABOSTIFY is designed as a unified platform for social interaction, productivity and business collaboration. Its goal is to help users organise digital activities in one place."
+        ],
+        "bullets": [
+          "Manage your account and profile.",
+          "Explore social features available in your version.",
+          "Organise work using enabled productivity tools.",
+          "Learn workflows through the documentation library."
+        ]
+      },
+      {
+        "heading": "Getting started",
+        "paragraphs": [
+          "Open the website, register if registration is available, sign in, and explore the dashboard. Visit the Academy whenever you need help."
+        ],
+        "bullets": [
+          "Keep credentials private.",
+          "Use accurate profile information.",
+          "Check which features are currently available."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "how-to-create-an-account",
+    "title": "How to Create an ABOSTIFY Account",
+    "category": "Getting Started",
+    "summary": "Understand the account registration process.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Before registration",
+        "paragraphs": [
+          "You need access to the website and the information requested by its registration form. The exact fields depend on the current application version."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Registration steps",
+        "paragraphs": [
+          "Open the website and choose Register or Sign Up if available. Enter the requested information, create a strong password when required, review your details, and submit the form."
+        ],
+        "bullets": [
+          "Check required fields.",
+          "Correct typing mistakes.",
+          "Follow any verification instructions shown."
+        ]
+      },
+      {
+        "heading": "Security",
+        "paragraphs": [
+          "Never share your password or verification codes. If registration fails, read the displayed error before trying again."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "how-to-login-and-logout",
+    "title": "How to Log In and Log Out",
+    "category": "Getting Started",
+    "summary": "Learn the basic sign-in and sign-out workflow.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Logging in",
+        "paragraphs": [
+          "Open the website, choose Login, enter your account credentials, and submit the form. Wait for the dashboard or requested page to open."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Logging out",
+        "paragraphs": [
+          "Locate Logout in the account menu or navigation and select it. On a shared device, confirm you are signed out and close the browser window."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "Check for typing mistakes and confirm you are using the correct account. Use the official recovery option if available. Never share your password with unofficial support contacts."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "how-to-use-the-dashboard",
+    "title": "How to Use the ABOSTIFY Dashboard",
+    "category": "Getting Started",
+    "summary": "Navigate the dashboard and access available features.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Dashboard overview",
+        "paragraphs": [
+          "The dashboard is the central area after sign-in. It provides access to sections enabled in your application version."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Navigation",
+        "paragraphs": [
+          "Sign in, review the page headings and links, open the section you need, and return to the dashboard when switching tasks."
+        ],
+        "bullets": [
+          "Start with your most important task.",
+          "Use the Academy for instructions.",
+          "Read validation errors before resubmitting forms."
+        ]
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If a link fails, refresh once and try again. Record the page URL and error message if the problem continues."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "how-to-use-abostify-on-mobile-and-desktop",
+    "title": "How to Use ABOSTIFY on Mobile and Desktop",
+    "category": "Getting Started",
+    "summary": "Tips for using ABOSTIFY across different screen sizes.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Mobile use",
+        "paragraphs": [
+          "Open ABOSTIFY in a current mobile browser and sign in. Responsive pages may adapt to your screen size."
+        ],
+        "bullets": [
+          "Use the navigation menu.",
+          "Scroll to read long articles.",
+          "Check your connection if a page fails to load."
+        ]
+      },
+      {
+        "heading": "Desktop use",
+        "paragraphs": [
+          "A desktop or laptop screen can make longer documents and multi-section workflows easier to review."
+        ],
+        "bullets": [
+          "Use a current browser.",
+          "Refresh incomplete pages.",
+          "Adjust browser zoom if content is cut off."
+        ]
+      },
+      {
+        "heading": "Safety",
+        "paragraphs": [
+          "Only enter credentials on the genuine website. Avoid using shared devices for sensitive work whenever possible."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "how-to-set-up-your-profile",
+    "title": "How to Set Up Your Profile",
+    "category": "Account & Profile",
+    "summary": "Create a clear and useful personal profile.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Why your profile matters",
+        "paragraphs": [
+          "A profile helps other users understand who you are and what you do. Clear, accurate details make interactions easier."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Editing your profile",
+        "paragraphs": [
+          "Sign in, open your profile or account settings, choose Edit if available, update supported fields, review your changes, and save."
+        ],
+        "bullets": [
+          "Use a recognisable display name.",
+          "Add relevant skills or interests.",
+          "Check spelling before saving."
+        ]
+      },
+      {
+        "heading": "Privacy",
+        "paragraphs": [
+          "Do not publish passwords, financial information, identity document numbers, or private contact details unnecessarily. Review available privacy controls."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "how-to-write-a-good-bio",
+    "title": "How to Write a Good Profile Bio",
+    "category": "Account & Profile",
+    "summary": "Write a concise and informative profile description.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Writing your bio",
+        "paragraphs": [
+          "A good bio is concise, clear, honest and relevant to your audience. Explain your work, skills or interests without making unsupported claims."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Suggested structure",
+        "paragraphs": [
+          "Introduce yourself, mention one or two skills, describe your interests or goals, and review the result for clarity."
+        ],
+        "bullets": [
+          "Avoid unnecessary abbreviations.",
+          "Do not exaggerate qualifications.",
+          "Keep private information out of public descriptions."
+        ]
+      },
+      {
+        "heading": "Example",
+        "paragraphs": [
+          "Electrical technician interested in practical problem-solving, technology and continuous learning. Focused on developing professional skills and collaborating on useful projects. Adapt this example to your own experience."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "what-is-a-social-feed",
+    "title": "What Is the Social Feed?",
+    "category": "Social Media",
+    "summary": "Understand social feeds and responsible participation.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Understanding the feed",
+        "paragraphs": [
+          "A social feed is an area where posts from users may be displayed. Depending on available features, it can support updates, discussions and content discovery."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Using the feed",
+        "paragraphs": [
+          "Sign in, open the Social or Feed section if available, read posts, and use the interaction controls provided by the application."
+        ],
+        "bullets": [
+          "Communicate respectfully.",
+          "Respect other people's privacy.",
+          "Check factual claims before sharing them."
+        ]
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If the feed does not load, check your connection and refresh the page. A missing control may not be implemented in your current version."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "how-to-create-a-social-post",
+    "title": "How to Create a Social Post",
+    "category": "Social Media",
+    "summary": "Prepare and publish a clear social post.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Plan your post",
+        "paragraphs": [
+          "Decide whether you want to share an update, ask a question, explain an idea or start a constructive discussion."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Publishing steps",
+        "paragraphs": [
+          "Open the social feed, locate the composer if available, write your message, review it, attach media only if supported, and submit the post."
+        ],
+        "bullets": [
+          "Check spelling.",
+          "Verify important claims.",
+          "Get permission before sharing private information or other people's images.",
+          "Never publish passwords or confidential information."
+        ]
+      },
+      {
+        "heading": "If posting fails",
+        "paragraphs": [
+          "Read the error message and correct required fields. If a post appears twice, inspect the feed before submitting again."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "how-to-use-tasks-in-productivity-center",
+    "title": "How to Use Tasks in the Productivity Center",
+    "category": "Productivity",
+    "summary": "Organise your work using a simple task workflow.",
+    "reading_time": "4 min",
+    "sections": [
+      {
+        "heading": "Understanding tasks",
+        "paragraphs": [
+          "A task represents a specific piece of work. Breaking large goals into smaller tasks makes planning and progress reviews easier."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Creating a task",
+        "paragraphs": [
+          "Sign in, open Productivity Center, locate the task section, and use the creation control if available. Enter a clear title and supported details, then save."
+        ],
+        "bullets": [
+          "Begin titles with an action.",
+          "Keep each task focused on one outcome.",
+          "Use deadlines only when appropriate.",
+          "Review unfinished tasks regularly."
+        ]
+      },
+      {
+        "heading": "Daily planning",
+        "paragraphs": [
+          "Choose your most important tasks, estimate the time required, and leave room for unexpected work. Review unfinished items before planning the next day."
+        ],
+        "bullets": []
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If saving fails, check required fields and read the error message. Features may vary by application version."
+        ],
+        "bullets": []
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "how-to-edit-your-profile",
+    "title": "How to Edit Your Profile",
+    "category": "Account & Profile",
+    "summary": "Learn how to update your profile information accurately.",
+    "sections": [
+      {
+        "heading": "Why update your profile?",
+        "paragraphs": [
+          "Your profile represents how other users see you on ABOSTIFY. Keeping it accurate helps people understand your identity, skills and interests."
+        ]
+      },
+      {
+        "heading": "Editing steps",
+        "steps": [
+          "Sign in to ABOSTIFY.",
+          "Open your profile or account settings.",
+          "Choose the edit option if available.",
+          "Update the fields supported by the application.",
+          "Review spelling and accuracy.",
+          "Save your changes and check the displayed profile."
+        ]
+      },
+      {
+        "heading": "What should you update?",
+        "bullets": [
+          "Display name and profile description.",
+          "Skills and professional interests.",
+          "Profile image, if supported.",
+          "Other optional fields that are relevant to your goals."
+        ]
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If changes do not appear, refresh the page and check again. If saving fails, read the displayed error. The available editing options depend on the current application version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 12,
+    "slug": "how-to-choose-a-display-name",
+    "title": "How to Choose a Good Display Name",
+    "category": "Account & Profile",
+    "summary": "Choose a clear, recognisable and appropriate display name.",
+    "sections": [
+      {
+        "heading": "What is a display name?",
+        "paragraphs": [
+          "A display name is the name shown to other people in supported parts of a platform. It may be different from a unique username used to identify an account."
+        ]
+      },
+      {
+        "heading": "Choose your name",
+        "steps": [
+          "Decide whether you are creating a personal or professional profile.",
+          "Choose a name people can recognise.",
+          "Keep spelling simple and readable.",
+          "Avoid impersonating another person or organisation.",
+          "Use the profile editor if display-name changes are supported."
+        ]
+      },
+      {
+        "heading": "Good practices",
+        "bullets": [
+          "Use a consistent name across professional interactions.",
+          "Avoid offensive or misleading wording.",
+          "Do not include private information such as account numbers.",
+          "Check the platform's rules before using a company or brand name."
+        ]
+      },
+      {
+        "heading": "If the name cannot be changed",
+        "paragraphs": [
+          "Some applications restrict how frequently a name can be changed or require a unique value. Read the error message and follow the available instructions."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 13,
+    "slug": "how-to-keep-your-account-secure",
+    "title": "How to Keep Your Account Secure",
+    "category": "Account & Profile",
+    "summary": "Practical steps to reduce the risk of unauthorised account access.",
+    "sections": [
+      {
+        "heading": "Use a strong password",
+        "paragraphs": [
+          "Create a password that is difficult to guess and not reused on other websites. A reputable password manager can help you store unique passwords safely."
+        ]
+      },
+      {
+        "heading": "Security checklist",
+        "bullets": [
+          "Never share your password or verification codes.",
+          "Avoid signing in on untrusted devices.",
+          "Log out after using a shared computer.",
+          "Keep your browser and device updated.",
+          "Be cautious of messages asking you to reveal credentials.",
+          "Use additional authentication protections if the application offers them."
+        ]
+      },
+      {
+        "heading": "If you suspect unauthorised access",
+        "steps": [
+          "Use the official website to access your account.",
+          "Change your password if you can sign in safely.",
+          "Secure the email account associated with your profile.",
+          "Review available account settings and active sessions, if supported.",
+          "Contact the platform's official support channel if the problem continues."
+        ]
+      },
+      {
+        "heading": "Recognising suspicious messages",
+        "paragraphs": [
+          "Be cautious of urgent messages demanding passwords, payment or verification codes. Do not follow suspicious links. Navigate to the website directly instead."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 14,
+    "slug": "how-to-update-account-information",
+    "title": "How to Update Account Information",
+    "category": "Account & Profile",
+    "summary": "Review and update the account details supported by your settings.",
+    "sections": [
+      {
+        "heading": "Understand account information",
+        "paragraphs": [
+          "Account information may include a display name, email address, profile details or other registration fields. The exact options depend on the application's implementation."
+        ]
+      },
+      {
+        "heading": "Update your information",
+        "steps": [
+          "Sign in to your account.",
+          "Open account settings or the profile editor.",
+          "Find the field you want to update.",
+          "Enter the correct information.",
+          "Review the changes before saving.",
+          "Complete any verification step requested by the application."
+        ]
+      },
+      {
+        "heading": "Important precautions",
+        "bullets": [
+          "Use an email address you control.",
+          "Do not enter false information to bypass verification.",
+          "Keep private identity and financial information secure.",
+          "Check whether changing a field affects how you sign in."
+        ]
+      },
+      {
+        "heading": "When updates fail",
+        "paragraphs": [
+          "Check required fields, formatting and any verification instructions. If a field is locked or unavailable, the application may not support changing it directly."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 15,
+    "slug": "how-to-understand-social-posts",
+    "title": "How to Understand and Read Social Posts",
+    "category": "Social Media",
+    "summary": "Read posts carefully and interact with content responsibly.",
+    "sections": [
+      {
+        "heading": "What a post can contain",
+        "paragraphs": [
+          "A social post may contain text and, where supported, attached media or interaction information. The exact format depends on the features available in the application."
+        ]
+      },
+      {
+        "heading": "Read a post effectively",
+        "steps": [
+          "Read the full message before responding.",
+          "Identify whether the author is sharing an opinion, question or factual claim.",
+          "Check context before drawing conclusions.",
+          "Use available profile links to understand who published the content.",
+          "Respond respectfully if you choose to participate."
+        ]
+      },
+      {
+        "heading": "Responsible engagement",
+        "bullets": [
+          "Do not assume every online claim is true.",
+          "Avoid sharing private information from another person.",
+          "Disagree with ideas without attacking individuals.",
+          "Report harmful content only through reporting controls that actually exist in the application."
+        ]
+      },
+      {
+        "heading": "If content is missing",
+        "paragraphs": [
+          "Refresh the page and check your connection. If a post or attachment remains unavailable, it may have been removed or the relevant feature may not be supported."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 16,
+    "slug": "how-to-comment-on-a-post",
+    "title": "How to Comment on a Post",
+    "category": "Social Media",
+    "summary": "Write useful comments and participate in discussions constructively.",
+    "sections": [
+      {
+        "heading": "Why comments matter",
+        "paragraphs": [
+          "Comments can help users ask questions, share relevant information and continue a discussion. A good comment adds something useful rather than repeating the post."
+        ]
+      },
+      {
+        "heading": "Commenting steps",
+        "steps": [
+          "Sign in and open the social feed.",
+          "Find the post you want to respond to.",
+          "Locate the comment field or control if available.",
+          "Write a clear and relevant response.",
+          "Review your wording before submitting.",
+          "Check whether the comment appears after submission."
+        ]
+      },
+      {
+        "heading": "Write better comments",
+        "bullets": [
+          "Stay on topic.",
+          "Ask clear questions when you need clarification.",
+          "Disagree respectfully.",
+          "Avoid sharing confidential or personal information.",
+          "Check facts before making strong claims."
+        ]
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If a comment cannot be submitted, check whether the field is empty, whether required information is missing, and whether an error message appears. Commenting may not be available on every type of content."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 17,
+    "slug": "how-to-like-a-post",
+    "title": "How to Like and React to a Post",
+    "category": "Social Media",
+    "summary": "Understand post likes and other reactions when supported.",
+    "sections": [
+      {
+        "heading": "What is a like?",
+        "paragraphs": [
+          "A like is a simple way to show appreciation or interest in a post. Some platforms also provide additional reaction options, but those options depend on the features implemented."
+        ]
+      },
+      {
+        "heading": "Using the like control",
+        "steps": [
+          "Open the social feed.",
+          "Find the post you want to react to.",
+          "Select the Like control if it is available.",
+          "Check whether the interface reflects your action.",
+          "If the control toggles, use it again only when you intend to remove your like."
+        ]
+      },
+      {
+        "heading": "Good practices",
+        "bullets": [
+          "React genuinely to content you appreciate.",
+          "Read the post before responding.",
+          "Do not use automated or deceptive engagement methods.",
+          "Remember that reactions do not replace a thoughtful response when one is needed."
+        ]
+      },
+      {
+        "heading": "If the count does not update",
+        "paragraphs": [
+          "Refresh the page and check the post again. Avoid repeatedly clicking while the request is processing. The display may depend on how the application updates its data."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 18,
+    "slug": "how-to-follow-another-user",
+    "title": "How to Follow Another User",
+    "category": "Social Media",
+    "summary": "Learn the general workflow for following people on the platform.",
+    "sections": [
+      {
+        "heading": "What does following mean?",
+        "paragraphs": [
+          "Following another user is a way to express interest in their updates. The exact effect on feed content and notifications depends on the application's implementation."
+        ]
+      },
+      {
+        "heading": "Follow a user",
+        "steps": [
+          "Sign in to ABOSTIFY.",
+          "Open the user-discovery area or a user's profile if available.",
+          "Review the profile to confirm you have found the right person.",
+          "Select Follow if that control is available.",
+          "Check whether the interface indicates that the follow action succeeded."
+        ]
+      },
+      {
+        "heading": "Following responsibly",
+        "bullets": [
+          "Follow accounts you genuinely want to hear from.",
+          "Respect other users' boundaries.",
+          "Do not impersonate people or create misleading accounts.",
+          "Review the available account controls if you want to change your following choices."
+        ]
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If the Follow control is missing, the feature may not be available on that page or in the current version. If an action fails, check the displayed message before trying again."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 19,
+    "slug": "how-to-unfollow-a-user",
+    "title": "How to Unfollow a User",
+    "category": "Social Media",
+    "summary": "Understand how to stop following an account when the feature is available.",
+    "sections": [
+      {
+        "heading": "When to unfollow",
+        "paragraphs": [
+          "You may choose to unfollow an account when its updates are no longer relevant to you. Unfollowing and blocking are different actions; do not assume that unfollowing prevents all future interactions."
+        ]
+      },
+      {
+        "heading": "Unfollow steps",
+        "steps": [
+          "Open the user's profile or the relevant following list.",
+          "Locate the Following or Unfollow control if available.",
+          "Select the control to stop following the account.",
+          "Confirm the interface reflects the updated state."
+        ]
+      },
+      {
+        "heading": "Before you act",
+        "bullets": [
+          "Check that you selected the correct account.",
+          "Understand that the other user may still be able to view public information, depending on platform settings.",
+          "Use additional privacy controls only if they are available and appropriate."
+        ]
+      },
+      {
+        "heading": "If unfollowing fails",
+        "paragraphs": [
+          "Refresh the page and check the current follow status. If the control is unavailable or an error appears, the feature may behave differently in your current application version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 20,
+    "slug": "social-media-etiquette-and-privacy",
+    "title": "Social Media Etiquette and Privacy",
+    "category": "Social Media",
+    "summary": "Communicate respectfully and protect private information when using social features.",
+    "sections": [
+      {
+        "heading": "Communicate respectfully",
+        "paragraphs": [
+          "Online communication works best when people discuss ideas clearly and treat one another with respect. Disagreement is normal, but harassment and personal attacks make conversations less useful."
+        ]
+      },
+      {
+        "heading": "Protect privacy",
+        "bullets": [
+          "Do not publish passwords, verification codes or financial details.",
+          "Ask permission before sharing another person's private information or images.",
+          "Avoid posting confidential workplace documents.",
+          "Review your message before publishing.",
+          "Be careful when clicking unfamiliar links or downloading files."
+        ]
+      },
+      {
+        "heading": "Handle disagreements",
+        "steps": [
+          "Read the full message before responding.",
+          "Ask for clarification if the meaning is unclear.",
+          "Explain your view without insulting the other person.",
+          "Disengage when a discussion becomes abusive.",
+          "Use official moderation or reporting controls if they exist and are appropriate."
+        ]
+      },
+      {
+        "heading": "Think before posting",
+        "paragraphs": [
+          "Online content may be copied or shared beyond its original audience. Publish only material you have the right to share and are comfortable making available to the intended audience."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 21,
+    "slug": "how-to-discover-new-people",
+    "title": "How to Discover New People",
+    "category": "Social Media",
+    "summary": "Learn how to explore and find people whose interests match yours.",
+    "sections": [
+      {
+        "heading": "Why discover people?",
+        "paragraphs": [
+          "Discovering other users can help you find people with similar interests, professional skills or ideas. Use discovery tools respectfully and avoid treating suggested profiles as verified identities."
+        ]
+      },
+      {
+        "heading": "Explore users",
+        "steps": [
+          "Sign in to ABOSTIFY.",
+          "Open the user discovery or people section if available.",
+          "Browse the profiles displayed by the application.",
+          "Open a profile to review its available public information.",
+          "Follow a user only if the follow feature is available and you want to see their updates."
+        ]
+      },
+      {
+        "heading": "Discovery best practices",
+        "bullets": [
+          "Read profile information before contacting someone.",
+          "Do not assume a profile is authentic solely because it appears in search results.",
+          "Respect other users' privacy and boundaries.",
+          "Avoid sending repeated unsolicited messages.",
+          "Keep your own profile information accurate."
+        ]
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If discovery results do not load, check your internet connection and refresh the page. Available discovery options depend on the current application version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 22,
+    "slug": "how-to-search-for-users",
+    "title": "How to Search for Users",
+    "category": "Social Media",
+    "summary": "Use available search tools to locate a particular user.",
+    "sections": [
+      {
+        "heading": "Before searching",
+        "paragraphs": [
+          "Think about the information you already know, such as a person's display name or username. Search results may contain multiple people with similar names."
+        ]
+      },
+      {
+        "heading": "Search workflow",
+        "steps": [
+          "Open ABOSTIFY and sign in if required.",
+          "Locate the search field or user-search page if available.",
+          "Enter the name or other supported search term.",
+          "Submit the search or wait for results if the interface searches automatically.",
+          "Review the results and open the correct profile."
+        ]
+      },
+      {
+        "heading": "Improve search results",
+        "bullets": [
+          "Check spelling and spacing.",
+          "Try a shorter search term if no results appear.",
+          "Use a username when you know it and the search supports usernames.",
+          "Compare available profile details before selecting a result."
+        ]
+      },
+      {
+        "heading": "Privacy and safety",
+        "paragraphs": [
+          "Search only for legitimate purposes. Do not use search results to harass, impersonate or expose private information about another person."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 23,
+    "slug": "how-to-view-another-users-profile",
+    "title": "How to View Another User's Profile",
+    "category": "Social Media",
+    "summary": "Understand profile pages and the information they may show.",
+    "sections": [
+      {
+        "heading": "What is a user profile?",
+        "paragraphs": [
+          "A user profile is a page containing information associated with an account. Depending on the features enabled, it may display a name, bio, posts or other profile details."
+        ]
+      },
+      {
+        "heading": "Open a profile",
+        "steps": [
+          "Locate the user through the feed, discovery section or search if available.",
+          "Select the user's name or profile link.",
+          "Review the information displayed on the profile.",
+          "Use available follow or interaction controls only when appropriate."
+        ]
+      },
+      {
+        "heading": "Interpreting profile information",
+        "bullets": [
+          "A profile description is information supplied by its owner.",
+          "Do not assume that every claim is independently verified.",
+          "Respect information that is not publicly displayed.",
+          "Avoid sharing another user's profile details outside the intended context without a good reason."
+        ]
+      },
+      {
+        "heading": "If the profile will not open",
+        "paragraphs": [
+          "Refresh the page and check the link. The profile may be unavailable because of a changed URL, account status, access restriction or an application error."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 24,
+    "slug": "how-to-manage-your-following-list",
+    "title": "How to Manage Your Following List",
+    "category": "Social Media",
+    "summary": "Keep track of accounts you choose to follow.",
+    "sections": [
+      {
+        "heading": "What is a following list?",
+        "paragraphs": [
+          "A following list, when supported, contains accounts that you have chosen to follow. Reviewing it periodically can help keep your social feed relevant."
+        ]
+      },
+      {
+        "heading": "Review your list",
+        "steps": [
+          "Open your profile or social account area.",
+          "Locate the Following list if available.",
+          "Review the accounts shown.",
+          "Open a profile if you need to identify an account.",
+          "Use the available unfollow control when you no longer want to follow someone."
+        ]
+      },
+      {
+        "heading": "Keep your feed useful",
+        "bullets": [
+          "Follow accounts relevant to your interests.",
+          "Review inactive or irrelevant follows periodically.",
+          "Do not follow people simply to create misleading engagement.",
+          "Respect other users even when you stop following them."
+        ]
+      },
+      {
+        "heading": "Feature availability",
+        "paragraphs": [
+          "The exact location and behaviour of following lists depend on the application version. If the list is not visible, check the available profile and social navigation options."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 25,
+    "slug": "how-to-engage-with-social-content",
+    "title": "How to Engage with Social Content",
+    "category": "Social Media",
+    "summary": "Participate in conversations through useful and respectful interactions.",
+    "sections": [
+      {
+        "heading": "Meaningful engagement",
+        "paragraphs": [
+          "Engagement may include actions such as liking, commenting or following, depending on the features available. The best interactions contribute positively to the conversation."
+        ]
+      },
+      {
+        "heading": "A practical workflow",
+        "steps": [
+          "Read the full post before reacting.",
+          "Decide whether a like or a written response is appropriate.",
+          "Write a relevant comment when you have something useful to add.",
+          "Review your response before submitting.",
+          "Check whether the application confirms your action."
+        ]
+      },
+      {
+        "heading": "Quality over quantity",
+        "bullets": [
+          "Avoid repetitive comments that add no value.",
+          "Do not use deceptive engagement tactics.",
+          "Respect different opinions.",
+          "Verify claims before repeating them.",
+          "Avoid revealing confidential information."
+        ]
+      },
+      {
+        "heading": "Resolving interaction problems",
+        "paragraphs": [
+          "If a reaction or comment fails, read any error message and check your connection. Avoid repeatedly submitting the same action while the first request may still be processing."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 26,
+    "slug": "how-to-organise-your-social-feed",
+    "title": "How to Organise Your Social Feed",
+    "category": "Social Media",
+    "summary": "Build healthier habits for reading and participating in your feed.",
+    "sections": [
+      {
+        "heading": "Define your purpose",
+        "paragraphs": [
+          "Decide what you want from the social feed. You might be looking for professional updates, learning opportunities, community discussions or personal interests."
+        ]
+      },
+      {
+        "heading": "Practical habits",
+        "steps": [
+          "Review the feed at a time that suits your schedule.",
+          "Prioritise posts relevant to your goals.",
+          "Interact with useful content thoughtfully.",
+          "Unfollow irrelevant accounts if that control is available.",
+          "Take breaks when browsing begins to distract you from important work."
+        ]
+      },
+      {
+        "heading": "Improve information quality",
+        "bullets": [
+          "Check the source of important claims.",
+          "Look for context rather than relying on headlines alone.",
+          "Distinguish personal opinions from verified information.",
+          "Avoid sharing content that appears misleading or harmful."
+        ]
+      },
+      {
+        "heading": "Feature limitations",
+        "paragraphs": [
+          "Some platforms offer feed filters or preferences, while others do not. Use only the controls actually available in your ABOSTIFY version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 27,
+    "slug": "how-to-write-helpful-comments",
+    "title": "How to Write Helpful Comments",
+    "category": "Social Media",
+    "summary": "Make comments clearer, more useful and easier to understand.",
+    "sections": [
+      {
+        "heading": "Start with context",
+        "paragraphs": [
+          "A helpful comment responds directly to the post. Before writing, identify the main point you want to address and whether your response will help the discussion."
+        ]
+      },
+      {
+        "heading": "A simple comment structure",
+        "steps": [
+          "Mention the point you are responding to.",
+          "State your question, observation or suggestion clearly.",
+          "Provide supporting context when useful.",
+          "Keep the tone respectful.",
+          "Review your wording before posting."
+        ]
+      },
+      {
+        "heading": "Examples of useful comments",
+        "bullets": [
+          "Ask a specific question when something is unclear.",
+          "Share a relevant experience without presenting it as universal proof.",
+          "Offer a practical suggestion related to the topic.",
+          "Correct a factual error politely and provide reliable context when possible."
+        ]
+      },
+      {
+        "heading": "Avoid these mistakes",
+        "paragraphs": [
+          "Avoid personal attacks, irrelevant promotions, repeated messages and unsupported accusations. If a discussion becomes hostile, disengaging may be more productive than continuing it."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 28,
+    "slug": "how-to-review-your-post-before-publishing",
+    "title": "How to Review a Post Before Publishing",
+    "category": "Social Media",
+    "summary": "Use a simple checklist to prevent mistakes before posting.",
+    "sections": [
+      {
+        "heading": "Why review matters",
+        "paragraphs": [
+          "A quick review can catch spelling mistakes, unclear wording, incorrect claims and information that should not be public. Online content may be copied or shared beyond its original audience."
+        ]
+      },
+      {
+        "heading": "Publishing checklist",
+        "steps": [
+          "Confirm that the post communicates one clear idea.",
+          "Check spelling, punctuation and readability.",
+          "Verify factual claims that matter.",
+          "Confirm you have permission to share any included material.",
+          "Remove passwords, private contact details and confidential information.",
+          "Submit only after you are satisfied with the final version."
+        ]
+      },
+      {
+        "heading": "Professional posts",
+        "bullets": [
+          "Use a clear and appropriate tone.",
+          "Credit sources when needed.",
+          "Avoid making promises you cannot keep.",
+          "Separate personal opinions from official company statements."
+        ]
+      },
+      {
+        "heading": "If you notice a mistake later",
+        "paragraphs": [
+          "Check whether the application provides an edit or delete option. If it does, review the change before saving. Do not assume that removing a post also removes copies already shared elsewhere."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 29,
+    "slug": "how-to-handle-negative-social-interactions",
+    "title": "How to Handle Negative Social Interactions",
+    "category": "Social Media",
+    "summary": "Respond constructively to criticism, disagreement and unwanted interactions.",
+    "sections": [
+      {
+        "heading": "Pause before responding",
+        "paragraphs": [
+          "Negative comments can be frustrating. Taking a moment before replying helps you avoid escalating a disagreement or publishing something you later regret."
+        ]
+      },
+      {
+        "heading": "Choose a response",
+        "steps": [
+          "Read the message carefully and identify the actual concern.",
+          "Decide whether a response is necessary.",
+          "If appropriate, reply calmly and address the issue rather than attacking the person.",
+          "Disengage if the exchange becomes repetitive or abusive.",
+          "Use platform safety or reporting options if available and warranted."
+        ]
+      },
+      {
+        "heading": "Protect yourself",
+        "bullets": [
+          "Do not disclose private information in retaliation.",
+          "Do not threaten or harass another user.",
+          "Keep relevant evidence of serious threats or abuse when safe to do so.",
+          "Seek appropriate help if you face credible threats."
+        ]
+      },
+      {
+        "heading": "Constructive criticism",
+        "paragraphs": [
+          "Not every disagreement is harassment. Consider whether feedback contains a useful point, while maintaining reasonable boundaries around disrespectful behaviour."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 30,
+    "slug": "social-media-content-planning-guide",
+    "title": "A Simple Guide to Social Media Content Planning",
+    "category": "Social Media",
+    "summary": "Plan useful posts without sacrificing accuracy or consistency.",
+    "sections": [
+      {
+        "heading": "Set a purpose",
+        "paragraphs": [
+          "Decide what your content should achieve. Possible goals include sharing knowledge, documenting progress, discussing professional interests or building a community."
+        ]
+      },
+      {
+        "heading": "Plan your content",
+        "steps": [
+          "Choose two or three topics relevant to your audience.",
+          "Write down possible post ideas.",
+          "Select a realistic publishing frequency.",
+          "Prepare drafts and verify important claims.",
+          "Review audience responses and learn what is useful."
+        ]
+      },
+      {
+        "heading": "Content ideas",
+        "bullets": [
+          "Share a lesson learned from a project.",
+          "Explain a process you understand well.",
+          "Ask a thoughtful question about your field.",
+          "Summarise a useful resource in your own words.",
+          "Describe a challenge and what you learned from it."
+        ]
+      },
+      {
+        "heading": "Responsible publishing",
+        "paragraphs": [
+          "Do not copy other people's work without permission or appropriate attribution. Avoid sharing confidential information and do not invent results to make a post appear more impressive."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 31,
+    "slug": "how-to-create-a-task",
+    "title": "How to Create a Task",
+    "category": "Productivity",
+    "summary": "Learn how to turn your work into clear, actionable tasks.",
+    "sections": [
+      {
+        "heading": "What makes a good task?",
+        "paragraphs": [
+          "A task describes a specific action or outcome that needs to be completed. Clear tasks reduce confusion and make it easier to measure progress."
+        ]
+      },
+      {
+        "heading": "Create a task",
+        "steps": [
+          "Sign in to ABOSTIFY.",
+          "Open Productivity Center if it is available in your account.",
+          "Locate the task creation control.",
+          "Enter a short, descriptive task title.",
+          "Add any supported details, such as a description or deadline.",
+          "Save the task and check that it appears in the task list."
+        ]
+      },
+      {
+        "heading": "Examples of good task titles",
+        "bullets": [
+          "Prepare the weekly work report.",
+          "Review the project requirements.",
+          "Contact the supplier about delivery.",
+          "Complete the training assignment.",
+          "Check and correct the attendance sheet."
+        ]
+      },
+      {
+        "heading": "Common mistakes",
+        "paragraphs": [
+          "Avoid vague titles such as Do something or Important work. Break large assignments into smaller tasks. The exact fields and controls depend on the features implemented in your application version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 32,
+    "slug": "how-to-edit-a-task",
+    "title": "How to Edit a Task",
+    "category": "Productivity",
+    "summary": "Update task details when your plans or requirements change.",
+    "sections": [
+      {
+        "heading": "When should you edit a task?",
+        "paragraphs": [
+          "A task may need updating when its requirements change, the original title is unclear, or the expected completion date changes. Keeping task information accurate helps prevent misunderstandings."
+        ]
+      },
+      {
+        "heading": "Editing workflow",
+        "steps": [
+          "Open Productivity Center.",
+          "Find the task you want to change.",
+          "Open the task or its edit control if available.",
+          "Update the supported fields.",
+          "Review the changes carefully.",
+          "Save and verify the updated task."
+        ]
+      },
+      {
+        "heading": "What to review",
+        "bullets": [
+          "Task title and description.",
+          "Deadline, if supported.",
+          "Priority or status, if supported.",
+          "Any assignment details provided by the application."
+        ]
+      },
+      {
+        "heading": "If editing fails",
+        "paragraphs": [
+          "Check required fields and read any error message. If no edit control is available, the current application version may not support editing that task. Avoid creating duplicates until you have checked whether the original task can be updated."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 33,
+    "slug": "how-to-set-task-priorities",
+    "title": "How to Set Task Priorities",
+    "category": "Productivity",
+    "summary": "Decide which tasks deserve attention first.",
+    "sections": [
+      {
+        "heading": "Why prioritisation matters",
+        "paragraphs": [
+          "When several tasks compete for your time, prioritisation helps you focus on work that matters most. A task that is urgent is not always the task with the greatest long-term value."
+        ]
+      },
+      {
+        "heading": "A simple priority method",
+        "steps": [
+          "List the tasks you need to complete.",
+          "Identify deadlines and consequences of delay.",
+          "Estimate the value and effort of each task.",
+          "Choose the most important task you can realistically start.",
+          "Review priorities when circumstances change."
+        ]
+      },
+      {
+        "heading": "Example",
+        "bullets": [
+          "High priority: submit a report due today.",
+          "Medium priority: prepare material for next week's meeting.",
+          "Low priority: reorganise optional notes when urgent work is finished."
+        ]
+      },
+      {
+        "heading": "Using application controls",
+        "paragraphs": [
+          "If ABOSTIFY provides priority fields, use the available options consistently. If priority controls are not available, you can still organise your work using a written list or another planning method."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 34,
+    "slug": "how-to-manage-task-deadlines",
+    "title": "How to Manage Task Deadlines",
+    "category": "Productivity",
+    "summary": "Plan deadlines realistically and reduce last-minute pressure.",
+    "sections": [
+      {
+        "heading": "Set realistic deadlines",
+        "paragraphs": [
+          "A deadline should reflect the amount of work required, available time, dependencies and possible interruptions. Unrealistic deadlines can create avoidable stress and reduce work quality."
+        ]
+      },
+      {
+        "heading": "Deadline planning",
+        "steps": [
+          "Clarify what must be delivered.",
+          "Estimate how long the work will take.",
+          "Check whether another person or task must come first.",
+          "Set a realistic target date when appropriate.",
+          "Review progress before the deadline.",
+          "Communicate early if the deadline becomes unrealistic."
+        ]
+      },
+      {
+        "heading": "Useful habits",
+        "bullets": [
+          "Break large assignments into smaller tasks.",
+          "Begin important work before the final day.",
+          "Leave time for review and corrections.",
+          "Review upcoming deadlines at the start of your day.",
+          "Update the task when a deadline genuinely changes."
+        ]
+      },
+      {
+        "heading": "Application limitations",
+        "paragraphs": [
+          "Use a task deadline field only if it is supported by the current ABOSTIFY version. A saved date should not be assumed to generate an automatic reminder unless that feature is available."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 35,
+    "slug": "how-to-update-task-status",
+    "title": "How to Update Task Status",
+    "category": "Productivity",
+    "summary": "Keep your task list accurate by reflecting the current state of your work.",
+    "sections": [
+      {
+        "heading": "What is task status?",
+        "paragraphs": [
+          "Task status communicates whether work has not started, is in progress, or has been completed. The available status labels depend on the application."
+        ]
+      },
+      {
+        "heading": "Update a status",
+        "steps": [
+          "Open your task list.",
+          "Find the task whose status needs updating.",
+          "Open the status control if available.",
+          "Choose the appropriate status.",
+          "Save the change if required.",
+          "Check that the task displays the expected status."
+        ]
+      },
+      {
+        "heading": "Keep statuses meaningful",
+        "bullets": [
+          "Do not mark unfinished work as completed.",
+          "Update tasks when work actually begins.",
+          "Review stalled tasks and identify blockers.",
+          "Use consistent status choices across similar tasks."
+        ]
+      },
+      {
+        "heading": "If the status will not change",
+        "paragraphs": [
+          "Check whether the task is editable and whether all required fields are valid. Read the error message and avoid repeatedly submitting the same change."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 36,
+    "slug": "how-to-break-large-projects-into-tasks",
+    "title": "How to Break Large Projects into Tasks",
+    "category": "Productivity",
+    "summary": "Turn a large assignment into smaller and more manageable actions.",
+    "sections": [
+      {
+        "heading": "Why break work down?",
+        "paragraphs": [
+          "Large projects can feel difficult to start because the final outcome may require many separate activities. Smaller tasks make progress visible and help identify missing steps."
+        ]
+      },
+      {
+        "heading": "Decomposition method",
+        "steps": [
+          "Write down the final outcome you want to achieve.",
+          "List the major stages required to reach it.",
+          "Break each stage into specific actions.",
+          "Identify dependencies between tasks.",
+          "Estimate effort and assign realistic deadlines where needed.",
+          "Review the task list and begin with the next actionable step."
+        ]
+      },
+      {
+        "heading": "Example: preparing a report",
+        "bullets": [
+          "Collect the required information.",
+          "Organise the source material.",
+          "Draft the main sections.",
+          "Review the facts and calculations.",
+          "Correct errors and format the document.",
+          "Submit the final report."
+        ]
+      },
+      {
+        "heading": "Avoid over-planning",
+        "paragraphs": [
+          "A task should be small enough to understand but large enough to produce meaningful progress. Do not spend so much time organising that the actual work never begins."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 37,
+    "slug": "how-to-review-daily-tasks",
+    "title": "How to Review Daily Tasks",
+    "category": "Productivity",
+    "summary": "Build a simple daily routine for reviewing and completing work.",
+    "sections": [
+      {
+        "heading": "Start the day with a review",
+        "paragraphs": [
+          "A short planning session helps you understand what needs attention. Reviewing your tasks before beginning work can reduce unnecessary switching between activities."
+        ]
+      },
+      {
+        "heading": "Daily review routine",
+        "steps": [
+          "Open your task list or planning notes.",
+          "Review unfinished work from the previous day.",
+          "Identify tasks with important deadlines.",
+          "Choose one or two main outcomes for the day.",
+          "Estimate how much time each task requires.",
+          "Review progress before ending the workday."
+        ]
+      },
+      {
+        "heading": "During the day",
+        "bullets": [
+          "Focus on one important task at a time where practical.",
+          "Record new tasks so you do not forget them.",
+          "Reassess priorities when urgent work appears.",
+          "Take reasonable breaks and allow time for unexpected issues."
+        ]
+      },
+      {
+        "heading": "End-of-day review",
+        "paragraphs": [
+          "Mark completed work accurately, note any blockers, and decide what should happen next. Move unfinished work forward deliberately instead of automatically treating every item as urgent."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 38,
+    "slug": "how-to-manage-overdue-tasks",
+    "title": "How to Manage Overdue Tasks",
+    "category": "Productivity",
+    "summary": "Recover control of delayed work with a practical review process.",
+    "sections": [
+      {
+        "heading": "Understand why work is overdue",
+        "paragraphs": [
+          "An overdue task may indicate an unrealistic deadline, an unexpected dependency, insufficient resources or an unclear requirement. Identify the cause before deciding what to do next."
+        ]
+      },
+      {
+        "heading": "Recovery steps",
+        "steps": [
+          "Review the overdue task and its current state.",
+          "Identify what prevented completion.",
+          "Decide whether the task is still necessary.",
+          "Estimate the remaining work.",
+          "Set a realistic revised plan if appropriate.",
+          "Inform affected people when the delay matters to them."
+        ]
+      },
+      {
+        "heading": "Avoid repeated delays",
+        "bullets": [
+          "Break complex tasks into smaller actions.",
+          "Allow time for review and unexpected problems.",
+          "Raise blockers early.",
+          "Avoid assigning every task the highest priority.",
+          "Review deadlines regularly."
+        ]
+      },
+      {
+        "heading": "Updating task details",
+        "paragraphs": [
+          "If the application supports deadline or status editing, update those fields to reflect the real situation. Do not change dates merely to hide delays or create a misleading record."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 39,
+    "slug": "how-to-organise-your-task-list",
+    "title": "How to Organise Your Task List",
+    "category": "Productivity",
+    "summary": "Keep tasks readable, actionable and easy to review.",
+    "sections": [
+      {
+        "heading": "Start with clarity",
+        "paragraphs": [
+          "A useful task list shows what needs to be done without requiring you to interpret vague notes. Give each task a clear action and a defined outcome."
+        ]
+      },
+      {
+        "heading": "Organisation workflow",
+        "steps": [
+          "Collect outstanding tasks in one place.",
+          "Remove duplicates and tasks that are no longer needed.",
+          "Rewrite vague titles as specific actions.",
+          "Group related tasks if your tool supports categories or projects.",
+          "Review priorities and deadlines.",
+          "Keep the list updated as work changes."
+        ]
+      },
+      {
+        "heading": "Good organisation habits",
+        "bullets": [
+          "Separate immediate actions from long-term ideas.",
+          "Keep descriptions concise but sufficient.",
+          "Use categories consistently when available.",
+          "Avoid creating multiple copies of the same task.",
+          "Review completed tasks according to your record-keeping needs."
+        ]
+      },
+      {
+        "heading": "Do not assume unsupported features",
+        "paragraphs": [
+          "Some task tools provide tags, categories, filters or sorting controls; others do not. Use the controls available in ABOSTIFY and keep a simple manual list if a preferred option is missing."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 40,
+    "slug": "productivity-best-practices-for-beginners",
+    "title": "Productivity Best Practices for Beginners",
+    "category": "Productivity",
+    "summary": "Develop practical work habits without making your system complicated.",
+    "sections": [
+      {
+        "heading": "Focus on outcomes",
+        "paragraphs": [
+          "Productivity is not simply about completing the largest number of tasks. It is about making meaningful progress on work that matters while maintaining a sustainable routine."
+        ]
+      },
+      {
+        "heading": "A beginner-friendly system",
+        "steps": [
+          "Choose a small number of important goals.",
+          "Turn each goal into specific tasks.",
+          "Prioritise the tasks that matter most.",
+          "Set realistic deadlines when necessary.",
+          "Work in focused periods with reasonable breaks.",
+          "Review progress and adjust your approach."
+        ]
+      },
+      {
+        "heading": "Habits that help",
+        "bullets": [
+          "Plan tomorrow before finishing today's work.",
+          "Reduce unnecessary notifications and distractions.",
+          "Keep task titles clear.",
+          "Ask for clarification when requirements are uncertain.",
+          "Learn from missed deadlines without ignoring recurring problems."
+        ]
+      },
+      {
+        "heading": "Use ABOSTIFY thoughtfully",
+        "paragraphs": [
+          "Use Productivity Center and its available controls to support your workflow. Do not rely on features such as automatic reminders, recurring tasks or advanced reporting unless they are actually available in your version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 41,
+    "slug": "what-are-productivity-goals",
+    "title": "What Are Productivity Goals?",
+    "category": "Goals & Planning",
+    "summary": "Understand how goals help you organise your effort and measure progress.",
+    "sections": [
+      {
+        "heading": "Understanding goals",
+        "paragraphs": [
+          "A goal describes an outcome you want to achieve. Unlike an individual task, a goal often requires several actions over a period of time.",
+          "For example, completing a training course is a goal. Watching lessons, taking notes and completing exercises are tasks that contribute to it."
+        ]
+      },
+      {
+        "heading": "Why goals matter",
+        "bullets": [
+          "Give your work a clear direction.",
+          "Help you decide which tasks deserve attention.",
+          "Make progress easier to review.",
+          "Provide a basis for adjusting your plans when circumstances change."
+        ]
+      },
+      {
+        "heading": "Getting started",
+        "steps": [
+          "Choose an outcome that matters to you.",
+          "Explain why you want to achieve it.",
+          "Decide how you will recognise success.",
+          "Break the goal into smaller actions.",
+          "Review progress regularly."
+        ]
+      },
+      {
+        "heading": "Keep goals realistic",
+        "paragraphs": [
+          "Consider your available time, resources and responsibilities. A useful goal should challenge you without depending on assumptions that are outside your control."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 42,
+    "slug": "how-to-set-smart-goals",
+    "title": "How to Set SMART Goals",
+    "category": "Goals & Planning",
+    "summary": "Use a structured method to make goals clearer and easier to evaluate.",
+    "sections": [
+      {
+        "heading": "The SMART method",
+        "paragraphs": [
+          "SMART is a common goal-setting framework. It encourages goals to be Specific, Measurable, Achievable, Relevant and Time-bound."
+        ]
+      },
+      {
+        "heading": "Apply the framework",
+        "bullets": [
+          "Specific: state exactly what you want to achieve.",
+          "Measurable: identify evidence that shows progress or completion.",
+          "Achievable: choose a target that fits your resources.",
+          "Relevant: connect the goal to a meaningful priority.",
+          "Time-bound: establish a target date when appropriate."
+        ]
+      },
+      {
+        "heading": "Example",
+        "paragraphs": [
+          "A vague goal is 'improve my skills'. A clearer goal is 'complete a beginner programming course and its practical exercises within eight weeks'. The second version describes an outcome and a target period."
+        ]
+      },
+      {
+        "heading": "Create an action plan",
+        "steps": [
+          "Write the goal in one clear sentence.",
+          "Define the result that will count as success.",
+          "Break the goal into smaller tasks.",
+          "Schedule the first action.",
+          "Review progress and adjust the plan when necessary."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 43,
+    "slug": "how-to-break-goals-into-milestones",
+    "title": "How to Break Goals into Milestones",
+    "category": "Goals & Planning",
+    "summary": "Use milestones to make long-term objectives easier to manage.",
+    "sections": [
+      {
+        "heading": "What is a milestone?",
+        "paragraphs": [
+          "A milestone is a meaningful checkpoint on the way to a larger outcome. Milestones help you see whether the project is progressing as expected."
+        ]
+      },
+      {
+        "heading": "Create milestones",
+        "steps": [
+          "Write down the final outcome.",
+          "Identify the major stages needed to reach it.",
+          "Describe a clear result for each stage.",
+          "Arrange the stages in a sensible order.",
+          "Estimate when each milestone should be reached.",
+          "Review the plan when dependencies or requirements change."
+        ]
+      },
+      {
+        "heading": "Example: building a website",
+        "bullets": [
+          "Milestone 1: define the requirements.",
+          "Milestone 2: prepare the interface design.",
+          "Milestone 3: implement the main workflows.",
+          "Milestone 4: test important user journeys.",
+          "Milestone 5: prepare the release."
+        ]
+      },
+      {
+        "heading": "Avoid unnecessary complexity",
+        "paragraphs": [
+          "Milestones should represent meaningful progress. Too many tiny checkpoints can create administrative work without improving your understanding of the project."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 44,
+    "slug": "how-to-track-goal-progress",
+    "title": "How to Track Goal Progress",
+    "category": "Goals & Planning",
+    "summary": "Review evidence of progress and decide what action to take next.",
+    "sections": [
+      {
+        "heading": "Measure progress meaningfully",
+        "paragraphs": [
+          "Progress tracking works best when the measure reflects the result you want. Depending on the goal, you may count completed tasks, finished lessons, delivered work or another observable outcome."
+        ]
+      },
+      {
+        "heading": "A simple tracking routine",
+        "steps": [
+          "Record the goal and its success criteria.",
+          "Choose a useful progress measure.",
+          "Update the measure at a consistent interval.",
+          "Compare current progress with the intended plan.",
+          "Identify blockers or unexpected changes.",
+          "Choose the next practical action."
+        ]
+      },
+      {
+        "heading": "Useful measurements",
+        "bullets": [
+          "Number of completed project stages.",
+          "Lessons or exercises completed.",
+          "Deliverables accepted by the intended recipient.",
+          "Time spent on planned activities when time is relevant.",
+          "Remaining work compared with the original estimate."
+        ]
+      },
+      {
+        "heading": "Be honest about progress",
+        "paragraphs": [
+          "Do not mark a goal complete simply because many activities were performed. Compare the actual outcome with the success criteria you defined."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 45,
+    "slug": "how-to-prioritise-multiple-goals",
+    "title": "How to Prioritise Multiple Goals",
+    "category": "Goals & Planning",
+    "summary": "Choose which goals need attention first when time and resources are limited.",
+    "sections": [
+      {
+        "heading": "Why prioritisation helps",
+        "paragraphs": [
+          "Trying to pursue every goal at full intensity can divide your attention and make progress slower. Prioritisation helps you make deliberate choices about limited time and energy."
+        ]
+      },
+      {
+        "heading": "Prioritisation method",
+        "steps": [
+          "List your current goals.",
+          "Identify deadlines and important consequences.",
+          "Estimate the effort and resources each goal needs.",
+          "Consider which goals support your longer-term direction.",
+          "Choose a manageable number of active priorities.",
+          "Review your choices when circumstances change."
+        ]
+      },
+      {
+        "heading": "Questions to ask",
+        "bullets": [
+          "What happens if this goal is delayed?",
+          "Does another goal depend on it?",
+          "Do I have the resources to make progress now?",
+          "Is this goal still relevant?",
+          "Can I pause or reduce the scope of another goal?"
+        ]
+      },
+      {
+        "heading": "Avoid overcommitment",
+        "paragraphs": [
+          "A goal can remain important even when you are not actively working on it. Record future intentions separately from immediate priorities so your current plan remains realistic."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 46,
+    "slug": "how-to-review-weekly-goals",
+    "title": "How to Review Your Goals Weekly",
+    "category": "Goals & Planning",
+    "summary": "Use a weekly review to recognise progress and improve your next plan.",
+    "sections": [
+      {
+        "heading": "Purpose of a weekly review",
+        "paragraphs": [
+          "A weekly review provides time to compare your plans with what actually happened. It helps you notice progress, identify obstacles and decide where to focus next."
+        ]
+      },
+      {
+        "heading": "Weekly review steps",
+        "steps": [
+          "Read each active goal.",
+          "Record meaningful progress made during the week.",
+          "Identify unfinished milestones and blockers.",
+          "Check whether deadlines remain realistic.",
+          "Choose the most important actions for the next week.",
+          "Update your plan to reflect new information."
+        ]
+      },
+      {
+        "heading": "Questions for reflection",
+        "bullets": [
+          "What progress am I most satisfied with?",
+          "What slowed me down?",
+          "Which task had the greatest impact?",
+          "What should I stop, continue or change?",
+          "What is the next concrete action?"
+        ]
+      },
+      {
+        "heading": "Keep the review practical",
+        "paragraphs": [
+          "A review does not need to be long. A short, honest assessment is more useful than a complicated system you cannot maintain consistently."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 47,
+    "slug": "how-to-handle-goal-setbacks",
+    "title": "How to Handle Goal Setbacks",
+    "category": "Goals & Planning",
+    "summary": "Respond to delays and unexpected difficulties with a practical recovery plan.",
+    "sections": [
+      {
+        "heading": "Setbacks are information",
+        "paragraphs": [
+          "A setback may result from an unexpected event, an unrealistic estimate, a missing resource or a change in priorities. It does not automatically mean that the goal should be abandoned."
+        ]
+      },
+      {
+        "heading": "Recover your progress",
+        "steps": [
+          "Describe what happened without exaggerating or hiding it.",
+          "Identify the main cause of the setback.",
+          "Decide whether the original goal remains relevant.",
+          "Estimate the remaining work and resources.",
+          "Choose a revised plan or smaller next step.",
+          "Communicate important changes to affected people."
+        ]
+      },
+      {
+        "heading": "Learn from the experience",
+        "bullets": [
+          "Add time for review when previous estimates were too optimistic.",
+          "Identify dependencies earlier.",
+          "Ask for help when a blocker is outside your control.",
+          "Avoid repeatedly making commitments that your schedule cannot support."
+        ]
+      },
+      {
+        "heading": "Know when to change direction",
+        "paragraphs": [
+          "Sometimes circumstances change enough that a goal is no longer useful. Revising or stopping a goal can be a reasonable decision when you understand the trade-offs and choose deliberately."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 48,
+    "slug": "how-to-create-an-action-plan",
+    "title": "How to Create an Action Plan",
+    "category": "Goals & Planning",
+    "summary": "Convert a desired outcome into a practical sequence of actions.",
+    "sections": [
+      {
+        "heading": "What is an action plan?",
+        "paragraphs": [
+          "An action plan describes the steps required to reach a goal. It can include tasks, milestones, responsibilities, resources and target dates when those details are relevant."
+        ]
+      },
+      {
+        "heading": "Build your plan",
+        "steps": [
+          "State the outcome you want to achieve.",
+          "Identify the major activities required.",
+          "Break each activity into actionable tasks.",
+          "Identify dependencies and required resources.",
+          "Set realistic target dates where useful.",
+          "Decide how you will review progress."
+        ]
+      },
+      {
+        "heading": "Example action plan",
+        "bullets": [
+          "Outcome: complete a professional training course.",
+          "Action 1: choose the course and confirm its requirements.",
+          "Action 2: prepare a study schedule.",
+          "Action 3: complete lessons and exercises.",
+          "Action 4: review weak areas.",
+          "Action 5: complete the final assessment if required."
+        ]
+      },
+      {
+        "heading": "Keep the plan flexible",
+        "paragraphs": [
+          "A plan should guide action rather than prevent adaptation. Update it when new information changes the best way to reach the intended outcome."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 49,
+    "slug": "how-to-balance-short-term-and-long-term-goals",
+    "title": "How to Balance Short-Term and Long-Term Goals",
+    "category": "Goals & Planning",
+    "summary": "Make progress on immediate responsibilities without losing sight of future ambitions.",
+    "sections": [
+      {
+        "heading": "Understand the difference",
+        "paragraphs": [
+          "Short-term goals focus on results you can pursue soon. Long-term goals usually require sustained effort, multiple milestones or significant preparation. Both can be important."
+        ]
+      },
+      {
+        "heading": "Create a balanced approach",
+        "steps": [
+          "Write down your major long-term goals.",
+          "Identify the next milestone for each active goal.",
+          "List immediate responsibilities and deadlines.",
+          "Reserve realistic time for long-term progress.",
+          "Review your schedule regularly.",
+          "Adjust your commitments when your circumstances change."
+        ]
+      },
+      {
+        "heading": "Practical habits",
+        "bullets": [
+          "Complete urgent responsibilities without allowing every new request to become urgent.",
+          "Take small, consistent steps toward important future outcomes.",
+          "Avoid filling every available hour with planned work.",
+          "Review whether your weekly activities support your longer-term direction."
+        ]
+      },
+      {
+        "heading": "Keep expectations realistic",
+        "paragraphs": [
+          "Progress may vary from week to week. A balanced plan accounts for rest, unexpected responsibilities and changes in available resources."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 50,
+    "slug": "how-to-celebrate-goal-achievements",
+    "title": "How to Review and Celebrate Goal Achievements",
+    "category": "Goals & Planning",
+    "summary": "Recognise completed goals, capture lessons and decide what comes next.",
+    "sections": [
+      {
+        "heading": "Confirm the result",
+        "paragraphs": [
+          "Before marking a goal complete, compare the outcome with the success criteria you defined. Completing activities is useful, but the final result should meet the intended requirement."
+        ]
+      },
+      {
+        "heading": "Completion review",
+        "steps": [
+          "Check the goal's success criteria.",
+          "Collect evidence of the completed outcome.",
+          "Record important lessons learned.",
+          "Acknowledge the effort and progress involved.",
+          "Close or archive related work if your tools support it.",
+          "Decide whether a follow-up goal is necessary."
+        ]
+      },
+      {
+        "heading": "What to record",
+        "bullets": [
+          "The original goal and intended outcome.",
+          "The result achieved.",
+          "Important obstacles and how they were resolved.",
+          "Methods that worked well.",
+          "Ideas that could improve a future project."
+        ]
+      },
+      {
+        "heading": "Move forward thoughtfully",
+        "paragraphs": [
+          "Celebrating progress can help reinforce useful habits. Avoid immediately adding too many new commitments; review your current priorities and choose the next goal deliberately."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 51,
+    "slug": "what-is-knowledge-management",
+    "title": "What Is Knowledge Management?",
+    "category": "Notes & Knowledge",
+    "summary": "Learn how to capture, organise and reuse useful information.",
+    "sections": [
+      {
+        "heading": "Understanding knowledge management",
+        "paragraphs": [
+          "Knowledge management is the practice of collecting, organising, maintaining and sharing information so it can be used when needed. It can include personal notes, project documentation, lessons learned and reference material.",
+          "A useful knowledge system helps you find information again instead of repeatedly solving the same problem."
+        ]
+      },
+      {
+        "heading": "Why it matters",
+        "bullets": [
+          "Reduce repeated work.",
+          "Keep important decisions and instructions accessible.",
+          "Make it easier to continue projects after a break.",
+          "Share relevant knowledge with teammates when appropriate.",
+          "Capture lessons from completed work."
+        ]
+      },
+      {
+        "heading": "Build a simple system",
+        "steps": [
+          "Decide what information is worth keeping.",
+          "Choose a consistent place to store it.",
+          "Give each note a descriptive title.",
+          "Group related notes using available categories or tags.",
+          "Review outdated information periodically.",
+          "Keep confidential information protected."
+        ]
+      },
+      {
+        "heading": "Start small",
+        "paragraphs": [
+          "You do not need a complicated system. Begin with a few useful categories and improve them as your collection grows. Use only note-management features that are actually available in your current application."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 52,
+    "slug": "how-to-create-useful-notes",
+    "title": "How to Create Useful Notes",
+    "category": "Notes & Knowledge",
+    "summary": "Write notes that are easy to understand and reuse later.",
+    "sections": [
+      {
+        "heading": "What makes a useful note?",
+        "paragraphs": [
+          "A useful note records information clearly enough that you can understand it later without relying on memory. It should preserve the important facts, decisions or actions from the original context."
+        ]
+      },
+      {
+        "heading": "Create a note",
+        "steps": [
+          "Open the notes area in your chosen application if available.",
+          "Select the create-note control.",
+          "Enter a descriptive title.",
+          "Write the key information in the body.",
+          "Add a category or other metadata if supported.",
+          "Save the note and confirm that it is available."
+        ]
+      },
+      {
+        "heading": "Writing better notes",
+        "bullets": [
+          "Keep one main subject per note where practical.",
+          "Use short paragraphs and meaningful headings.",
+          "Record dates when the timing matters.",
+          "Separate facts from assumptions and personal opinions.",
+          "Include the next action when the note relates to unfinished work."
+        ]
+      },
+      {
+        "heading": "Review your notes",
+        "paragraphs": [
+          "Revisit notes that support active work. Correct outdated information and remove unnecessary duplicates when appropriate."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 53,
+    "slug": "how-to-organise-notes",
+    "title": "How to Organise Your Notes",
+    "category": "Notes & Knowledge",
+    "summary": "Create a consistent structure for storing and finding information.",
+    "sections": [
+      {
+        "heading": "Why organisation matters",
+        "paragraphs": [
+          "A large collection of notes becomes difficult to use when titles and categories are inconsistent. A simple structure makes important information easier to locate."
+        ]
+      },
+      {
+        "heading": "Organisation workflow",
+        "steps": [
+          "Review the notes you already have.",
+          "Identify recurring subjects.",
+          "Choose a small set of categories.",
+          "Use descriptive and consistent titles.",
+          "Group related information where supported.",
+          "Review the structure when your needs change."
+        ]
+      },
+      {
+        "heading": "Possible categories",
+        "bullets": [
+          "Personal planning.",
+          "Learning and study.",
+          "Work and projects.",
+          "Meeting notes.",
+          "Technical references.",
+          "Ideas and future tasks."
+        ]
+      },
+      {
+        "heading": "Avoid over-organising",
+        "paragraphs": [
+          "Creating too many categories can make it harder to decide where information belongs. Start with broad categories and introduce more detail only when it solves a real problem."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 54,
+    "slug": "how-to-use-note-titles-and-headings",
+    "title": "How to Use Note Titles and Headings",
+    "category": "Notes & Knowledge",
+    "summary": "Make notes easier to scan through clear titles and headings.",
+    "sections": [
+      {
+        "heading": "Write descriptive titles",
+        "paragraphs": [
+          "A note title should identify its subject without requiring you to open the note. Titles such as Meeting Notes or Project Plan may be too broad when you have many similar documents."
+        ]
+      },
+      {
+        "heading": "A better naming method",
+        "steps": [
+          "Identify the main subject.",
+          "Include the project or context when useful.",
+          "Add a date when the information is time-sensitive.",
+          "Keep the title concise.",
+          "Use a consistent naming pattern for related notes."
+        ]
+      },
+      {
+        "heading": "Examples",
+        "bullets": [
+          "Instead of Notes, use Project Alpha — Planning Meeting — 12 October.",
+          "Instead of Ideas, use Customer Feedback — Improvement Ideas.",
+          "Instead of Study, use Python — Functions — Practice Notes."
+        ]
+      },
+      {
+        "heading": "Use headings inside notes",
+        "paragraphs": [
+          "For longer notes, headings divide information into logical sections. They help you find decisions, instructions, examples and action items quickly. Use formatting features only if your editor supports them."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 55,
+    "slug": "how-to-search-and-find-notes",
+    "title": "How to Search and Find Notes",
+    "category": "Notes & Knowledge",
+    "summary": "Use clear search terms and consistent naming to retrieve saved information.",
+    "sections": [
+      {
+        "heading": "Start with the key concept",
+        "paragraphs": [
+          "When looking for a note, begin with the most distinctive word or phrase associated with the information. A project name or specific subject is often more useful than a broad term."
+        ]
+      },
+      {
+        "heading": "Search workflow",
+        "steps": [
+          "Open the notes area or note collection.",
+          "Locate the search field if available.",
+          "Enter a relevant keyword or phrase.",
+          "Review the matching results.",
+          "Open the likely note and confirm that it contains the information you need."
+        ]
+      },
+      {
+        "heading": "Improve future searches",
+        "bullets": [
+          "Use meaningful titles.",
+          "Keep important names and terminology consistent.",
+          "Record project identifiers when relevant.",
+          "Avoid creating unnecessary copies of the same information.",
+          "Add categories or tags if the application supports them."
+        ]
+      },
+      {
+        "heading": "If search is unavailable",
+        "paragraphs": [
+          "Use the available category or list navigation. You can also maintain a simple index of important notes until a dedicated search feature becomes available."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 56,
+    "slug": "how-to-take-effective-meeting-notes",
+    "title": "How to Take Effective Meeting Notes",
+    "category": "Notes & Knowledge",
+    "summary": "Capture decisions, responsibilities and next steps during meetings.",
+    "sections": [
+      {
+        "heading": "Focus on outcomes",
+        "paragraphs": [
+          "Meeting notes should capture the information people need after the meeting. Writing every sentence is usually less useful than recording decisions, unresolved questions and agreed actions."
+        ]
+      },
+      {
+        "heading": "Before the meeting",
+        "steps": [
+          "Write the meeting title and date.",
+          "Record the purpose of the meeting.",
+          "Prepare headings for agenda items.",
+          "Identify any information you need to bring."
+        ]
+      },
+      {
+        "heading": "During and after the meeting",
+        "bullets": [
+          "Record important decisions.",
+          "Write down action items and responsible people when appropriate.",
+          "Capture deadlines that participants actually agree to.",
+          "List open questions and unresolved issues.",
+          "Review and clarify your notes soon after the meeting."
+        ]
+      },
+      {
+        "heading": "Confidentiality",
+        "paragraphs": [
+          "Only record or share meeting information you are authorised to access. Be particularly careful with personnel matters, private customer details and confidential company decisions."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 57,
+    "slug": "how-to-turn-notes-into-tasks",
+    "title": "How to Turn Notes into Actionable Tasks",
+    "category": "Notes & Knowledge",
+    "summary": "Convert useful information and decisions into concrete next steps.",
+    "sections": [
+      {
+        "heading": "Notes versus tasks",
+        "paragraphs": [
+          "Notes preserve information. Tasks describe actions that need to happen. A meeting note may explain a decision, while a task identifies the work required to carry it out."
+        ]
+      },
+      {
+        "heading": "Convert information into actions",
+        "steps": [
+          "Review the note and identify statements that require action.",
+          "Write each action as a clear task.",
+          "Identify the expected outcome.",
+          "Add an owner or deadline only when appropriate and supported by your workflow.",
+          "Create the task in your task manager if available.",
+          "Keep a reference to the original note when useful."
+        ]
+      },
+      {
+        "heading": "Example",
+        "bullets": [
+          "Note: The team needs a revised project estimate.",
+          "Task: Prepare and review the revised project estimate.",
+          "Note: Several questions remain about the requirements.",
+          "Task: Collect the open questions and request clarification."
+        ]
+      },
+      {
+        "heading": "Avoid unnecessary tasks",
+        "paragraphs": [
+          "Not every note needs to become a task. Background information, useful references and completed decisions may simply need to be stored for future use."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 58,
+    "slug": "how-to-maintain-accurate-notes",
+    "title": "How to Maintain Accurate Notes",
+    "category": "Notes & Knowledge",
+    "summary": "Keep saved information reliable, current and understandable.",
+    "sections": [
+      {
+        "heading": "Why accuracy matters",
+        "paragraphs": [
+          "Outdated or unclear notes can lead to mistakes when people rely on them later. Regular review is particularly important for procedures, deadlines, project requirements and technical instructions."
+        ]
+      },
+      {
+        "heading": "Maintenance routine",
+        "steps": [
+          "Identify notes used frequently.",
+          "Check whether the information is still correct.",
+          "Update outdated details when you have reliable evidence.",
+          "Record dates or sources when they matter.",
+          "Mark obsolete guidance clearly or archive it if supported.",
+          "Review important changes before sharing a note with others."
+        ]
+      },
+      {
+        "heading": "Good documentation habits",
+        "bullets": [
+          "Separate confirmed facts from estimates.",
+          "Avoid recording assumptions as established facts.",
+          "Use clear language and consistent terminology.",
+          "Keep a record of important decisions when appropriate.",
+          "Remove sensitive information that does not need to be retained."
+        ]
+      },
+      {
+        "heading": "Be careful with changes",
+        "paragraphs": [
+          "Do not overwrite useful historical information when an audit trail is required. Follow your organisation's record-keeping policies and use version history only when the application actually provides it."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 59,
+    "slug": "how-to-protect-private-notes",
+    "title": "How to Protect Private Notes",
+    "category": "Notes & Knowledge",
+    "summary": "Reduce the risk of exposing sensitive information stored in notes.",
+    "sections": [
+      {
+        "heading": "Understand note sensitivity",
+        "paragraphs": [
+          "Notes can contain personal information, business plans, meeting details or confidential technical material. Consider who is authorised to access each note before storing or sharing it."
+        ]
+      },
+      {
+        "heading": "Protect your information",
+        "bullets": [
+          "Use a strong password for your account.",
+          "Avoid storing passwords or verification codes in ordinary notes.",
+          "Do not include financial or identity information without a clear need.",
+          "Use access controls when the application supports them.",
+          "Be careful when copying notes into public posts or messages.",
+          "Sign out on shared devices."
+        ]
+      },
+      {
+        "heading": "Before sharing a note",
+        "steps": [
+          "Identify the intended recipients.",
+          "Check whether the note contains confidential details.",
+          "Remove information recipients do not need.",
+          "Confirm that you are authorised to share the remaining content.",
+          "Use an approved sharing method if one is available."
+        ]
+      },
+      {
+        "heading": "If information is exposed",
+        "paragraphs": [
+          "If you accidentally share sensitive information, follow your organisation's incident process where applicable. Remove or restrict access using available controls, but do not assume that removing a note deletes copies already downloaded or shared."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 60,
+    "slug": "personal-knowledge-management-workflow",
+    "title": "A Personal Knowledge Management Workflow",
+    "category": "Notes & Knowledge",
+    "summary": "Create a repeatable process for collecting, organising and using knowledge.",
+    "sections": [
+      {
+        "heading": "The basic workflow",
+        "paragraphs": [
+          "Personal knowledge management helps you capture useful information, organise it, retrieve it when needed and apply what you learn. A consistent workflow is more valuable than collecting large amounts of information that you never use."
+        ]
+      },
+      {
+        "heading": "Four practical stages",
+        "steps": [
+          "Capture: record important ideas, instructions and lessons.",
+          "Organise: give each note a clear title and suitable category.",
+          "Review: revisit active notes and correct outdated information.",
+          "Apply: use the information to make decisions, complete tasks or improve your work."
+        ]
+      },
+      {
+        "heading": "Weekly maintenance",
+        "bullets": [
+          "Review notes created during the week.",
+          "Identify information that should become a task.",
+          "File important reference material consistently.",
+          "Remove unnecessary duplicates where appropriate.",
+          "Choose one useful idea to apply to current work."
+        ]
+      },
+      {
+        "heading": "Keep the system sustainable",
+        "paragraphs": [
+          "Avoid spending more time organising information than using it. Start with a simple routine and add categories, tags or search methods only when they make your work easier."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 61,
+    "slug": "what-is-calendar-planning",
+    "title": "What Is Calendar Planning?",
+    "category": "Calendar & Planning",
+    "summary": "Understand how calendar planning helps organise your time and commitments.",
+    "sections": [
+      {
+        "heading": "Understanding calendar planning",
+        "paragraphs": [
+          "Calendar planning is the practice of arranging activities, appointments and important deadlines across days and weeks. It helps you understand how your available time relates to your commitments."
+        ]
+      },
+      {
+        "heading": "Why plan your calendar?",
+        "bullets": [
+          "Keep track of important appointments.",
+          "Reserve time for focused work.",
+          "Avoid scheduling conflicting activities.",
+          "Prepare for upcoming deadlines.",
+          "Create a more realistic daily routine."
+        ]
+      },
+      {
+        "heading": "Getting started",
+        "steps": [
+          "List your fixed commitments.",
+          "Identify deadlines and important events.",
+          "Estimate how much time your activities require.",
+          "Reserve time for important work.",
+          "Review the schedule and adjust conflicts."
+        ]
+      },
+      {
+        "heading": "Use available features",
+        "paragraphs": [
+          "If ABOSTIFY provides calendar functionality, use the controls available in your version. Otherwise, you can apply the same planning principles using another calendar or a written schedule."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 62,
+    "slug": "how-to-plan-your-day",
+    "title": "How to Plan Your Day",
+    "category": "Calendar & Planning",
+    "summary": "Create a realistic daily plan around your priorities and available time.",
+    "sections": [
+      {
+        "heading": "Start with priorities",
+        "paragraphs": [
+          "A daily plan should help you focus on important outcomes rather than fill every minute with activity. Leave some flexibility for unexpected work."
+        ]
+      },
+      {
+        "heading": "Daily planning steps",
+        "steps": [
+          "Review your tasks and commitments.",
+          "Identify the two or three most important outcomes.",
+          "Check fixed appointments and deadlines.",
+          "Estimate how long each activity will take.",
+          "Arrange tasks in a practical order.",
+          "Leave room for breaks and unexpected changes."
+        ]
+      },
+      {
+        "heading": "During the day",
+        "bullets": [
+          "Review the plan when priorities change.",
+          "Record new commitments so you do not forget them.",
+          "Avoid switching between tasks unnecessarily.",
+          "Take reasonable breaks.",
+          "Update completed work honestly."
+        ]
+      },
+      {
+        "heading": "End-of-day review",
+        "paragraphs": [
+          "At the end of the day, identify completed work, unfinished priorities and important blockers. Use this information to prepare a realistic plan for tomorrow."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 63,
+    "slug": "how-to-create-a-weekly-schedule",
+    "title": "How to Create a Weekly Schedule",
+    "category": "Calendar & Planning",
+    "summary": "Organise your week without overcommitting your available time.",
+    "sections": [
+      {
+        "heading": "Why plan by week?",
+        "paragraphs": [
+          "A weekly schedule provides a wider view than a daily task list. It helps balance work, study, personal responsibilities and longer-term goals."
+        ]
+      },
+      {
+        "heading": "Build your weekly schedule",
+        "steps": [
+          "List fixed appointments and obligations.",
+          "Identify important deadlines for the week.",
+          "Choose milestones you want to reach.",
+          "Reserve suitable time for focused work.",
+          "Include breaks and personal responsibilities.",
+          "Review the schedule before the week begins."
+        ]
+      },
+      {
+        "heading": "Keep the schedule realistic",
+        "bullets": [
+          "Do not allocate every available minute.",
+          "Group similar activities when practical.",
+          "Account for travel or preparation time.",
+          "Allow time for unexpected requests.",
+          "Revisit the schedule when priorities change."
+        ]
+      },
+      {
+        "heading": "Review your results",
+        "paragraphs": [
+          "At the end of the week, compare your plan with what happened. Identify unrealistic estimates and use those lessons to improve the next schedule."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 64,
+    "slug": "how-to-manage-appointments",
+    "title": "How to Manage Appointments",
+    "category": "Calendar & Planning",
+    "summary": "Record appointments clearly and prepare for them in advance.",
+    "sections": [
+      {
+        "heading": "What should an appointment record contain?",
+        "paragraphs": [
+          "An appointment record commonly includes its title, date, start time, location or meeting method, and relevant preparation details. Include only information supported by your calendar tool."
+        ]
+      },
+      {
+        "heading": "Organise an appointment",
+        "steps": [
+          "Confirm the date and time.",
+          "Record the appointment in your calendar if available.",
+          "Include the location or meeting method when known.",
+          "Check whether preparation is required.",
+          "Allow time for travel or joining the meeting.",
+          "Review the details before the appointment begins."
+        ]
+      },
+      {
+        "heading": "Avoid scheduling problems",
+        "bullets": [
+          "Check for overlapping commitments.",
+          "Confirm time zones for remote meetings.",
+          "Update participants if a confirmed appointment changes.",
+          "Do not assume an appointment has been sent to others unless the application confirms it."
+        ]
+      },
+      {
+        "heading": "If your schedule changes",
+        "paragraphs": [
+          "Update your own record and notify affected participants through an appropriate communication channel. Check that the revised time is clear to everyone involved."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 65,
+    "slug": "how-to-manage-time-effectively",
+    "title": "How to Manage Time Effectively",
+    "category": "Calendar & Planning",
+    "summary": "Use practical time-management methods to work with greater focus.",
+    "sections": [
+      {
+        "heading": "Understand where time goes",
+        "paragraphs": [
+          "Time management begins with understanding your responsibilities and the activities that compete for your attention. The objective is to make deliberate choices rather than remain busy all day."
+        ]
+      },
+      {
+        "heading": "Practical time-management steps",
+        "steps": [
+          "Identify your most important outcomes.",
+          "Break large assignments into smaller tasks.",
+          "Estimate how long each activity may take.",
+          "Schedule focused work for suitable periods.",
+          "Reduce avoidable distractions.",
+          "Review what worked and adjust your routine."
+        ]
+      },
+      {
+        "heading": "Useful habits",
+        "bullets": [
+          "Start important tasks before they become urgent.",
+          "Group similar small activities when practical.",
+          "Use breaks to maintain a sustainable pace.",
+          "Learn to decline or defer low-priority requests when appropriate.",
+          "Keep a buffer for unexpected work."
+        ]
+      },
+      {
+        "heading": "Avoid unrealistic expectations",
+        "paragraphs": [
+          "Your energy and available time vary. A good system supports consistent progress without assuming that every day will follow the plan exactly."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 66,
+    "slug": "how-to-prepare-for-a-meeting",
+    "title": "How to Prepare for a Meeting",
+    "category": "Calendar & Planning",
+    "summary": "Prepare objectives, information and follow-up actions before meetings.",
+    "sections": [
+      {
+        "heading": "Define the meeting purpose",
+        "paragraphs": [
+          "A meeting is more productive when participants understand why it is happening and what decisions or outcomes are needed. Preparation helps keep the discussion focused."
+        ]
+      },
+      {
+        "heading": "Preparation checklist",
+        "steps": [
+          "Confirm the date, time and meeting method.",
+          "Read the agenda or write down the purpose.",
+          "Review relevant documents.",
+          "Prepare questions and important updates.",
+          "Identify decisions that may be needed.",
+          "Join on time and keep necessary materials accessible."
+        ]
+      },
+      {
+        "heading": "During the meeting",
+        "bullets": [
+          "Stay focused on the agenda.",
+          "Ask clear questions.",
+          "Record important decisions.",
+          "Capture action items and agreed deadlines.",
+          "Respect other participants' time."
+        ]
+      },
+      {
+        "heading": "After the meeting",
+        "paragraphs": [
+          "Review your notes and identify the next actions. Complete your assigned work or communicate any blockers through the appropriate channel."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 67,
+    "slug": "how-to-manage-deadlines-on-a-calendar",
+    "title": "How to Manage Deadlines on a Calendar",
+    "category": "Calendar & Planning",
+    "summary": "Make deadlines visible and create time to finish work before it is due.",
+    "sections": [
+      {
+        "heading": "Record important dates",
+        "paragraphs": [
+          "A calendar can make important dates easier to notice. Recording a deadline is only one part of planning; you also need to reserve time for the work that must happen before it."
+        ]
+      },
+      {
+        "heading": "Deadline planning steps",
+        "steps": [
+          "Confirm the actual due date.",
+          "Record it in your calendar or planning tool.",
+          "Estimate the effort required to finish the work.",
+          "Identify intermediate milestones.",
+          "Reserve time for execution and review.",
+          "Check progress before the final day."
+        ]
+      },
+      {
+        "heading": "Reduce last-minute pressure",
+        "bullets": [
+          "Start early when the task is complex.",
+          "Identify dependencies before they become blockers.",
+          "Ask for clarification when requirements are unclear.",
+          "Communicate risks as soon as they become apparent.",
+          "Keep some flexibility for unexpected problems."
+        ]
+      },
+      {
+        "heading": "Understand reminder limitations",
+        "paragraphs": [
+          "A calendar entry does not automatically guarantee a notification. Check whether your chosen application supports reminders and whether they are configured correctly."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 68,
+    "slug": "how-to-use-reminders-effectively",
+    "title": "How to Use Reminders Effectively",
+    "category": "Calendar & Planning",
+    "summary": "Create useful reminders without overwhelming yourself with notifications.",
+    "sections": [
+      {
+        "heading": "Purpose of reminders",
+        "paragraphs": [
+          "A reminder helps bring an important action or event back to your attention at an appropriate time. Reminders work best when they are specific and connected to a clear next step."
+        ]
+      },
+      {
+        "heading": "Create a useful reminder",
+        "steps": [
+          "Identify the action or event you must remember.",
+          "Choose a suitable time for the reminder.",
+          "Write a clear description of what needs to happen.",
+          "Use a reminder feature if your application provides one.",
+          "Check that the reminder was saved correctly."
+        ]
+      },
+      {
+        "heading": "Good reminder habits",
+        "bullets": [
+          "Use specific wording rather than vague labels.",
+          "Set reminders early enough to prepare.",
+          "Avoid creating several duplicate reminders.",
+          "Review reminders that are no longer relevant.",
+          "Keep important deadlines recorded somewhere reliable."
+        ]
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If a notification does not appear, check application permissions, device notification settings and the reminder details. Some applications do not provide automatic reminders, so confirm feature availability first."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 69,
+    "slug": "how-to-avoid-calendar-conflicts",
+    "title": "How to Avoid Calendar Conflicts",
+    "category": "Calendar & Planning",
+    "summary": "Prevent overlapping commitments through careful scheduling and communication.",
+    "sections": [
+      {
+        "heading": "Why conflicts happen",
+        "paragraphs": [
+          "Calendar conflicts can occur when appointments overlap, travel time is ignored or new commitments are added without checking the existing schedule."
+        ]
+      },
+      {
+        "heading": "Prevent conflicts",
+        "steps": [
+          "Review your existing schedule before accepting a new commitment.",
+          "Check start times and expected duration.",
+          "Include travel and preparation time where needed.",
+          "Confirm the time zone for remote meetings.",
+          "Record the commitment promptly.",
+          "Recheck the schedule after making changes."
+        ]
+      },
+      {
+        "heading": "When conflicts occur",
+        "bullets": [
+          "Identify which commitment is most important or time-sensitive.",
+          "Contact affected people as early as possible.",
+          "Offer a realistic alternative when appropriate.",
+          "Update your calendar after a change is confirmed.",
+          "Avoid assuming that another participant has accepted a proposed change."
+        ]
+      },
+      {
+        "heading": "Build a buffer",
+        "paragraphs": [
+          "Leaving a little space between demanding activities can reduce delays and give you time to prepare. The appropriate buffer depends on the type of appointment and your circumstances."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 70,
+    "slug": "weekly-planning-and-review-routine",
+    "title": "A Weekly Planning and Review Routine",
+    "category": "Calendar & Planning",
+    "summary": "Combine calendar planning, task review and goal setting in one repeatable routine.",
+    "sections": [
+      {
+        "heading": "Why use a weekly routine?",
+        "paragraphs": [
+          "A weekly routine gives you a regular opportunity to review commitments, identify priorities and prepare for upcoming work. It connects daily actions with longer-term goals."
+        ]
+      },
+      {
+        "heading": "Weekly planning steps",
+        "steps": [
+          "Review unfinished tasks from the previous week.",
+          "Check upcoming appointments and deadlines.",
+          "Review progress on active goals.",
+          "Choose the most important outcomes for the new week.",
+          "Reserve time for priority work.",
+          "Leave room for personal responsibilities and unexpected events."
+        ]
+      },
+      {
+        "heading": "Midweek check",
+        "bullets": [
+          "Confirm that priorities are still relevant.",
+          "Identify delays and missing information.",
+          "Adjust the schedule when necessary.",
+          "Communicate important changes to affected people."
+        ]
+      },
+      {
+        "heading": "End-of-week review",
+        "paragraphs": [
+          "Identify what was completed, what remains unfinished and what you learned. Use the findings to improve the next week's plan rather than carrying forward every task without review."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 71,
+    "slug": "professional-communication-basics",
+    "title": "Professional Communication Basics",
+    "category": "Messaging & Communication",
+    "summary": "Learn how to communicate clearly and professionally online.",
+    "sections": [
+      {
+        "heading": "What is professional communication?",
+        "paragraphs": [
+          "Professional communication means exchanging information clearly, respectfully and appropriately for the situation. It helps people coordinate work, resolve questions and build trust."
+        ]
+      },
+      {
+        "heading": "Write a clear message",
+        "steps": [
+          "Identify the purpose of your message.",
+          "Choose a suitable recipient.",
+          "Write a meaningful subject or opening when appropriate.",
+          "Explain the main point using clear language.",
+          "Include the required context or next action.",
+          "Review the message before sending."
+        ]
+      },
+      {
+        "heading": "Good communication habits",
+        "bullets": [
+          "Keep messages focused and readable.",
+          "Use a respectful tone.",
+          "Avoid unnecessary jargon.",
+          "Separate facts from assumptions.",
+          "Respond within reasonable expectations.",
+          "Protect confidential information."
+        ]
+      },
+      {
+        "heading": "Choose the right channel",
+        "paragraphs": [
+          "A short question may suit a message, while a complicated issue may need a meeting or a detailed document. Use the communication channel available and appropriate for the task."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 72,
+    "slug": "how-to-write-clear-messages",
+    "title": "How to Write Clear Messages",
+    "category": "Messaging & Communication",
+    "summary": "Structure messages so recipients understand the purpose and required action.",
+    "sections": [
+      {
+        "heading": "Start with the purpose",
+        "paragraphs": [
+          "A clear message tells the recipient why you are contacting them and what information or action is needed. Avoid making readers search through unrelated details to understand your request."
+        ]
+      },
+      {
+        "heading": "A simple message structure",
+        "steps": [
+          "Write a short opening that establishes the context.",
+          "State the main question or update.",
+          "Add essential supporting details.",
+          "Explain the next action or deadline if applicable.",
+          "Close politely when appropriate.",
+          "Review the message for clarity and accuracy."
+        ]
+      },
+      {
+        "heading": "Example",
+        "paragraphs": [
+          "Instead of writing 'Please check this', explain what needs reviewing, where the relevant material can be found, and when feedback is required if a deadline exists."
+        ]
+      },
+      {
+        "heading": "Avoid confusion",
+        "bullets": [
+          "Do not combine unrelated requests in one long paragraph.",
+          "Avoid ambiguous dates and times.",
+          "Identify the correct document or project.",
+          "Do not imply that a recipient agreed to something unless they actually did."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 73,
+    "slug": "how-to-manage-conversations",
+    "title": "How to Manage Conversations",
+    "category": "Messaging & Communication",
+    "summary": "Keep conversations organised and make important discussions easier to follow.",
+    "sections": [
+      {
+        "heading": "What is a conversation?",
+        "paragraphs": [
+          "A conversation is an exchange of messages between participants. Depending on the application, conversations may be displayed as separate threads or grouped discussions."
+        ]
+      },
+      {
+        "heading": "Conversation management",
+        "steps": [
+          "Open the messaging area if available.",
+          "Locate the conversation you need.",
+          "Review earlier messages for context.",
+          "Respond to the relevant question or request.",
+          "Keep the discussion focused on its purpose.",
+          "Record important decisions or actions separately when necessary."
+        ]
+      },
+      {
+        "heading": "Good practices",
+        "bullets": [
+          "Read previous messages before asking a repeated question.",
+          "Keep related replies in the same conversation when practical.",
+          "Use a new conversation for a clearly unrelated subject when appropriate.",
+          "Avoid sending repeated messages while waiting for a reasonable response.",
+          "Respect other people's working hours and boundaries."
+        ]
+      },
+      {
+        "heading": "Feature availability",
+        "paragraphs": [
+          "Conversation search, pinning, archiving and other advanced controls depend on the application's implementation. Use only the options visible in your current version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 74,
+    "slug": "messaging-privacy-and-security",
+    "title": "Messaging Privacy and Security",
+    "category": "Messaging & Communication",
+    "summary": "Protect sensitive information when communicating online.",
+    "sections": [
+      {
+        "heading": "Understand message sensitivity",
+        "paragraphs": [
+          "Messages may contain private conversations, personal information, business decisions or confidential attachments. Consider whether each recipient is authorised to receive the information."
+        ]
+      },
+      {
+        "heading": "Protect your messages",
+        "bullets": [
+          "Never send passwords or verification codes through ordinary messages.",
+          "Verify recipients before sharing sensitive documents.",
+          "Avoid opening unexpected links or attachments.",
+          "Use strong account credentials.",
+          "Sign out of shared devices.",
+          "Follow workplace policies for confidential information."
+        ]
+      },
+      {
+        "heading": "Before sending an attachment",
+        "steps": [
+          "Confirm that the file is the correct version.",
+          "Check that it does not contain unnecessary private information.",
+          "Verify the recipient and their access requirements.",
+          "Use an approved sharing method for confidential material.",
+          "Confirm the upload or send action succeeded."
+        ]
+      },
+      {
+        "heading": "Important limitation",
+        "paragraphs": [
+          "Do not assume a message is end-to-end encrypted, temporary or accessible only to its recipients unless the application explicitly documents those protections."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 75,
+    "slug": "how-to-share-documents-safely",
+    "title": "How to Share Documents Safely",
+    "category": "Messaging & Communication",
+    "summary": "Check files and recipients before sharing documents through supported tools.",
+    "sections": [
+      {
+        "heading": "Prepare the document",
+        "paragraphs": [
+          "Before sharing a document, verify that it is the intended file and that you have permission to distribute its contents. A correct recipient does not automatically mean every piece of information in the document should be shared."
+        ]
+      },
+      {
+        "heading": "Safe sharing workflow",
+        "steps": [
+          "Open the supported message or file-sharing feature.",
+          "Select the intended document if attachments are supported.",
+          "Review the file name and version.",
+          "Check the recipient or audience.",
+          "Remove unnecessary confidential details when appropriate.",
+          "Send the document and confirm the application reports success."
+        ]
+      },
+      {
+        "heading": "File-sharing checklist",
+        "bullets": [
+          "Use clear file names.",
+          "Check document contents and metadata when relevant.",
+          "Avoid sharing executable files unless there is a legitimate and approved reason.",
+          "Use organisation-approved storage for confidential business documents.",
+          "Follow applicable access and retention policies."
+        ]
+      },
+      {
+        "heading": "If the wrong file is sent",
+        "paragraphs": [
+          "Notify the appropriate people promptly and follow your organisation's incident process where applicable. Removing a message or file may not remove copies already downloaded by recipients."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 76,
+    "slug": "how-to-follow-up-on-unanswered-messages",
+    "title": "How to Follow Up on Unanswered Messages",
+    "category": "Messaging & Communication",
+    "summary": "Follow up politely without creating unnecessary pressure.",
+    "sections": [
+      {
+        "heading": "Allow reasonable response time",
+        "paragraphs": [
+          "People may be busy, away or waiting for information before replying. Choose a follow-up interval based on the urgency and importance of the request rather than sending repeated messages immediately."
+        ]
+      },
+      {
+        "heading": "Follow-up steps",
+        "steps": [
+          "Review the original message and its request.",
+          "Check whether you included all necessary information.",
+          "Allow a reasonable amount of time for a response.",
+          "Send a brief follow-up that references the original request.",
+          "Explain a real deadline if one exists.",
+          "Use another appropriate channel only when the situation warrants it."
+        ]
+      },
+      {
+        "heading": "Example follow-up",
+        "paragraphs": [
+          "Hello, I am following up on my earlier message about the project document. Could you please let me know if you need any additional information? If possible, feedback by the agreed date would help us keep the work on schedule."
+        ]
+      },
+      {
+        "heading": "Keep it professional",
+        "bullets": [
+          "Avoid blame or accusatory wording.",
+          "Do not invent urgency.",
+          "Respect working hours and communication preferences.",
+          "Escalate important blockers through the established process when necessary."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 77,
+    "slug": "how-to-handle-message-misunderstandings",
+    "title": "How to Handle Message Misunderstandings",
+    "category": "Messaging & Communication",
+    "summary": "Resolve confusion by clarifying meaning and confirming important details.",
+    "sections": [
+      {
+        "heading": "Why misunderstandings happen",
+        "paragraphs": [
+          "Text messages do not always communicate tone, context or intention clearly. Short wording, unfamiliar terms and missing background can lead to different interpretations."
+        ]
+      },
+      {
+        "heading": "Resolve the misunderstanding",
+        "steps": [
+          "Pause before responding emotionally.",
+          "Identify the specific statement that is unclear.",
+          "Ask a neutral clarification question.",
+          "Explain what you intended to communicate.",
+          "Confirm any important decision or next step.",
+          "Correct written records if a material detail was wrong."
+        ]
+      },
+      {
+        "heading": "Helpful phrases",
+        "bullets": [
+          "Could you clarify what you mean by this point?",
+          "I may have misunderstood; are you saying that the deadline has changed?",
+          "To confirm, the next step is to review the document by Friday, correct?",
+          "Thanks for clarifying. I will update my understanding accordingly."
+        ]
+      },
+      {
+        "heading": "Prevent repeated confusion",
+        "paragraphs": [
+          "For important decisions, summarise the agreed outcome in writing. Use explicit dates, responsibilities and deliverables when they matter."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 78,
+    "slug": "how-to-communicate-project-updates",
+    "title": "How to Communicate Project Updates",
+    "category": "Messaging & Communication",
+    "summary": "Provide concise updates about progress, blockers and next steps.",
+    "sections": [
+      {
+        "heading": "Purpose of a project update",
+        "paragraphs": [
+          "A project update helps relevant people understand what has changed, what remains to be done and whether any decisions or assistance are needed."
+        ]
+      },
+      {
+        "heading": "A useful update structure",
+        "steps": [
+          "State the project or task being discussed.",
+          "Summarise completed work.",
+          "Describe the current status accurately.",
+          "Identify blockers or risks.",
+          "Explain the next planned actions.",
+          "Mention required decisions or support."
+        ]
+      },
+      {
+        "heading": "Example update",
+        "paragraphs": [
+          "Completed: the initial requirements review. In progress: checking the implementation details. Blocker: waiting for clarification on one requirement. Next step: finalise the plan after receiving the missing information. Adapt this format to the real status of your work."
+        ]
+      },
+      {
+        "heading": "Good reporting habits",
+        "bullets": [
+          "Be factual and concise.",
+          "Raise risks early.",
+          "Distinguish completed work from planned work.",
+          "Do not hide delays that affect others.",
+          "Share confidential information only with authorised recipients."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 79,
+    "slug": "how-to-manage-communication-notifications",
+    "title": "How to Manage Communication Notifications",
+    "category": "Messaging & Communication",
+    "summary": "Reduce distractions while remaining aware of important messages.",
+    "sections": [
+      {
+        "heading": "Why notification management matters",
+        "paragraphs": [
+          "Frequent notifications can interrupt focused work. A useful notification setup helps you notice important messages without responding to every alert immediately."
+        ]
+      },
+      {
+        "heading": "Improve your notification habits",
+        "steps": [
+          "Identify which messages genuinely need prompt attention.",
+          "Review notification settings in the application if available.",
+          "Use device-level notification controls where appropriate.",
+          "Choose specific times to review non-urgent messages.",
+          "Keep essential work alerts enabled when required.",
+          "Review your settings when your responsibilities change."
+        ]
+      },
+      {
+        "heading": "Healthy communication habits",
+        "bullets": [
+          "Do not assume every message requires an immediate response.",
+          "Tell collaborators when you are unavailable if coordination requires it.",
+          "Use agreed channels for urgent matters.",
+          "Avoid disabling critical alerts without understanding the consequences."
+        ]
+      },
+      {
+        "heading": "Feature limitations",
+        "paragraphs": [
+          "Application-level notification controls vary. If ABOSTIFY does not provide a specific setting, check your device's notification controls and use an appropriate manual review routine."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 80,
+    "slug": "professional-messaging-etiquette",
+    "title": "Professional Messaging Etiquette",
+    "category": "Messaging & Communication",
+    "summary": "Use considerate messaging habits in professional and team environments.",
+    "sections": [
+      {
+        "heading": "Respect the recipient",
+        "paragraphs": [
+          "Professional messaging should make communication easier for everyone involved. Clear requests, appropriate timing and respectful language reduce unnecessary back-and-forth."
+        ]
+      },
+      {
+        "heading": "Core etiquette principles",
+        "bullets": [
+          "Use a clear opening and explain your purpose.",
+          "Keep messages focused and readable.",
+          "Check names, dates and attachments before sending.",
+          "Avoid all-caps wording that may appear aggressive.",
+          "Respect working hours and stated availability.",
+          "Use an appropriate level of formality for the situation."
+        ]
+      },
+      {
+        "heading": "Before sending a work message",
+        "steps": [
+          "Confirm the recipient is correct.",
+          "Check whether the subject requires a message, email, call or meeting.",
+          "Include enough context for the recipient to respond.",
+          "State the requested action clearly.",
+          "Review the tone and factual accuracy."
+        ]
+      },
+      {
+        "heading": "Build trust",
+        "paragraphs": [
+          "Respond honestly, acknowledge mistakes and correct inaccurate information promptly. Good communication is based on clarity and respect, not on sending the greatest number of messages."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 81,
+    "slug": "what-are-online-communities",
+    "title": "What Are Online Communities?",
+    "category": "Communities & Notifications",
+    "summary": "Understand how online communities bring people together around shared interests.",
+    "sections": [
+      {
+        "heading": "Understanding communities",
+        "paragraphs": [
+          "An online community is a group of people who interact around a shared interest, goal, profession or activity. Communities can help members exchange knowledge, ask questions and collaborate."
+        ]
+      },
+      {
+        "heading": "Benefits of communities",
+        "bullets": [
+          "Learn from other people's experiences.",
+          "Discuss relevant questions and ideas.",
+          "Discover professional or educational opportunities.",
+          "Share useful resources with appropriate attribution.",
+          "Build constructive relationships around shared interests."
+        ]
+      },
+      {
+        "heading": "Participating in a community",
+        "steps": [
+          "Find a community relevant to your interests if discovery is available.",
+          "Read its description and rules.",
+          "Review existing discussions before posting.",
+          "Contribute useful and respectful comments.",
+          "Protect private information when sharing experiences."
+        ]
+      },
+      {
+        "heading": "Feature availability",
+        "paragraphs": [
+          "Community creation, membership and discussion controls depend on the application version. Use only the community features actually available in ABOSTIFY."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 82,
+    "slug": "how-to-join-a-community",
+    "title": "How to Join a Community",
+    "category": "Communities & Notifications",
+    "summary": "Learn the general process for joining an online community when supported.",
+    "sections": [
+      {
+        "heading": "Choose the right community",
+        "paragraphs": [
+          "Before joining a community, check its purpose, audience and rules. A relevant community is more likely to provide useful discussions and learning opportunities."
+        ]
+      },
+      {
+        "heading": "Joining workflow",
+        "steps": [
+          "Sign in to ABOSTIFY.",
+          "Open the community discovery area if available.",
+          "Review the community description.",
+          "Read any visible membership requirements.",
+          "Select Join if the option is available.",
+          "Check whether the application confirms your membership."
+        ]
+      },
+      {
+        "heading": "Participate constructively",
+        "bullets": [
+          "Follow community rules.",
+          "Introduce yourself when appropriate.",
+          "Search existing discussions before repeating a question.",
+          "Respect members with different perspectives.",
+          "Avoid unsolicited promotions and spam."
+        ]
+      },
+      {
+        "heading": "If joining fails",
+        "paragraphs": [
+          "Check the displayed message and any membership requirements. Some communities may restrict membership or require approval if those features are implemented."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 83,
+    "slug": "how-to-create-a-community",
+    "title": "How to Create a Community",
+    "category": "Communities & Notifications",
+    "summary": "Plan a useful community and understand the general creation workflow.",
+    "sections": [
+      {
+        "heading": "Start with a clear purpose",
+        "paragraphs": [
+          "A community works best when people understand why it exists and what kinds of contributions belong there. Define its intended audience and purpose before inviting participants."
+        ]
+      },
+      {
+        "heading": "Community planning",
+        "steps": [
+          "Choose a clear topic and purpose.",
+          "Identify the intended audience.",
+          "Write a concise description.",
+          "Prepare simple participation guidelines.",
+          "Use the community creation option if ABOSTIFY provides it.",
+          "Review the resulting community details."
+        ]
+      },
+      {
+        "heading": "Healthy community guidelines",
+        "bullets": [
+          "Encourage respectful discussion.",
+          "Explain what content is relevant.",
+          "Discourage harassment and spam.",
+          "Respect privacy and intellectual property.",
+          "Describe how members should raise concerns."
+        ]
+      },
+      {
+        "heading": "After creation",
+        "paragraphs": [
+          "If community management features are available, review membership and moderation options. Do not assume that invitations, private membership or advanced moderation exist unless those controls are actually provided."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 84,
+    "slug": "community-rules-and-moderation",
+    "title": "Community Rules and Moderation",
+    "category": "Communities & Notifications",
+    "summary": "Understand how clear rules support safer and more constructive discussions.",
+    "sections": [
+      {
+        "heading": "Why rules matter",
+        "paragraphs": [
+          "Community rules explain the behaviour expected from participants. Clear rules reduce ambiguity and help members understand how to contribute constructively."
+        ]
+      },
+      {
+        "heading": "Useful community rules",
+        "bullets": [
+          "Treat other members respectfully.",
+          "Stay relevant to the community's purpose.",
+          "Do not publish private information without permission.",
+          "Avoid harassment, threats and impersonation.",
+          "Respect copyright and attribution requirements.",
+          "Do not use discussions for repetitive unwanted promotion."
+        ]
+      },
+      {
+        "heading": "Handling a concern",
+        "steps": [
+          "Identify the specific behaviour or content causing concern.",
+          "Review the community's published rules.",
+          "Explain the issue calmly when it is safe and appropriate.",
+          "Use available reporting or moderation controls if necessary.",
+          "Follow the platform's established process."
+        ]
+      },
+      {
+        "heading": "Fair moderation",
+        "paragraphs": [
+          "Moderation should be consistent, proportionate and based on clearly communicated rules. Avoid making assumptions before reviewing the relevant context. Specific moderation tools depend on the application."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 85,
+    "slug": "how-to-manage-notifications",
+    "title": "How to Manage Notifications",
+    "category": "Communities & Notifications",
+    "summary": "Understand notifications and organise your attention around important updates.",
+    "sections": [
+      {
+        "heading": "What are notifications?",
+        "paragraphs": [
+          "Notifications alert users to events or updates. Depending on the application, they may relate to account activity, social interactions, messages or other supported features."
+        ]
+      },
+      {
+        "heading": "Review notifications",
+        "steps": [
+          "Sign in to ABOSTIFY.",
+          "Locate the notification area if available.",
+          "Review the information shown for each notification.",
+          "Open the relevant item when further action is needed.",
+          "Use available controls to mark or manage notifications if supported."
+        ]
+      },
+      {
+        "heading": "Stay organised",
+        "bullets": [
+          "Prioritise notifications that require action.",
+          "Review non-urgent updates at suitable times.",
+          "Avoid repeatedly refreshing pages when no new information is expected.",
+          "Check device notification settings if alerts do not appear."
+        ]
+      },
+      {
+        "heading": "Important limitation",
+        "paragraphs": [
+          "The existence of a notification area does not guarantee push alerts, email notifications or advanced notification preferences. Check the features available in your current application version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 86,
+    "slug": "how-to-handle-important-notifications",
+    "title": "How to Handle Important Notifications",
+    "category": "Communities & Notifications",
+    "summary": "Identify notifications requiring action and respond without overlooking deadlines.",
+    "sections": [
+      {
+        "heading": "Recognise action items",
+        "paragraphs": [
+          "Some notifications simply provide information, while others may require a response or decision. Read the content carefully before deciding what to do."
+        ]
+      },
+      {
+        "heading": "A simple workflow",
+        "steps": [
+          "Open the notification.",
+          "Identify the event or request it refers to.",
+          "Check whether action is required.",
+          "Record a task or deadline if necessary.",
+          "Complete the action through the appropriate section.",
+          "Confirm the result when the application provides confirmation."
+        ]
+      },
+      {
+        "heading": "Avoid missed actions",
+        "bullets": [
+          "Review important updates regularly.",
+          "Do not assume that viewing a notification completes the underlying task.",
+          "Record deadlines in a reliable planning system.",
+          "Check the relevant page if the notification lacks sufficient context."
+        ]
+      },
+      {
+        "heading": "Troubleshooting",
+        "paragraphs": [
+          "If a notification links to an unavailable page, refresh the application and inspect the relevant section. If the issue continues, note the error message and report it through the available support process."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 87,
+    "slug": "what-is-saved-content-and-bookmarking",
+    "title": "What Is Saved Content and Bookmarking?",
+    "category": "Communities & Notifications",
+    "summary": "Learn why saving useful content can make future reference easier.",
+    "sections": [
+      {
+        "heading": "Understanding saved content",
+        "paragraphs": [
+          "Bookmarking is a common way to keep a reference to content you may want to revisit. Depending on the application, saved items might include posts, articles or other supported resources."
+        ]
+      },
+      {
+        "heading": "Why save content?",
+        "bullets": [
+          "Return to useful information later.",
+          "Keep references for a project or learning activity.",
+          "Reduce the need to search for the same item repeatedly.",
+          "Build a personal collection of relevant resources."
+        ]
+      },
+      {
+        "heading": "Save useful information",
+        "steps": [
+          "Find the content you want to revisit.",
+          "Look for a Save or Bookmark control if available.",
+          "Select the control and check for confirmation.",
+          "Open the saved-content area if one exists.",
+          "Return to the item when you need it."
+        ]
+      },
+      {
+        "heading": "Do not assume every feature exists",
+        "paragraphs": [
+          "Bookmarking, private saved lists and cross-device synchronisation depend on implementation. If ABOSTIFY does not offer a save control, you can use an appropriate personal reference system instead."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 88,
+    "slug": "how-to-organise-saved-content",
+    "title": "How to Organise Saved Content",
+    "category": "Communities & Notifications",
+    "summary": "Keep saved references useful rather than letting them become an unmanageable collection.",
+    "sections": [
+      {
+        "heading": "Why organise saved items?",
+        "paragraphs": [
+          "A saved collection becomes less useful when it contains large numbers of unrelated items that are never reviewed. Regular organisation helps you retrieve information when needed."
+        ]
+      },
+      {
+        "heading": "Organise your collection",
+        "steps": [
+          "Review the items you have saved.",
+          "Remove references that are no longer useful if removal is supported.",
+          "Group related items using available collections or categories.",
+          "Give personal notes descriptive titles.",
+          "Record why an important item is worth revisiting."
+        ]
+      },
+      {
+        "heading": "A simple category system",
+        "bullets": [
+          "Learning resources.",
+          "Work and projects.",
+          "Personal interests.",
+          "Ideas to review.",
+          "References for future decisions."
+        ]
+      },
+      {
+        "heading": "Review regularly",
+        "paragraphs": [
+          "Choose a suitable review interval and revisit saved items. Turn useful information into notes or tasks when appropriate, and remove obsolete references when you no longer need them."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 89,
+    "slug": "how-to-report-inappropriate-content",
+    "title": "How to Handle Inappropriate Content",
+    "category": "Communities & Notifications",
+    "summary": "Respond responsibly when you encounter harmful or inappropriate material.",
+    "sections": [
+      {
+        "heading": "Assess the situation",
+        "paragraphs": [
+          "Online content can range from irrelevant or misleading posts to harassment, threats or privacy violations. Consider the actual behaviour and context before deciding how to respond."
+        ]
+      },
+      {
+        "heading": "Possible steps",
+        "steps": [
+          "Avoid engaging impulsively with harmful content.",
+          "Do not repost sensitive material to increase its reach.",
+          "Use the reporting control if the application provides one and the situation warrants it.",
+          "Block or restrict an account only if the relevant controls exist and are appropriate.",
+          "Keep relevant evidence of serious threats when it is safe to do so.",
+          "Seek appropriate assistance if you face credible threats."
+        ]
+      },
+      {
+        "heading": "Protect your privacy",
+        "bullets": [
+          "Do not retaliate by publishing private information.",
+          "Avoid clicking suspicious links or downloading unexpected files.",
+          "Do not assume that a report has been reviewed until confirmation is provided.",
+          "Follow applicable workplace or community safety procedures."
+        ]
+      },
+      {
+        "heading": "Feature availability",
+        "paragraphs": [
+          "Reporting, blocking and content restriction tools vary between applications. If a particular control is unavailable, use the platform's documented support or safety process if one exists."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 90,
+    "slug": "community-participation-best-practices",
+    "title": "Community Participation Best Practices",
+    "category": "Communities & Notifications",
+    "summary": "Contribute useful information while respecting community members and shared rules.",
+    "sections": [
+      {
+        "heading": "Make meaningful contributions",
+        "paragraphs": [
+          "Healthy communities benefit when members share relevant information, ask thoughtful questions and help others understand difficult subjects. Quality participation matters more than the number of posts."
+        ]
+      },
+      {
+        "heading": "Participation checklist",
+        "steps": [
+          "Read the community description and rules.",
+          "Search for existing answers before repeating a question.",
+          "Explain your point clearly and respectfully.",
+          "Credit other people's work when appropriate.",
+          "Avoid sharing confidential information.",
+          "Review responses and correct mistakes when necessary."
+        ]
+      },
+      {
+        "heading": "Build trust",
+        "bullets": [
+          "Be honest about what you know and do not know.",
+          "Separate personal opinions from verified facts.",
+          "Respect different backgrounds and perspectives.",
+          "Avoid harassment and repetitive unwanted promotion.",
+          "Follow through on commitments you make to other members."
+        ]
+      },
+      {
+        "heading": "Keep improving",
+        "paragraphs": [
+          "Review which discussions were genuinely useful and adjust your participation accordingly. Use available community controls responsibly and remember that specific features vary by application version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 91,
+    "slug": "what-is-business-collaboration",
+    "title": "What Is Business Collaboration?",
+    "category": "Business & Projects",
+    "summary": "Understand how people coordinate tasks, information and decisions to achieve shared business outcomes.",
+    "sections": [
+      {
+        "heading": "Understanding collaboration",
+        "paragraphs": [
+          "Business collaboration is the process of people working together toward shared outcomes. It can involve communicating updates, dividing responsibilities, sharing authorised information and coordinating deadlines.",
+          "Good collaboration makes responsibilities clearer and reduces avoidable duplication."
+        ]
+      },
+      {
+        "heading": "Benefits of collaboration",
+        "bullets": [
+          "Clarify responsibilities and expectations.",
+          "Share relevant knowledge with teammates.",
+          "Identify blockers earlier.",
+          "Coordinate work across different functions.",
+          "Maintain a clearer record of decisions and progress."
+        ]
+      },
+      {
+        "heading": "Build a collaborative workflow",
+        "steps": [
+          "Define the outcome the team needs to achieve.",
+          "Identify the people involved.",
+          "Agree on responsibilities and communication channels.",
+          "Break the work into manageable tasks.",
+          "Review progress and resolve blockers.",
+          "Record important decisions and next steps."
+        ]
+      },
+      {
+        "heading": "Use tools appropriately",
+        "paragraphs": [
+          "ABOSTIFY can support collaboration through the features implemented in your current version. Do not assume that every advanced business feature is available unless the corresponding control exists."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 92,
+    "slug": "how-to-organise-a-workspace",
+    "title": "How to Organise a Business Workspace",
+    "category": "Business & Projects",
+    "summary": "Create a clear structure for organising team activities and shared information.",
+    "sections": [
+      {
+        "heading": "What is a workspace?",
+        "paragraphs": [
+          "In many collaboration platforms, a workspace is a central area for a team, organisation or group of related activities. Its exact meaning depends on the application and the features it provides."
+        ]
+      },
+      {
+        "heading": "Organise your work",
+        "steps": [
+          "Identify the main purpose of the workspace.",
+          "Decide which people need access.",
+          "Group related activities logically.",
+          "Use clear names for projects and shared resources.",
+          "Agree on where important updates should be recorded.",
+          "Review the structure as the team grows."
+        ]
+      },
+      {
+        "heading": "Workspace best practices",
+        "bullets": [
+          "Keep names consistent and descriptive.",
+          "Avoid creating unnecessary duplicate workspaces.",
+          "Limit access to people who need it.",
+          "Document important workflows.",
+          "Review outdated resources periodically."
+        ]
+      },
+      {
+        "heading": "Feature availability",
+        "paragraphs": [
+          "Dedicated workspaces, shared folders and workspace-level permissions may not exist in every version of ABOSTIFY. Use the available project and account controls instead of assuming unsupported functionality."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 93,
+    "slug": "how-to-define-team-responsibilities",
+    "title": "How to Define Team Responsibilities",
+    "category": "Business & Projects",
+    "summary": "Make ownership clear so work does not become duplicated or neglected.",
+    "sections": [
+      {
+        "heading": "Why responsibility matters",
+        "paragraphs": [
+          "When responsibilities are unclear, multiple people may assume someone else is handling an important task. Clear ownership helps teams understand who is responsible for each outcome."
+        ]
+      },
+      {
+        "heading": "Assign responsibilities",
+        "steps": [
+          "List the outcomes the team must deliver.",
+          "Break outcomes into specific tasks.",
+          "Identify one accountable owner for each task when practical.",
+          "Clarify who contributes or reviews the work.",
+          "Agree on deadlines and completion criteria.",
+          "Review ownership when the scope changes."
+        ]
+      },
+      {
+        "heading": "Good responsibility practices",
+        "bullets": [
+          "Make assignments explicit rather than implied.",
+          "Confirm that owners understand the expected result.",
+          "Consider workload and available skills.",
+          "Communicate changes promptly.",
+          "Avoid assigning responsibility without the authority or resources needed to complete the work."
+        ]
+      },
+      {
+        "heading": "Document ownership",
+        "paragraphs": [
+          "Use the task descriptions, project notes or other records available to your team. If ABOSTIFY does not support task assignments, maintain an agreed external record rather than assuming an assignment has been saved."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 94,
+    "slug": "how-to-plan-a-business-project",
+    "title": "How to Plan a Business Project",
+    "category": "Business & Projects",
+    "summary": "Turn a business objective into a practical plan with clear deliverables and checkpoints.",
+    "sections": [
+      {
+        "heading": "Define the objective",
+        "paragraphs": [
+          "A project plan describes the outcome, activities, resources, responsibilities and timing needed to complete a defined piece of work. Start by clarifying what success means."
+        ]
+      },
+      {
+        "heading": "Planning steps",
+        "steps": [
+          "Write the project objective.",
+          "Define the scope and expected deliverables.",
+          "Identify stakeholders and responsibilities.",
+          "Break the work into tasks and milestones.",
+          "Estimate resources, effort and timing.",
+          "Identify major risks and dependencies.",
+          "Agree on how progress will be reviewed."
+        ]
+      },
+      {
+        "heading": "Project planning checklist",
+        "bullets": [
+          "Are the requirements clear?",
+          "Is the scope realistic?",
+          "Are important dependencies identified?",
+          "Does each major task have an owner?",
+          "Are deadlines achievable?",
+          "Is there a process for handling changes?"
+        ]
+      },
+      {
+        "heading": "Keep the plan current",
+        "paragraphs": [
+          "A plan should reflect the current understanding of the project. Update it when requirements, dependencies or available resources change, and communicate important revisions to affected people."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 95,
+    "slug": "how-to-track-project-progress",
+    "title": "How to Track Project Progress",
+    "category": "Business & Projects",
+    "summary": "Measure completed work, identify blockers and communicate project status accurately.",
+    "sections": [
+      {
+        "heading": "What should you track?",
+        "paragraphs": [
+          "Project tracking helps a team compare actual progress with its intended plan. Useful information may include completed deliverables, unfinished tasks, upcoming milestones and unresolved risks."
+        ]
+      },
+      {
+        "heading": "Progress review",
+        "steps": [
+          "Review the project's expected outcomes.",
+          "Check which tasks and milestones are complete.",
+          "Confirm that completed work meets its acceptance criteria.",
+          "Identify overdue work and blockers.",
+          "Update estimates when new information becomes available.",
+          "Communicate the current status and next steps."
+        ]
+      },
+      {
+        "heading": "Useful status reporting",
+        "bullets": [
+          "Completed: work finished and verified.",
+          "In progress: work currently being performed.",
+          "Blocked: progress depends on an unresolved issue.",
+          "Planned: work that has not started yet."
+        ]
+      },
+      {
+        "heading": "Report honestly",
+        "paragraphs": [
+          "Distinguish actual completion from optimistic estimates. A task should not be reported as finished simply because most of the work is done. Use the status options provided by your application when available."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 96,
+    "slug": "how-to-manage-project-risks",
+    "title": "How to Manage Project Risks",
+    "category": "Business & Projects",
+    "summary": "Identify uncertainties early and prepare practical responses.",
+    "sections": [
+      {
+        "heading": "Understanding project risk",
+        "paragraphs": [
+          "A project risk is an uncertain event or condition that could affect the project's objectives. Risks may involve timing, resources, requirements, technical issues or external dependencies."
+        ]
+      },
+      {
+        "heading": "Risk management steps",
+        "steps": [
+          "Identify events that could affect the project.",
+          "Estimate their likelihood and potential impact.",
+          "Prioritise the risks that matter most.",
+          "Choose a practical response for significant risks.",
+          "Assign responsibility for follow-up where appropriate.",
+          "Review risks as the project changes."
+        ]
+      },
+      {
+        "heading": "Possible responses",
+        "bullets": [
+          "Avoid: change the plan to remove a particular risk.",
+          "Reduce: take steps to lower likelihood or impact.",
+          "Transfer or share: use an appropriate agreement or arrangement when suitable.",
+          "Accept: acknowledge the risk and prepare a response if it occurs."
+        ]
+      },
+      {
+        "heading": "Communicate early",
+        "paragraphs": [
+          "Raise material risks before they become emergencies. Explain the possible impact, what is known, what remains uncertain and which decision or support may be needed."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 97,
+    "slug": "how-to-run-effective-team-meetings",
+    "title": "How to Run Effective Team Meetings",
+    "category": "Business & Projects",
+    "summary": "Keep meetings focused on decisions, coordination and actionable outcomes.",
+    "sections": [
+      {
+        "heading": "Start with a purpose",
+        "paragraphs": [
+          "A meeting should have a clear reason for bringing people together. If the information can be shared effectively in a written update, a meeting may not be necessary."
+        ]
+      },
+      {
+        "heading": "Before the meeting",
+        "steps": [
+          "Define the intended outcome.",
+          "Invite the people whose participation is needed.",
+          "Prepare an agenda and relevant materials.",
+          "Share preparation requirements in advance.",
+          "Allocate reasonable time for each topic."
+        ]
+      },
+      {
+        "heading": "During the meeting",
+        "bullets": [
+          "Keep the discussion connected to the agenda.",
+          "Invite relevant contributions.",
+          "Clarify decisions and unresolved questions.",
+          "Record action items and owners.",
+          "Manage time respectfully."
+        ]
+      },
+      {
+        "heading": "After the meeting",
+        "paragraphs": [
+          "Share an appropriate summary of decisions, actions and deadlines. Follow up on blockers and update project records where necessary. Protect confidential meeting information."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 98,
+    "slug": "how-to-manage-project-changes",
+    "title": "How to Manage Project Changes",
+    "category": "Business & Projects",
+    "summary": "Evaluate requested changes before adjusting project commitments.",
+    "sections": [
+      {
+        "heading": "Why change management matters",
+        "paragraphs": [
+          "Project requirements can change as teams learn more about the problem. Uncontrolled changes, however, can affect cost, timing, quality and workload."
+        ]
+      },
+      {
+        "heading": "Evaluate a change",
+        "steps": [
+          "Record what is being requested.",
+          "Clarify why the change is needed.",
+          "Identify effects on scope, resources and deadlines.",
+          "Check dependencies and potential risks.",
+          "Obtain the appropriate approval when required.",
+          "Update plans and communicate the decision."
+        ]
+      },
+      {
+        "heading": "Good change practices",
+        "bullets": [
+          "Distinguish essential changes from optional improvements.",
+          "Document significant decisions.",
+          "Explain the impact of accepting or rejecting a request.",
+          "Avoid silently expanding the scope.",
+          "Revisit estimates when requirements change."
+        ]
+      },
+      {
+        "heading": "Maintain a clear record",
+        "paragraphs": [
+          "Use the project documentation or change-record process available to your team. Do not assume ABOSTIFY provides approval workflows or version history unless those features are implemented."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 99,
+    "slug": "how-to-improve-team-productivity",
+    "title": "How to Improve Team Productivity",
+    "category": "Business & Projects",
+    "summary": "Improve team output through clarity, realistic planning and continuous learning.",
+    "sections": [
+      {
+        "heading": "Focus on outcomes",
+        "paragraphs": [
+          "Team productivity is about delivering useful results reliably, not merely increasing the number of messages or tasks completed. Clear objectives help teams focus on work that creates value."
+        ]
+      },
+      {
+        "heading": "Practical improvements",
+        "steps": [
+          "Clarify the team's most important outcomes.",
+          "Remove unnecessary or duplicate work.",
+          "Define responsibilities and completion criteria.",
+          "Make important information accessible to authorised people.",
+          "Resolve blockers early.",
+          "Review results and adjust the workflow."
+        ]
+      },
+      {
+        "heading": "Habits that help",
+        "bullets": [
+          "Keep meetings purposeful.",
+          "Write clear task descriptions.",
+          "Reduce unnecessary interruptions.",
+          "Use consistent status reporting.",
+          "Share lessons learned after important work.",
+          "Balance workload against available capacity."
+        ]
+      },
+      {
+        "heading": "Measure carefully",
+        "paragraphs": [
+          "Choose measures that reflect meaningful outcomes, such as quality, delivery reliability or customer value. Avoid judging productivity solely by online activity, message volume or hours worked."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 100,
+    "slug": "business-collaboration-best-practices",
+    "title": "Business Collaboration Best Practices",
+    "category": "Business & Projects",
+    "summary": "Build reliable working relationships through clear communication, ownership and responsible information sharing.",
+    "sections": [
+      {
+        "heading": "Establish shared expectations",
+        "paragraphs": [
+          "Effective collaboration requires a common understanding of goals, responsibilities, communication channels and decision-making. These expectations should be clear to everyone involved."
+        ]
+      },
+      {
+        "heading": "Core best practices",
+        "bullets": [
+          "Define objectives before beginning work.",
+          "Assign clear ownership for important tasks.",
+          "Share accurate updates at suitable intervals.",
+          "Document decisions that affect other people.",
+          "Raise risks and blockers early.",
+          "Respect confidentiality and access restrictions."
+        ]
+      },
+      {
+        "heading": "A repeatable collaboration workflow",
+        "steps": [
+          "Agree on the desired outcome.",
+          "Break work into tasks and milestones.",
+          "Confirm responsibilities and deadlines.",
+          "Carry out the work and record meaningful progress.",
+          "Review quality and resolve blockers.",
+          "Capture lessons for future projects."
+        ]
+      },
+      {
+        "heading": "Continuous improvement",
+        "paragraphs": [
+          "Ask team members which parts of the workflow are helpful and which create unnecessary effort. Make measured improvements and verify whether the changes actually improve results. Use only the collaboration controls available in your current ABOSTIFY version."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 101,
+    "slug": "how-to-troubleshoot-common-problems",
+    "title": "How to Troubleshoot Common ABOSTIFY Problems",
+    "category": "Troubleshooting & Support",
+    "summary": "Follow a systematic process to diagnose common application problems.",
+    "sections": [
+      {
+        "heading": "Start with the basics",
+        "paragraphs": [
+          "When an application does not behave as expected, start with simple checks before making major changes. A blank page, failed form submission or missing update can have several different causes."
+        ]
+      },
+      {
+        "heading": "Troubleshooting steps",
+        "steps": [
+          "Check that your internet connection is working.",
+          "Refresh the affected page once.",
+          "Confirm that you are signed in if the feature requires authentication.",
+          "Review required form fields and validation messages.",
+          "Try the action again only after addressing the reported problem.",
+          "Record the error and the steps that produced it if the problem continues."
+        ]
+      },
+      {
+        "heading": "Common problems",
+        "bullets": [
+          "A page does not load: check connectivity and refresh.",
+          "A form cannot be submitted: review required fields and displayed errors.",
+          "A feature is missing: confirm whether it is available in the current version.",
+          "Changes do not appear: reload the page and verify the saved information.",
+          "A protected page redirects to login: sign in and retry."
+        ]
+      },
+      {
+        "heading": "Avoid risky fixes",
+        "paragraphs": [
+          "Do not delete project files, reset the database or change production configuration merely to fix an unexplained error. Preserve important data and backups before making changes."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 102,
+    "slug": "how-to-protect-your-abostify-account",
+    "title": "How to Protect Your ABOSTIFY Account",
+    "category": "Security & Privacy",
+    "summary": "Follow practical account-security habits to reduce the risk of unauthorised access.",
+    "sections": [
+      {
+        "heading": "Use secure credentials",
+        "paragraphs": [
+          "Use a strong, unique password for your account. Reusing a password across multiple services increases risk because a compromise elsewhere may affect this account too."
+        ]
+      },
+      {
+        "heading": "Security checklist",
+        "bullets": [
+          "Never share passwords or verification codes.",
+          "Use a password manager if appropriate.",
+          "Keep your device and browser updated.",
+          "Avoid signing in through suspicious links.",
+          "Log out when using a shared device.",
+          "Use additional authentication protection if the application offers it."
+        ]
+      },
+      {
+        "heading": "If you suspect account compromise",
+        "steps": [
+          "Access the genuine website directly.",
+          "Change your password if you can do so safely.",
+          "Secure the email account associated with your login.",
+          "Review available account-security settings.",
+          "Contact official support if you cannot regain control."
+        ]
+      },
+      {
+        "heading": "Keep credentials private",
+        "paragraphs": [
+          "Never post passwords, API keys, database credentials or secret configuration values in public repositories, screenshots or support messages."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 103,
+    "slug": "mobile-accessibility-and-browser-tips",
+    "title": "Mobile Access and Browser Tips",
+    "category": "Getting Started",
+    "summary": "Improve your experience when accessing ABOSTIFY from a mobile browser.",
+    "sections": [
+      {
+        "heading": "Open ABOSTIFY on mobile",
+        "paragraphs": [
+          "Open the website using your mobile browser and navigate to the page you need. Responsive layouts may change the arrangement of menus, cards and forms to fit a smaller screen."
+        ]
+      },
+      {
+        "heading": "Practical tips",
+        "steps": [
+          "Use a current browser version.",
+          "Wait for pages and forms to finish loading.",
+          "Use the navigation menu to move between sections.",
+          "Scroll vertically through long articles.",
+          "Check form fields carefully before submitting.",
+          "Refresh once if content appears incomplete."
+        ]
+      },
+      {
+        "heading": "If the layout looks incorrect",
+        "bullets": [
+          "Check your internet connection.",
+          "Try adjusting browser zoom if text or controls are clipped.",
+          "Close unnecessary browser tabs if the device is under heavy load.",
+          "Try another current browser if the issue continues.",
+          "Record the affected page and device details when reporting a bug."
+        ]
+      },
+      {
+        "heading": "Keep your account safe",
+        "paragraphs": [
+          "Avoid saving passwords on devices shared with other people. Sign out after using a shared device and do not enter credentials on unfamiliar pages."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 104,
+    "slug": "understanding-data-privacy",
+    "title": "Understanding Data Privacy on ABOSTIFY",
+    "category": "Security & Privacy",
+    "summary": "Learn responsible practices for handling personal and confidential information.",
+    "sections": [
+      {
+        "heading": "What is data privacy?",
+        "paragraphs": [
+          "Data privacy concerns how personal information is collected, used, accessed, shared and retained. Users should understand what information they provide and avoid exposing unnecessary details."
+        ]
+      },
+      {
+        "heading": "Protect your information",
+        "bullets": [
+          "Share only information needed for the purpose.",
+          "Avoid publishing identity document numbers or financial details.",
+          "Do not include passwords or verification codes in posts or notes.",
+          "Check recipients before sharing documents.",
+          "Use privacy settings when they are available.",
+          "Keep confidential workplace information within authorised channels."
+        ]
+      },
+      {
+        "heading": "Before publishing or sharing",
+        "steps": [
+          "Identify the information included.",
+          "Consider who may be able to see it.",
+          "Remove unnecessary sensitive details.",
+          "Confirm that you have permission to share other people's information.",
+          "Review the final content before submitting."
+        ]
+      },
+      {
+        "heading": "Understand feature limitations",
+        "paragraphs": [
+          "Do not assume that a profile, message, note or saved item is private unless the application's behaviour and settings establish that. The exact privacy controls depend on the implemented features."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 105,
+    "slug": "accessibility-and-inclusive-use",
+    "title": "Accessibility and Inclusive Use",
+    "category": "Accessibility",
+    "summary": "Practical ways to make digital interactions easier to understand and use.",
+    "sections": [
+      {
+        "heading": "What is accessibility?",
+        "paragraphs": [
+          "Accessibility aims to make digital services usable by people with different abilities, devices and interaction preferences. Clear language, readable text and predictable navigation can benefit many users."
+        ]
+      },
+      {
+        "heading": "Helpful practices",
+        "bullets": [
+          "Use clear headings and descriptive link text.",
+          "Write instructions in simple, direct language.",
+          "Avoid relying on colour alone to communicate meaning.",
+          "Provide meaningful text alternatives for important images when supported.",
+          "Keep forms labelled and error messages understandable.",
+          "Allow sufficient time to read and complete tasks."
+        ]
+      },
+      {
+        "heading": "Using the interface",
+        "steps": [
+          "Navigate using the controls available on the page.",
+          "Increase browser zoom if text is difficult to read.",
+          "Use device accessibility features where helpful.",
+          "Report controls that are difficult to identify or operate.",
+          "Describe the affected page and the difficulty encountered."
+        ]
+      },
+      {
+        "heading": "Continuous improvement",
+        "paragraphs": [
+          "Accessibility should be checked through testing rather than assumed from appearance alone. Specific keyboard, screen-reader and contrast support depends on the actual implementation of the application."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 106,
+    "slug": "understanding-common-error-messages",
+    "title": "Understanding Common Error Messages",
+    "category": "Troubleshooting & Support",
+    "summary": "Learn how to interpret application errors and decide on the next step.",
+    "sections": [
+      {
+        "heading": "Why errors appear",
+        "paragraphs": [
+          "An error message indicates that an operation could not be completed as expected. Causes may include missing form information, expired sessions, unavailable resources or a server-side problem."
+        ]
+      },
+      {
+        "heading": "Common error types",
+        "bullets": [
+          "Validation error: one or more submitted values need correction.",
+          "Authentication error: sign-in details may be incorrect or the session may have expired.",
+          "Permission error: the requested action may not be allowed for the current account.",
+          "Not found: the requested page or resource may not exist at that address.",
+          "Server error: the application may have encountered an unexpected problem."
+        ]
+      },
+      {
+        "heading": "What to do next",
+        "steps": [
+          "Read the complete error message.",
+          "Check whether required fields are missing or invalid.",
+          "Sign in again if the session has expired.",
+          "Confirm that the page address is correct.",
+          "Retry once after addressing the likely cause.",
+          "Record the error and affected page if the problem continues."
+        ]
+      },
+      {
+        "heading": "Report errors safely",
+        "paragraphs": [
+          "Include the steps that caused the problem and the time it occurred. Remove passwords, access tokens, personal information and other secrets from screenshots or logs before sharing them."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  },
+  {
+    "id": 107,
+    "slug": "how-to-get-help-and-report-bugs",
+    "title": "How to Get Help and Report Bugs",
+    "category": "Troubleshooting & Support",
+    "summary": "Prepare a useful bug report that helps diagnose and resolve application issues.",
+    "sections": [
+      {
+        "heading": "When to report a problem",
+        "paragraphs": [
+          "Report a bug when a feature repeatedly behaves incorrectly, an important page is unavailable, information is displayed unexpectedly or a workflow cannot be completed despite following the documented instructions."
+        ]
+      },
+      {
+        "heading": "Prepare a useful report",
+        "steps": [
+          "Describe the problem in one or two sentences.",
+          "Identify the affected page or feature.",
+          "List the steps that reproduce the problem.",
+          "Describe what you expected to happen.",
+          "Describe what actually happened.",
+          "Include the error message and relevant device or browser details.",
+          "Remove passwords, tokens and private information before submitting the report."
+        ]
+      },
+      {
+        "heading": "Example bug report",
+        "paragraphs": [
+          "Title: Unable to save a profile update. Steps: Sign in, open the profile editor, change a supported field and select Save. Expected result: the updated information is saved. Actual result: an error message appears and the information remains unchanged. Add the real error text and environment details when reporting an actual issue."
+        ]
+      },
+      {
+        "heading": "Before submitting",
+        "bullets": [
+          "Check whether the issue can be reproduced.",
+          "Avoid including confidential business documents unless authorised and necessary.",
+          "Do not publish secret configuration values.",
+          "Use the official support or issue-reporting channel provided by the project.",
+          "Keep a record of any reference number or response you receive."
+        ]
+      },
+      {
+        "heading": "Final guidance",
+        "paragraphs": [
+          "The Academy provides general instructions. If a guide describes a feature that is not visible in your version, do not assume something is broken immediately; the feature may not yet be implemented. Confirm the available functionality and report genuine problems with enough detail to investigate them."
+        ]
+      }
+    ],
+    "reading_time": "4 min"
+  }
+]

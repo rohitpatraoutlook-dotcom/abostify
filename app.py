@@ -53,6 +53,61 @@ def productivity_center():
     return render_template("productivity.html", user=current_user)
 
 
+
+
+@app.get("/academy")
+def academy_home():
+    import json
+
+    articles_file = Path(__file__).parent / "docs" / "articles.json"
+    articles = json.loads(articles_file.read_text(encoding="utf-8"))
+    categories = sorted({
+        str(article.get("category", "General"))
+        for article in articles
+    })
+    return render_template(
+        "academy.html",
+        articles=articles,
+        categories=categories,
+    )
+
+
+@app.get("/academy/<slug>")
+def academy_article(slug):
+    import json
+    from flask import abort
+
+    articles_file = Path(__file__).parent / "docs" / "articles.json"
+    articles = json.loads(articles_file.read_text(encoding="utf-8"))
+
+    index = next(
+        (i for i, item in enumerate(articles)
+         if item.get("slug") == slug),
+        None,
+    )
+    if index is None:
+        abort(404)
+
+    article = articles[index]
+    previous_article = articles[index - 1] if index > 0 else None
+    next_article = articles[index + 1] if index + 1 < len(articles) else None
+
+    related_articles = [
+        item for item in articles
+        if item.get("category") == article.get("category")
+        and item.get("slug") != slug
+    ][:4]
+
+    return render_template(
+        "documentation/article.html",
+        article=article,
+        previous_article=previous_article,
+        next_article=next_article,
+        related_articles=related_articles,
+        article_number=index + 1,
+        total_articles=len(articles),
+    )
+
 @app.get("/health")
 def health():
     return jsonify({

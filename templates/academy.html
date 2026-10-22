@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the ABOSTIFY Academy: practical guides for social networking, productivity and collaboration.">
+  <title>Academy | ABOSTIFY</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
+  <style>
+    .academy-wrap{max-width:1120px;margin:auto;padding:30px 18px 70px}
+    .academy-hero{padding:clamp(26px,6vw,60px);border-radius:26px;background:linear-gradient(135deg,#18233b,#334e80);color:white;margin:20px 0 28px}
+    .academy-hero h1{font-size:clamp(2rem,5vw,3.5rem);line-height:1.1;margin:12px 0}
+    .academy-hero p{max-width:680px;line-height:1.75;color:#e4eaf5}
+    .academy-controls{display:grid;grid-template-columns:minmax(0,2fr) minmax(170px,1fr);gap:12px;margin:22px 0}
+    .academy-controls input,.academy-controls select{width:100%;padding:13px 14px;border:1px solid #d8deea;border-radius:12px;background:white;color:#172033;font:inherit}
+    .academy-meta{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:20px 0;color:var(--text-muted,#657087)}
+    .academy-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .academy-card{display:flex;flex-direction:column;padding:21px;border:1px solid var(--ui-border,#e1e6ef);border-radius:18px;background:var(--card-bg,#fff);min-height:215px}
+    .academy-category{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#5269aa}
+    .academy-card h2{font-size:1.1rem;line-height:1.45;margin:10px 0}
+    .academy-card p{font-size:.92rem;line-height:1.65;color:var(--text-muted,#657087);flex:1}
+    .academy-read{display:inline-flex;align-self:flex-start;text-decoration:none;font-weight:700;margin-top:12px}
+    .academy-empty{padding:35px;text-align:center;border:1px dashed #cbd3e1;border-radius:16px;grid-column:1/-1}
+    @media(max-width:800px){.academy-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media(max-width:540px){.academy-grid{grid-template-columns:1fr}.academy-controls{grid-template-columns:1fr}.academy-card{min-height:unset}}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+    <div class="nav-links">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a class="active" href="{{ url_for('academy_home') }}">Academy</a>
+      {% if current_user.is_authenticated %}
+        <a href="{{ url_for('dashboard') }}">Workspace</a>
+        <a href="{{ url_for('social.feed') }}">Social Feed</a>
+      {% else %}
+        <a href="{{ url_for('auth.login') }}">Login</a>
+      {% endif %}
+    </div>
+  </nav>
+</header>
+
+<main class="academy-wrap">
+  <section class="academy-hero">
+    <span class="academy-category" style="color:#cbd8ff">ABOSTIFY LEARNING CENTRE</span>
+    <h1>Learn something.<br>Make progress.</h1>
+    <p>Explore practical, step-by-step guides to using ABOSTIFY, building productive habits, communicating professionally and collaborating with a team.</p>
+    <strong>{{ articles|length }} learning guides · One searchable library</strong>
+  </section>
+
+  <div class="academy-controls">
+    <input id="academySearch" type="search" placeholder="Search guides, topics or keywords..." aria-label="Search articles">
+    <select id="academyCategory" aria-label="Filter by category">
+      <option value="">All categories</option>
+      {% for category in categories %}
+        <option value="{{ category|lower }}">{{ category }}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <div class="academy-meta">
+    <span id="academyCount" aria-live="polite">Showing {{ articles|length }} guides</span>
+    <a href="{{ url_for('home') }}">← Back to ABOSTIFY</a>
+  </div>
+
+  <section class="academy-grid" id="academyGrid">
+    {% for article in articles %}
+      <article class="academy-card"
+        data-title="{{ article.title|lower }}"
+        data-summary="{{ article.summary|lower }}"
+        data-category="{{ article.get('category', 'General')|lower }}"
+        data-search="{{ article.get('slug', '')|lower }}">
+        <span class="academy-category">{{ article.get('category', 'General') }}</span>
+        <h2>{{ article.title }}</h2>
+        <p>{{ article.summary }}</p>
+        <span style="font-size:.8rem;color:var(--text-muted,#657087)">{{ article.get('reading_time', '4 min') }} read</span>
+        <a class="academy-read" href="{{ url_for('academy_article', slug=article.slug) }}">Read guide →</a>
+      </article>
+    {% endfor %}
+    <div class="academy-empty" id="academyEmpty" hidden>
+      <h2>No guides found</h2>
+      <p>Try a different search term or select another category.</p>
+    </div>
+  </section>
+</main>
+
+<script>
+(function () {
+  const search = document.getElementById('academySearch');
+  const category = document.getElementById('academyCategory');
+  const cards = Array.from(document.querySelectorAll('.academy-card'));
+  const count = document.getElementById('academyCount');
+  const empty = document.getElementById('academyEmpty');
+
+  function filterArticles() {
+    const query = search.value.trim().toLowerCase();
+    const selectedCategory = category.value;
+    let visible = 0;
+
+    cards.forEach(function (card) {
+      const text = [
+        card.dataset.title,
+        card.dataset.summary,
+        card.dataset.category,
+        card.dataset.search
+      ].join(' ');
+      const matches = text.includes(query) &&
+        (!selectedCategory || card.dataset.category === selectedCategory);
+      card.hidden = !matches;
+      if (matches) visible++;
+    });
+
+    count.textContent = 'Showing ' + visible + ' of ' + cards.length + ' guides';
+    empty.hidden = visible !== 0;
+  }
+
+  search.addEventListener('input', filterArticles);
+  category.addEventListener('change', filterArticles);
+})();
+</script>
+</body>
+</html>
