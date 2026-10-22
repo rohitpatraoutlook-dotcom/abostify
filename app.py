@@ -46,6 +46,13 @@ def dashboard():
     return render_template("dashboard.html", user=current_user)
 
 
+
+@app.get("/productivity")
+@login_required
+def productivity_center():
+    return render_template("productivity.html", user=current_user)
+
+
 @app.get("/health")
 def health():
     return jsonify({

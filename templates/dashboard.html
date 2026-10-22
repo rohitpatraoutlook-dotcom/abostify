@@ -1,45 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dashboard | ABOSTIFY</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <meta name="description" content="Your personal ABOSTIFY workspace.">
+  <title>Workspace | ABOSTIFY</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
 </head>
 <body>
-<main class="auth-container">
-    <section class="auth-card dashboard-card">
-        <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
-
-        <h1>Welcome, {{ user.display_name or user.username }}.</h1>
-        <p>Your account is active.</p>
-
-        <div class="profile-details">
-            <p><strong>Username:</strong> {{ user.username }}</p>
-            <p><strong>Email:</strong> {{ user.email }}</p>
-            <p><strong>Display name:</strong> {{ user.display_name or "Not set" }}</p>
-        </div>
-
-        <p>
-            <a class="primary-link"
-               href="{{ url_for('profiles.view', username=user.username) }}">
-                View Profile
-            </a>
-        </p>
-
-        <p>
-            <a href="{{ url_for('profiles.edit') }}">Edit Profile</a>
-        </p>
-
-        <h2>Your workspace</h2>
-        <p>Social Feed · Tasks · Notes · Communities</p>
-        <p>Additional workspace features are under development.</p>
-
-        <form method="POST" action="{{ url_for('auth.logout') }}">
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-            <button class="auth-button" type="submit">Log Out</button>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+      <div class="nav-links">
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('social.feed') }}">Social Feed</a>
+        <a href="{{ url_for('social.discover_people') }}">Discover</a>
+        <a href="{{ url_for('social.create_post') }}">Create Post</a>
+        <a class="active" href="{{ url_for('dashboard') }}">Workspace</a>
+        <a href="{{ url_for('profiles.view', username=user.username) }}">My Profile</a>
+        <a href="{{ url_for('profiles.edit') }}">Settings</a>
+        <form method="POST" action="{{ url_for('auth.logout') }}" class="nav-logout-form">
+          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+          <button class="nav-logout-button" type="submit">Log out</button>
         </form>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <section class="page-heading">
+      <p class="eyebrow">YOUR PERSONAL WORKSPACE</p>
+
+    <section class="pc-dashboard-link" style="margin:18px 0;padding:20px;border:1px solid var(--ui-border,#ddd);border-radius:18px">
+      <h2>Productivity Center</h2>
+      <p>Manage your tasks, goals, notes, calendar events and reminders.</p>
+      <a class="btn" href="{{ url_for('productivity_center') }}">Open Productivity Center →</a>
     </section>
-</main>
+<h1>Good to see you, {{ user.display_name or user.username }}.</h1>
+      <p>Your space to connect with people, share ideas and organise your work.</p>
+    </section>
+
+    <section class="card" style="padding:clamp(22px,4vw,36px);margin-bottom:24px">
+      <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
+        <div class="profile-avatar" style="width:66px;height:66px;font-size:1.6rem">
+          {{ (user.display_name or user.username)[0]|upper }}
+        </div>
+        <div style="flex:1;min-width:180px">
+          <p class="eyebrow" style="margin:0">YOUR ACCOUNT</p>
+          <h2 style="margin:4px 0">{{ user.display_name or user.username }}</h2>
+          <p style="margin:0">@{{ user.username }}</p>
+        </div>
+        <a class="button button-primary"
+           href="{{ url_for('profiles.view', username=user.username) }}">View profile</a>
+        <a class="button button-secondary"
+           href="{{ url_for('profiles.edit') }}">Edit profile</a>
+      </div>
+    </section>
+
+    <section style="margin-bottom:30px">
+      <div class="page-heading">
+        <p class="eyebrow">GET STARTED</p>
+        <h2>Everything starts here.</h2>
+        <p>Jump directly into the part of ABOSTIFY you need.</p>
+      </div>
+
+      <div class="features">
+        <article class="feature-card">
+          <div class="profile-avatar">S</div>
+          <p class="eyebrow">COMMUNITY</p>
+          <h3>Social Feed</h3>
+          <p>See conversations, share your thoughts and interact with posts.</p>
+          <a class="button button-primary" href="{{ url_for('social.feed') }}">Explore feed</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="profile-avatar">+</div>
+          <p class="eyebrow">CREATE</p>
+          <h3>Publish an update</h3>
+          <p>Share an idea, an update or something worth discussing.</p>
+          <a class="button button-primary" href="{{ url_for('social.create_post') }}">Create post</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="profile-avatar">P</div>
+          <p class="eyebrow">YOUR PRESENCE</p>
+          <h3>Personal profile</h3>
+          <p>Manage your public profile and how other people see you.</p>
+          <a class="button button-primary"
+             href="{{ url_for('profiles.view', username=user.username) }}">Open profile</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="profile-avatar">◎</div>
+          <p class="eyebrow">NETWORK</p>
+          <h3>Discover people</h3>
+          <p>Explore profiles and grow your network.</p>
+          <a class="button button-primary"
+             href="{{ url_for('social.discover_people') }}">Discover people</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="profile-avatar">⌕</div>
+          <p class="eyebrow">DISCOVERY</p>
+          <h3>Search members</h3>
+          <p>Find people on ABOSTIFY by searching their profiles.</p>
+          <a class="button button-secondary"
+             href="{{ url_for('social.search_users') }}">Search people</a>
+        </article>
+
+        <article class="feature-card">
+          <div class="profile-avatar">⚙</div>
+          <p class="eyebrow">PREFERENCES</p>
+          <h3>Account settings</h3>
+          <p>Update your profile details and keep your account information current.</p>
+          <a class="button button-secondary"
+             href="{{ url_for('profiles.edit') }}">Edit settings</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" style="padding:24px">
+      <p class="eyebrow">ACCOUNT INFORMATION</p>
+      <h2>Your details</h2>
+      <div class="profile-details">
+        <p><strong>Username:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+        <p><strong>Display name:</strong> {{ user.display_name or "Not set" }}</p>
+      </div>
+      <p>More workspace modules—including tasks, goals, messaging and team projects—will receive their dedicated interfaces as development continues.</p>
+    </section>
+
+    <form method="POST" action="{{ url_for('auth.logout') }}" style="margin-top:24px">
+      <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+      <button class="button button-secondary" type="submit">Log out of ABOSTIFY</button>
+    </form>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}" defer></script>
 </body>
 </html>

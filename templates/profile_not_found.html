@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Profile Not Found | ABOSTIFY</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
 </head>
 <body>
 <main class="auth-container">
@@ -15,5 +16,6 @@
         <a class="primary-link" href="{{ url_for('home') }}">Go Home</a>
     </section>
 </main>
+    <script src="{{ url_for('static', filename='app.js') }}" defer></script>
 </body>
 </html>

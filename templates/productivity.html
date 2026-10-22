@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <title>Productivity Center | ABOSTIFY</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
+  <style>
+    .pc-shell{max-width:1200px;margin:32px auto;padding:0 20px 100px}
+    .pc-hero{padding:30px;border-radius:24px;background:linear-gradient(125deg,#182b55,#5145bd 70%,#8b5cf6);color:white;margin-bottom:24px}
+    .pc-hero h1{font-size:clamp(28px,5vw,42px);margin:0 0 10px}
+    .pc-hero p{opacity:.86;margin:0;max-width:650px;line-height:1.7}
+    .pc-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin:20px 0}
+    .pc-stat,.pc-panel{border:1px solid var(--ui-border,#e5e7eb);background:var(--ui-surface,#fff);border-radius:18px;padding:18px}
+    .pc-stat span{display:block;color:var(--ui-muted,#6b7280);font-size:13px}
+    .pc-stat strong{display:block;font-size:28px;margin-top:8px}
+    .pc-tabs{display:flex;gap:9px;overflow:auto;padding:4px 0 16px}
+    .pc-tab{border:1px solid var(--ui-border,#ddd);background:var(--ui-surface,#fff);color:var(--ui-text,#222);padding:11px 17px;border-radius:12px;white-space:nowrap;cursor:pointer;font-weight:650}
+    .pc-tab.active{background:#5145bd;color:white;border-color:#5145bd}
+    .pc-layout{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.5fr);gap:18px;align-items:start}
+    .pc-panel h2{font-size:20px;margin:0 0 16px}
+    .pc-form{display:grid;gap:12px}
+    .pc-form label{font-size:13px;font-weight:650;display:grid;gap:6px}
+    .pc-form input,.pc-form textarea,.pc-form select{width:100%;box-sizing:border-box;border:1px solid var(--ui-border,#ddd);border-radius:10px;padding:12px;background:var(--ui-surface,#fff);color:var(--ui-text,#222);font:inherit}
+    .pc-form textarea{min-height:90px;resize:vertical}
+    .pc-btn{border:0;border-radius:11px;padding:12px 16px;background:#5145bd;color:white;font-weight:700;cursor:pointer}
+    .pc-btn:disabled{opacity:.6;cursor:wait}
+    .pc-list{display:grid;gap:12px}
+    .pc-item{padding:15px;border:1px solid var(--ui-border,#e5e7eb);border-radius:14px;min-width:0}
+    .pc-item-top{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+    .pc-item h3{font-size:16px;margin:0 0 7px;overflow-wrap:anywhere}
+    .pc-item p{white-space:pre-wrap;overflow-wrap:anywhere;color:var(--ui-muted,#6b7280);font-size:14px;line-height:1.6;margin:5px 0}
+    .pc-meta{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}
+    .pc-badge{font-size:11px;padding:5px 8px;border-radius:20px;background:var(--ui-surface-2,#f3f4f6);color:var(--ui-text,#333)}
+    .pc-delete{border:1px solid #ef4444;background:transparent;color:#ef4444;border-radius:8px;padding:7px 9px;cursor:pointer}
+    .pc-empty{padding:28px 12px;text-align:center;color:var(--ui-muted,#6b7280)}
+    .pc-message{display:none;padding:12px 14px;border-radius:10px;margin-bottom:14px}
+    .pc-message.show{display:block}
+    .pc-message.error{background:#fee2e2;color:#991b1b}
+    .pc-message.success{background:#dcfce7;color:#166534}
+    .pc-progress{height:7px;border-radius:10px;background:var(--ui-surface-2,#eee);overflow:hidden;margin-top:10px}
+    .pc-progress span{display:block;height:100%;background:#5145bd}
+    .pc-list-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:15px}
+    .pc-list-head h2{margin:0}
+    @media(max-width:760px){.pc-shell{padding:0 13px 100px;margin-top:18px}.pc-hero{padding:23px 19px}.pc-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pc-stat{padding:14px}.pc-stat strong{font-size:24px}.pc-layout{grid-template-columns:1fr}.pc-panel{padding:15px}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="brand" href="{{ url_for('dashboard') }}">ABOSTIFY</a>
+      <div class="nav-links">
+        <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        <a href="{{ url_for('social.feed') }}">Social Feed</a>
+        <a href="{{ url_for('social.discover_people') }}">Discover</a>
+        <a href="{{ url_for('profiles.view', username=current_user.username) }}">My Profile</a>
+        <a href="{{ url_for('auth.logout') }}">Logout</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="pc-shell">
+    <section class="pc-hero">
+      <h1>Your Productivity Center</h1>
+      <p>Plan your day, track your goals, capture ideas, organize events and stay on top of reminders — all in one workspace.</p>
+    </section>
+
+    <div id="pc-message" class="pc-message" role="status" aria-live="polite"></div>
+
+    <section class="pc-stats">
+      <div class="pc-stat"><span>All Tasks</span><strong id="stat-tasks">—</strong></div>
+      <div class="pc-stat"><span>Open Tasks</span><strong id="stat-open">—</strong></div>
+      <div class="pc-stat"><span>Goals</span><strong id="stat-goals">—</strong></div>
+      <div class="pc-stat"><span>Notes</span><strong id="stat-notes">—</strong></div>
+    </section>
+
+    <div class="pc-tabs" role="tablist" aria-label="Productivity sections">
+      <button class="pc-tab active" data-section="tasks" role="tab">✓ Tasks</button>
+      <button class="pc-tab" data-section="goals" role="tab">◎ Goals</button>
+      <button class="pc-tab" data-section="notes" role="tab">▤ Notes</button>
+      <button class="pc-tab" data-section="calendar" role="tab">▦ Calendar</button>
+      <button class="pc-tab" data-section="reminders" role="tab">◷ Reminders</button>
+    </div>
+
+    <section class="pc-layout">
+      <div class="pc-panel">
+        <h2 id="form-heading">Create a task</h2>
+        <form id="pc-form" class="pc-form">
+          <label>Title
+            <input name="title" maxlength="200" required placeholder="What do you want to accomplish?">
+          </label>
+          <label>Description
+            <textarea name="description" maxlength="10000" placeholder="Add some details..."></textarea>
+          </label>
+
+          <div data-fields="tasks">
+            <label>Priority
+              <select name="priority"><option value="medium">Medium</option><option value="low">Low</option><option value="high">High</option><option value="urgent">Urgent</option></select>
+            </label>
+            <label>Due date
+              <input name="due_at" type="datetime-local">
+            </label>
+          </div>
+
+          <div data-fields="goals" hidden>
+            <label>Target date <input name="target_date" type="date"></label>
+          </div>
+
+          <div data-fields="notes" hidden>
+            <label>Category <input name="category" maxlength="80" placeholder="Personal, work, ideas..."></label>
+            <label>Tags <input name="tags_text" maxlength="500" placeholder="work, idea, important"></label>
+          </div>
+
+          <div data-fields="calendar" hidden>
+            <label>Starts at <input name="starts_at" type="datetime-local"></label>
+            <label>Ends at <input name="ends_at" type="datetime-local"></label>
+            <label>Location <input name="location" maxlength="250" placeholder="Office, home, online..."></label>
+          </div>
+
+          <div data-fields="reminders" hidden>
+            <label>Remind me at <input name="remind_at" type="datetime-local"></label>
+          </div>
+
+          <button class="pc-btn" id="pc-submit" type="submit">+ Create task</button>
+        </form>
+      </div>
+
+      <div class="pc-panel">
+        <div class="pc-list-head">
+          <h2 id="list-heading">Your tasks</h2>
+          <button class="pc-btn" id="pc-refresh" type="button">↻ Refresh</button>
+        </div>
+        <div id="pc-list" class="pc-list">
+          <div class="pc-empty">Loading your workspace…</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  <script src="{{ url_for('static', filename='productivity.js') }}"></script>
+</body>
+</html>
