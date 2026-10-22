@@ -2,21 +2,36 @@ import os
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent
+INSTANCE_DIR = BASE_DIR / "instance"
+INSTANCE_DIR.mkdir(parents=True, exist_ok=True)
+
 
 class Config:
     SECRET_KEY = os.environ.get("SECRET_KEY")
 
     if not SECRET_KEY:
-        SECRET_KEY = "dev-only-change-this-secret-key"
+        SECRET_KEY = "local-development-only-change-me"
 
-    SQLALCHEMY_DATABASE_URI = os.environ.get(
-        "DATABASE_URL",
-        "sqlite:///" + str(BASE_DIR / "instance" / "abostify.db")
-    )
+    DATABASE_URL = os.environ.get("DATABASE_URL")
 
-    if SQLALCHEMY_DATABASE_URI.startswith("postgres://"):
-        SQLALCHEMY_DATABASE_URI = SQLALCHEMY_DATABASE_URI.replace(
-            "postgres://", "postgresql://", 1
+    if DATABASE_URL:
+        if DATABASE_URL.startswith("postgres://"):
+            DATABASE_URL = DATABASE_URL.replace(
+                "postgres://",
+                "postgresql+psycopg://",
+                1
+            )
+        elif DATABASE_URL.startswith("postgresql://"):
+            DATABASE_URL = DATABASE_URL.replace(
+                "postgresql://",
+                "postgresql+psycopg://",
+                1
+            )
+
+        SQLALCHEMY_DATABASE_URI = DATABASE_URL
+    else:
+        SQLALCHEMY_DATABASE_URI = (
+            "sqlite:///" + str(INSTANCE_DIR / "abostify.db")
         )
 
     SQLALCHEMY_TRACK_MODIFICATIONS = False
