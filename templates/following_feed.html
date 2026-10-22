@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Following Feed | ABOSTIFY</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="nav container">
+        <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('social.feed') }}">Public Feed</a>
+            <a href="{{ url_for('social.following_feed') }}">Following</a>
+            <a href="{{ url_for('social.discover_people') }}">Discover People</a>
+            <a href="{{ url_for('social.search_users') }}">Search People</a>
+            <a href="{{ url_for('social.create_post') }}">Create Post</a>
+            <a href="{{ url_for('profiles.view', username=current_user.username) }}">My Profile</a>
+            <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        </div>
+    </nav>
+</header>
+
+
+<main class="container page-content">
+
+    <section class="page-heading">
+        <p class="eyebrow">YOUR NETWORK</p>
+
+        <h1>Following Feed</h1>
+
+        <p>
+            Updates from people you follow on ABOSTIFY.
+        </p>
+
+        <div class="feed-navigation">
+            <a class="button button-secondary"
+               href="{{ url_for('social.feed') }}">
+                Public Feed
+            </a>
+
+            <a class="button button-primary"
+               href="{{ url_for('social.discover_people') }}">
+                Discover People
+            </a>
+        </div>
+    </section>
+
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-container">
+                {% for category, message in messages %}
+                    <div class="flash flash-{{ category }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+
+    <section class="feed-list">
+
+        {% for post in posts %}
+
+            <article class="card post-card">
+
+                <div class="post-header">
+
+                    <div class="avatar">
+                        {{ (post.author.display_name or post.author.username)[0]|upper }}
+                    </div>
+
+                    <div class="post-author">
+                        <a href="{{ url_for('profiles.view', username=post.author.username) }}">
+                            {{ post.author.display_name or post.author.username }}
+                        </a>
+
+                        <span>@{{ post.author.username }}</span>
+                    </div>
+
+                    <time class="post-time">
+                        {{ post.created_at.strftime('%d %b %Y, %H:%M') }}
+                    </time>
+
+                </div>
+
+
+                <div class="post-content">{{ post.content }}</div>
+
+
+                <div class="post-actions">
+                    <span>{{ post.likes|length }} likes</span>
+                    <span>{{ post.comments|length }} comments</span>
+                </div>
+
+
+                <div class="post-action-buttons">
+
+                    <form method="POST"
+                          action="{{ url_for('social.toggle_like', post_id=post.id) }}">
+
+                        <input type="hidden"
+                               name="csrf_token"
+                               value="{{ csrf_token() }}">
+
+                        <button class="button button-secondary" type="submit">
+                            {{ 'Unlike' if post.id in liked_post_ids else 'Like' }}
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <form class="comment-form"
+                      method="POST"
+                      action="{{ url_for('social.add_comment', post_id=post.id) }}">
+
+                    <input type="hidden"
+                           name="csrf_token"
+                           value="{{ csrf_token() }}">
+
+                    <label for="comment-{{ post.id }}">
+                        Write a comment
+                    </label>
+
+                    <div class="comment-input-row">
+
+                        <input id="comment-{{ post.id }}"
+                               type="text"
+                               name="content"
+                               maxlength="500"
+                               required
+                               placeholder="Share your thoughts">
+
+                        <button class="button button-primary" type="submit">
+                            Comment
+                        </button>
+
+                    </div>
+
+                </form>
+
+
+                {% if post.comments %}
+
+                    <div class="comment-list">
+
+                        {% for comment in post.comments %}
+
+                            <div class="comment">
+
+                                <a href="{{ url_for('profiles.view', username=comment.author.username) }}">
+                                    {{ comment.author.display_name or comment.author.username }}
+                                </a>
+
+                                <p>{{ comment.content }}</p>
+
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+
+                {% endif %}
+
+            </article>
+
+        {% else %}
+
+            <div class="card empty-state">
+
+                <h2>Your feed is waiting for connections</h2>
+
+                <p>
+                    Follow people to see their posts here.
+                </p>
+
+                <a class="button button-primary"
+                   href="{{ url_for('social.discover_people') }}">
+                    Discover People
+                </a>
+
+            </div>
+
+        {% endfor %}
+
+    </section>
+
+</main>
+
+</body>
+</html>

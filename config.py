@@ -8,8 +8,14 @@ INSTANCE_DIR.mkdir(parents=True, exist_ok=True)
 
 class Config:
     SECRET_KEY = os.environ.get("SECRET_KEY")
-
     if not SECRET_KEY:
+        if (
+            os.environ.get("RENDER")
+            or os.environ.get("FLASK_ENV") == "production"
+        ):
+            raise RuntimeError(
+                "SECRET_KEY must be configured in production."
+            )
         SECRET_KEY = "local-development-only-change-me"
 
     DATABASE_URL = os.environ.get("DATABASE_URL")

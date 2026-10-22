@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Create Post | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+            <div class="nav-links">
+                <a href="{{ url_for('social.feed') }}">Social Feed</a>
+                <a href="{{ url_for('dashboard') }}">Dashboard</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-content">
+        <section class="page-heading">
+            <p class="eyebrow">COMMUNITY</p>
+            <h1>Create a post</h1>
+            <p>Share an update with the ABOSTIFY community.</p>
+        </section>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-container">
+                    {% for category, message in messages %}
+                        <div class="flash flash-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <section class="card form-card">
+            <form method="POST" action="{{ url_for('social.create_post') }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+                <label for="content">What's on your mind?</label>
+                <textarea id="content" name="content"
+                          rows="8" maxlength="2000" required
+                          placeholder="Write your post here...">{{ request.form.get('content', '') }}</textarea>
+
+                <p class="form-help">Maximum 2,000 characters.</p>
+
+                <div class="form-actions">
+                    <a class="button button-secondary"
+                       href="{{ url_for('social.feed') }}">Cancel</a>
+                    <button class="button button-primary" type="submit">
+                        Publish Post
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

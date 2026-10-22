@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Social Feed | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+
+            <div class="nav-links">
+                <a href="{{ url_for('social.feed') }}">Feed</a>
+
+                {% if current_user.is_authenticated %}
+                    <a href="{{ url_for('app_dashboard') if false else url_for('dashboard') }}">Dashboard</a>
+                    <a href="{{ url_for('social.create_post') }}">Create Post</a>
+                    <a href="{{ url_for('profiles.view', username=current_user.username) }}">My Profile</a>
+                {% else %}
+                    <a href="{{ url_for('auth.login') }}">Login</a>
+                    <a href="{{ url_for('auth.register') }}">Get Started</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-content">
+        <section class="page-heading">
+            <p class="eyebrow">COMMUNITY</p>
+            <h1>Social Feed</h1>
+            <p>Discover conversations and updates from the community.</p>
+
+            {% if current_user.is_authenticated %}
+                <a class="button button-primary"
+                   href="{{ url_for('social.create_post') }}">
+                    Create a post
+                </a>
+            {% else %}
+                <p><a href="{{ url_for('auth.login') }}">Log in</a> to publish, like and comment.</p>
+            {% endif %}
+        </section>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="flash-container">
+                    {% for category, message in messages %}
+                        <div class="flash flash-{{ category }}">{{ message }}</div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <section class="feed-list">
+            {% for post in posts %}
+                <article class="card post-card">
+                    <div class="post-header">
+                        <div class="avatar">
+                            {{ (post.author.display_name or post.author.username)[0]|upper }}
+                        </div>
+
+                        <div class="post-author">
+                            <a href="{{ url_for('profiles.view', username=post.author.username) }}">
+                                {{ post.author.display_name or post.author.username }}
+                            </a>
+                            <span>@{{ post.author.username }}</span>
+                        </div>
+
+                        <time class="post-time">
+                            {{ post.created_at.strftime('%d %b %Y, %H:%M') }}
+                        </time>
+                    </div>
+
+                    <div class="post-content">{{ post.content }}</div>
+
+                    <div class="post-actions">
+                        <span>{{ post.likes|length }} likes</span>
+                        <span>{{ post.comments|length }} comments</span>
+                    </div>
+
+                    {% if current_user.is_authenticated %}
+                        <div class="post-action-buttons">
+                            <form method="POST"
+                                  action="{{ url_for('social.toggle_like', post_id=post.id) }}">
+                                <input type="hidden" name="csrf_token"
+                                       value="{{ csrf_token() }}">
+                                <button class="button button-secondary" type="submit">
+                                    {{ 'Unlike' if post.id in liked_post_ids else 'Like' }}
+                                </button>
+                            </form>
+                        </div>
+
+                        <form class="comment-form" method="POST"
+                              action="{{ url_for('social.add_comment', post_id=post.id) }}">
+                            <input type="hidden" name="csrf_token"
+                                   value="{{ csrf_token() }}">
+                            <label for="comment-{{ post.id }}">Write a comment</label>
+                            <div class="comment-input-row">
+                                <input id="comment-{{ post.id }}"
+                                       type="text" name="content"
+                                       maxlength="500" required
+                                       placeholder="Share your thoughts">
+                                <button class="button button-primary" type="submit">
+                                    Comment
+                                </button>
+                            </div>
+                        </form>
+                    {% endif %}
+
+                    {% if post.comments %}
+                        <div class="comment-list">
+                            {% for comment in post.comments %}
+                                <div class="comment">
+                                    <a href="{{ url_for('profiles.view', username=comment.author.username) }}">
+                                        {{ comment.author.display_name or comment.author.username }}
+                                    </a>
+                                    <p>{{ comment.content }}</p>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endif %}
+                </article>
+            {% else %}
+                <div class="card empty-state">
+                    <h2>No posts yet</h2>
+                    <p>Be the first to share something with the community.</p>
+
+                    {% if current_user.is_authenticated %}
+                        <a class="button button-primary"
+                           href="{{ url_for('social.create_post') }}">
+                            Publish the first post
+                        </a>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>

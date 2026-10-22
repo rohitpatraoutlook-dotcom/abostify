@@ -3,72 +3,324 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#101421">
-    <meta name="description" content="ABOSTIFY brings social networking, productivity and collaboration together.">
-    <title>ABOSTIFY — Connect. Create. Collaborate.</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-</head>
-<body>
-    <header>
-        <h1>ABOSTIFY</h1>
-        <p>Your Social &amp; Productivity Space</p>
-        <nav class="home-nav">
-            <a href="{{ url_for('auth.login') }}">Log In</a>
-            <a class="nav-register" href="{{ url_for('auth.register') }}">Get Started</a>
-        </nav>
-    </header>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="ABOSTIFY — Social networking, productivity and collaboration in one place.">
 
-    <main>
-        <section class="hero">
-            <span>ONE PLATFORM. MANY POSSIBILITIES.</span>
-            <h2>Connect.<br>Create.<br>Collaborate.</h2>
-            <p>
-                Social networking, personal productivity and teamwork
-                — all in one place.
-            </p>
-            <div class="hero-actions">
-                <a class="primary-link" href="{{ url_for('auth.register') }}">
-                    Create Your Account →
+    <title>ABOSTIFY — Connect. Create. Collaborate.</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header class="site-header">
+    <nav class="nav container">
+
+        <a class="brand" href="{{ url_for('home') }}">
+            ABOSTIFY
+        </a>
+
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('social.feed') }}">Social Feed</a>
+            <a href="{{ url_for('social.discover_people') }}">Discover People</a>
+            <a href="{{ url_for('social.search_users') }}">Search People</a>
+
+            {% if current_user.is_authenticated %}
+
+                <a href="{{ url_for('social.create_post') }}">
+                    Create Post
                 </a>
-                <a class="secondary-link" href="{{ url_for('auth.login') }}">
+
+                <a href="{{ url_for('dashboard') }}">
+                    Dashboard
+                </a>
+
+                <a href="{{ url_for('profiles.view', username=current_user.username) }}">
+                    My Profile
+                </a>
+
+                <a href="{{ url_for('profiles.edit') }}">
+                    Edit Profile
+                </a>
+
+                <form method="POST"
+                      action="{{ url_for('auth.logout') }}"
+                      class="nav-logout-form">
+
+                    <input type="hidden"
+                           name="csrf_token"
+                           value="{{ csrf_token() }}">
+
+                    <button type="submit" class="nav-logout-button">
+                        Logout
+                    </button>
+                </form>
+
+            {% else %}
+
+                <a href="{{ url_for('auth.login') }}">Login</a>
+
+                <a class="nav-register"
+                   href="{{ url_for('auth.register') }}">
+                    Get Started
+                </a>
+
+            {% endif %}
+        </div>
+
+    </nav>
+</header>
+
+
+<main>
+
+    <section class="hero container">
+
+        <span class="eyebrow">
+            ONE PLATFORM. MANY POSSIBILITIES.
+        </span>
+
+        <h1>
+            Connect.<br>
+            Create.<br>
+            Collaborate.
+        </h1>
+
+        <p>
+            Social networking, personal productivity and business
+            collaboration — all in one connected platform.
+        </p>
+
+        <div class="hero-actions">
+
+            {% if current_user.is_authenticated %}
+
+                <a class="primary-link"
+                   href="{{ url_for('social.feed') }}">
+                    Explore Social Feed
+                </a>
+
+                <a class="secondary-link"
+                   href="{{ url_for('social.create_post') }}">
+                    Create a Post
+                </a>
+
+            {% else %}
+
+                <a class="primary-link"
+                   href="{{ url_for('auth.register') }}">
+                    Create Your Account
+                </a>
+
+                <a class="secondary-link"
+                   href="{{ url_for('auth.login') }}">
                     Already a member? Log in
                 </a>
-            </div>
-        </section>
 
-        <section class="features">
-            <article>
-                <div class="feature-icon">🌐</div>
+            {% endif %}
+
+        </div>
+
+    </section>
+
+
+    <section class="container home-section">
+
+        <div class="section-heading">
+            <span class="eyebrow">EXPLORE ABOSTIFY</span>
+            <h2>Everything starts here.</h2>
+            <p>
+                Discover people, share ideas and manage your work
+                from one place.
+            </p>
+        </div>
+
+
+        <div class="features">
+
+            <article class="card feature-card">
+                <div class="feature-label">01 / SOCIAL</div>
+
                 <h3>Social Feed</h3>
-                <p>Share your ideas, express yourself and connect with people.</p>
+
+                <p>
+                    Publish updates, share ideas, like posts
+                    and join conversations.
+                </p>
+
+                <a href="{{ url_for('social.feed') }}">
+                    Open Social Feed
+                </a>
             </article>
 
-            <article>
-                <div class="feature-icon">⚡</div>
-                <h3>My Workspace</h3>
-                <p>Organize tasks, notes, goals and personal projects.</p>
+
+            <article class="card feature-card">
+                <div class="feature-label">02 / NETWORK</div>
+
+                <h3>Discover People</h3>
+
+                <p>
+                    Explore registered users, discover profiles
+                    and build your network.
+                </p>
+
+                <a href="{{ url_for('social.discover_people') }}">
+                    Discover Users
+                </a>
             </article>
 
-            <article>
-                <div class="feature-icon">🤝</div>
-                <h3>Communities</h3>
-                <p>Build communities and collaborate on shared goals.</p>
-            </article>
-        </section>
 
-        <section class="closing">
-            <h2>Your world. Your workspace.</h2>
-            <p>Start building your ABOSTIFY experience.</p>
-            <a class="primary-link" href="{{ url_for('auth.register') }}">
+            <article class="card feature-card">
+                <div class="feature-label">03 / SEARCH</div>
+
+                <h3>Find People</h3>
+
+                <p>
+                    Search for users by username or display name
+                    and visit their profiles.
+                </p>
+
+                <a href="{{ url_for('social.search_users') }}">
+                    Search People
+                </a>
+            </article>
+
+
+            <article class="card feature-card">
+                <div class="feature-label">04 / PROFILE</div>
+
+                <h3>Your Profile</h3>
+
+                <p>
+                    Manage your identity, biography, location
+                    and personal website.
+                </p>
+
+                {% if current_user.is_authenticated %}
+
+                    <a href="{{ url_for('profiles.view', username=current_user.username) }}">
+                        View My Profile
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('auth.register') }}">
+                        Create Your Profile
+                    </a>
+
+                {% endif %}
+            </article>
+
+
+            <article class="card feature-card">
+                <div class="feature-label">05 / WORKSPACE</div>
+
+                <h3>Personal Workspace</h3>
+
+                <p>
+                    Access your account dashboard and prepare
+                    for upcoming productivity tools.
+                </p>
+
+                {% if current_user.is_authenticated %}
+
+                    <a href="{{ url_for('dashboard') }}">
+                        Open Dashboard
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('auth.register') }}">
+                        Get Started
+                    </a>
+
+                {% endif %}
+            </article>
+
+
+            <article class="card feature-card">
+                <div class="feature-label">06 / PUBLISH</div>
+
+                <h3>Create Content</h3>
+
+                <p>
+                    Share your thoughts with the community
+                    and participate in discussions.
+                </p>
+
+                {% if current_user.is_authenticated %}
+
+                    <a href="{{ url_for('social.create_post') }}">
+                        Create a Post
+                    </a>
+
+                {% else %}
+
+                    <a href="{{ url_for('auth.login') }}">
+                        Login to Publish
+                    </a>
+
+                {% endif %}
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <section class="closing container">
+
+        <span class="eyebrow">YOUR SPACE. YOUR COMMUNITY.</span>
+
+        <h2>
+            Build your world with ABOSTIFY.
+        </h2>
+
+        <p>
+            Connect with people, share your ideas and bring
+            your digital life together.
+        </p>
+
+        {% if current_user.is_authenticated %}
+
+            <a class="primary-link"
+               href="{{ url_for('dashboard') }}">
+                Go to Dashboard
+            </a>
+
+        {% else %}
+
+            <a class="primary-link"
+               href="{{ url_for('auth.register') }}">
                 Join ABOSTIFY
             </a>
-        </section>
-    </main>
 
-    <footer>
-        <p>© 2026 ABOSTIFY · Connect. Create. Collaborate.</p>
-    </footer>
+        {% endif %}
 
-    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    </section>
+
+</main>
+
+
+<footer class="site-footer">
+    <div class="container footer-content">
+
+        <a class="brand" href="{{ url_for('home') }}">
+            ABOSTIFY
+        </a>
+
+        <p>
+            Connect. Create. Collaborate.
+        </p>
+
+        <span>
+            © 2026 ABOSTIFY. All rights reserved.
+        </span>
+
+    </div>
+</footer>
+
 </body>
 </html>

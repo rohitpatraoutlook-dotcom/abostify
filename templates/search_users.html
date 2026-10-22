@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search People | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('social.feed') }}">Social Feed</a>
+                <a href="{{ url_for('social.discover_people') }}">Discover People</a>
+
+                {% if current_user.is_authenticated %}
+                    <a href="{{ url_for('dashboard') }}">Dashboard</a>
+                    <a href="{{ url_for('profiles.view', username=current_user.username) }}">My Profile</a>
+                {% else %}
+                    <a href="{{ url_for('auth.login') }}">Login</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-content">
+        <section class="page-heading">
+            <p class="eyebrow">YOUR NETWORK</p>
+            <h1>Search People</h1>
+            <p>Find people by their username or display name.</p>
+        </section>
+
+        <form class="user-search-form" method="GET"
+              action="{{ url_for('social.search_users') }}">
+            <label for="q">Username or display name</label>
+
+            <div class="user-search-row">
+                <input
+                    id="q"
+                    type="search"
+                    name="q"
+                    value="{{ query }}"
+                    maxlength="60"
+                    placeholder="Search people..."
+                    required
+                >
+                <button class="button button-primary" type="submit">
+                    Search
+                </button>
+            </div>
+        </form>
+
+        {% if query %}
+            <p class="search-summary">
+                Results for <strong>{{ query }}</strong>:
+                {{ people|length }} found
+            </p>
+
+            <section class="people-grid">
+                {% for person in people %}
+                    <article class="card person-card">
+                        <div class="person-card-heading">
+                            <div class="profile-avatar">
+                                {{ (person.display_name or person.username)[0]|upper }}
+                            </div>
+
+                            <div>
+                                <h2>{{ person.display_name or person.username }}</h2>
+                                <p>@{{ person.username }}</p>
+                            </div>
+                        </div>
+
+                        <p class="person-bio">
+                            {{ person.bio or "No bio added yet." }}
+                        </p>
+
+                        <p class="person-followers">
+                            {{ follower_counts.get(person.id, 0) }} followers
+                        </p>
+
+                        <div class="person-card-actions">
+                            <a class="button button-secondary"
+                               href="{{ url_for('profiles.view', username=person.username) }}">
+                                View Profile
+                            </a>
+
+                            {% if current_user.is_authenticated and person.id != current_user.id %}
+                                <form method="POST"
+                                      action="{{ url_for('social.toggle_follow', username=person.username) }}">
+                                    <input type="hidden" name="csrf_token"
+                                           value="{{ csrf_token() }}">
+
+                                    <button class="button button-primary" type="submit">
+                                        {{ 'Unfollow' if person.id in following_ids else 'Follow' }}
+                                    </button>
+                                </form>
+                            {% elif not current_user.is_authenticated %}
+                                <a class="button button-primary"
+                                   href="{{ url_for('auth.login') }}">
+                                    Login to Follow
+                                </a>
+                            {% endif %}
+                        </div>
+                    </article>
+                {% else %}
+                    <div class="card empty-state">
+                        <h2>No matching users</h2>
+                        <p>Try a different username or display name.</p>
+                    </div>
+                {% endfor %}
+            </section>
+        {% else %}
+            <div class="card empty-state">
+                <h2>Find your community</h2>
+                <p>Enter a username or display name to start searching.</p>
+            </div>
+        {% endif %}
+    </main>
+</body>
+</html>

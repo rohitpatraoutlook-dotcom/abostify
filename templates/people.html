@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Discover People | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+
+            <div class="nav-links">
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('social.feed') }}">Social Feed</a>
+
+                {% if current_user.is_authenticated %}
+                    <a href="{{ url_for('social.create_post') }}">Create Post</a>
+                    <a href="{{ url_for('dashboard') }}">Dashboard</a>
+                    <a href="{{ url_for('profiles.view', username=current_user.username) }}">My Profile</a>
+                {% else %}
+                    <a href="{{ url_for('auth.login') }}">Login</a>
+                    <a href="{{ url_for('auth.register') }}">Get Started</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+    <main class="container page-content">
+        <section class="page-heading">
+            <p class="eyebrow">YOUR NETWORK</p>
+            <h1>Discover People</h1>
+            <p>Find people, explore profiles and build your network.</p>
+        </section>
+
+        <section class="people-grid">
+            {% for person in people %}
+                <article class="card person-card">
+                    <div class="person-card-heading">
+                        <div class="profile-avatar">
+                            {{ (person.display_name or person.username)[0]|upper }}
+                        </div>
+
+                        <div>
+                            <h2>{{ person.display_name or person.username }}</h2>
+                            <p>@{{ person.username }}</p>
+                        </div>
+                    </div>
+
+                    {% if person.bio %}
+                        <p class="person-bio">{{ person.bio }}</p>
+                    {% else %}
+                        <p class="person-bio">No bio added yet.</p>
+                    {% endif %}
+
+                    <p class="person-followers">
+                        {{ follower_counts.get(person.id, 0) }} followers
+                    </p>
+
+                    <div class="person-card-actions">
+                        <a class="button button-secondary"
+                           href="{{ url_for('profiles.view', username=person.username) }}">
+                            View Profile
+                        </a>
+
+                        {% if current_user.is_authenticated and person.id != current_user.id %}
+                            <form method="POST"
+                                  action="{{ url_for('social.toggle_follow', username=person.username) }}">
+                                <input type="hidden" name="csrf_token"
+                                       value="{{ csrf_token() }}">
+
+                                <button class="button button-primary" type="submit">
+                                    {{ 'Unfollow' if person.id in following_ids else 'Follow' }}
+                                </button>
+                            </form>
+                        {% elif not current_user.is_authenticated %}
+                            <a class="button button-primary"
+                               href="{{ url_for('auth.login') }}">
+                                Login to Follow
+                            </a>
+                        {% endif %}
+                    </div>
+                </article>
+            {% else %}
+                <div class="card empty-state">
+                    <h2>No users found</h2>
+                    <p>Registered users will appear here.</p>
+                </div>
+            {% endfor %}
+        </section>
+    </main>
+</body>
+</html>
