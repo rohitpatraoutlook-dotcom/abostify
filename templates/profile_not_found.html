@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Not Found | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main class="auth-container">
+    <section class="auth-card">
+        <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+        <h1>Profile not found</h1>
+        <p>This username doesn't belong to an available profile.</p>
+        <a class="primary-link" href="{{ url_for('home') }}">Go Home</a>
+    </section>
+</main>
+</body>
+</html>

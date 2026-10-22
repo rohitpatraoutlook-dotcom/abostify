@@ -27,6 +27,11 @@ class User(UserMixin, db.Model):
         nullable=False
     )
 
+    display_name = db.Column(db.String(60), nullable=True)
+    bio = db.Column(db.String(300), nullable=True)
+    location = db.Column(db.String(100), nullable=True)
+    website = db.Column(db.String(200), nullable=True)
+
     def set_password(self, password):
         self.password_hash = generate_password_hash(password)
 

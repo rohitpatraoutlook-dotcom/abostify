@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ABOSTIFY member profile">
+    <title>{{ profile_user.display_name or profile_user.username }} | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<main class="auth-container">
+    <section class="auth-card">
+        <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+
+        <div class="profile-avatar" aria-hidden="true">
+            {{ (profile_user.display_name or profile_user.username)[0]|upper }}
+        </div>
+
+        <h1>{{ profile_user.display_name or profile_user.username }}</h1>
+        <p class="profile-username">@{{ profile_user.username }}</p>
+
+        {% if profile_user.bio %}
+            <p class="profile-bio">{{ profile_user.bio }}</p>
+        {% else %}
+            <p class="profile-bio">No biography has been added yet.</p>
+        {% endif %}
+
+        {% if profile_user.location %}
+            <p><strong>Location:</strong> {{ profile_user.location }}</p>
+        {% endif %}
+
+        {% if profile_user.website %}
+            <p>
+                <strong>Website:</strong>
+                <a href="{{ profile_user.website }}"
+                   target="_blank" rel="noopener noreferrer">
+                    {{ profile_user.website }}
+                </a>
+            </p>
+        {% endif %}
+
+        {% if is_owner %}
+            <a class="primary-link"
+               href="{{ url_for('profiles.edit') }}">Edit Profile</a>
+        {% endif %}
+
+        <p class="auth-footer">
+            <a href="{{ url_for('dashboard') if current_user.is_authenticated else url_for('home') }}">
+                Back to ABOSTIFY
+            </a>
+        </p>
+    </section>
+</main>
+</body>
+</html>

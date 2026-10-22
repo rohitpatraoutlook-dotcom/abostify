@@ -5,8 +5,10 @@ from flask_login import current_user, login_required
 from flask_wtf.csrf import CSRFProtect
 
 from config import Config
-from models import db
+from models import db, User
+from sqlalchemy import inspect, text
 from auth import auth, login_manager
+from profiles import profiles
 
 
 app = Flask(__name__)
@@ -22,6 +24,7 @@ db.init_app(app)
 login_manager.init_app(app)
 
 app.register_blueprint(auth)
+app.register_blueprint(profiles)
 
 
 @app.get("/")
@@ -46,6 +49,42 @@ def health():
 
 with app.app_context():
     db.create_all()
+
+    table_name = User.__tablename__
+    inspector = inspect(db.engine)
+
+    existing_columns = {
+        column["name"]
+        for column in inspector.get_columns(table_name)
+    }
+
+    column_definitions = {
+        "display_name": "VARCHAR(60)",
+        "bio": "VARCHAR(300)",
+        "location": "VARCHAR(100)",
+        "website": "VARCHAR(200)",
+    }
+
+    quoted_table = (
+        db.engine.dialect.identifier_preparer.quote(table_name)
+    )
+
+    with db.engine.begin() as connection:
+        for column_name, column_type in column_definitions.items():
+            if column_name not in existing_columns:
+                quoted_column = (
+                    db.engine.dialect.identifier_preparer
+                    .quote(column_name)
+                )
+
+                connection.execute(
+                    text(
+                        f"ALTER TABLE {quoted_table} "
+                        f"ADD COLUMN {quoted_column} {column_type}"
+                    )
+                )
+
+                print(f"Database migration: added {column_name}")
 
 
 if __name__ == "__main__":
