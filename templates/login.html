@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="auth-container">
+        <div class="auth-card">
+            <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+            <h1>Welcome back</h1>
+            <p>Log in to continue to your workspace.</p>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endwith %}
+
+            <form method="POST" action="{{ url_for('auth.login') }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+                <label for="identity">Username or email</label>
+                <input id="identity" name="identity" type="text"
+                       autocomplete="username" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password"
+                       autocomplete="current-password" required>
+
+                <button type="submit" class="auth-button">Log In</button>
+            </form>
+
+            <p class="auth-footer">
+                New to ABOSTIFY?
+                <a href="{{ url_for('auth.register') }}">Create an account</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>

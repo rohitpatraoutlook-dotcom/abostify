@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="auth-container">
+        <div class="auth-card dashboard-card">
+            <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+
+            <h1>Welcome, {{ user.username }}!</h1>
+            <p>Your account is active.</p>
+
+            <div class="profile-details">
+                <p><strong>Username:</strong> {{ user.username }}</p>
+                <p><strong>Email:</strong> {{ user.email }}</p>
+            </div>
+
+            <h2>Your workspace</h2>
+            <p>Social Feed · Tasks · Notes · Communities</p>
+            <p>These features will be developed in upcoming phases.</p>
+
+            <form method="POST" action="{{ url_for('auth.logout') }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                <button class="auth-button" type="submit">Log Out</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

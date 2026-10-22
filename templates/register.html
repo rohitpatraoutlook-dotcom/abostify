@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | ABOSTIFY</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="auth-container">
+        <div class="auth-card">
+            <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+            <h1>Create your account</h1>
+            <p>Join your social and productivity space.</p>
+
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% for category, message in messages %}
+                    <div class="flash {{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endwith %}
+
+            <form method="POST" action="{{ url_for('auth.register') }}">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text"
+                       minlength="3" maxlength="30"
+                       pattern="[A-Za-z0-9_]{3,30}"
+                       autocomplete="username" required>
+
+                <label for="email">Email address</label>
+                <input id="email" name="email" type="email"
+                       maxlength="120" autocomplete="email" required>
+
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password"
+                       minlength="8" maxlength="128"
+                       autocomplete="new-password" required>
+
+                <button type="submit" class="auth-button">Create Account</button>
+            </form>
+
+            <p class="auth-footer">
+                Already registered?
+                <a href="{{ url_for('auth.login') }}">Log in</a>
+            </p>
+        </div>
+    </main>
+</body>
+</html>
