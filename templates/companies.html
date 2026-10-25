@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Companies | ABOSTIFY</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
+  <style>
+    .company-layout{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:20px}
+    .company-card{padding:22px;border:1px solid var(--ui-border,#dfe3eb);border-radius:16px;background:var(--card-bg,#fff);margin-bottom:14px}
+    .company-card h3{margin:0 0 8px}
+    .company-form{display:grid;gap:12px}
+    .company-form input,.company-form textarea,.company-form select{width:100%;box-sizing:border-box;padding:11px;border:1px solid #cfd5df;border-radius:9px;font:inherit}
+    .company-form textarea{min-height:90px;resize:vertical}
+    .company-meta{color:var(--text-muted,#667085);font-size:.92rem}
+    .company-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+    .company-table-wrap{overflow-x:auto}
+    .company-table{width:100%;border-collapse:collapse;min-width:600px}
+    .company-table th,.company-table td{text-align:left;padding:12px;border-bottom:1px solid var(--ui-border,#ddd);vertical-align:top}
+    .notice{padding:12px 15px;border-radius:10px;margin:12px 0;background:#eef3ff}
+    .notice.error{background:#fff0f0}.notice.success{background:#ecfdf3}
+    .company-section{margin:24px 0}
+    .company-inline{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+    .company-inline input{flex:1;min-width:140px}
+    .company-small{font-size:.85rem;color:#667085}
+  </style>
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container">
+    <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
+    <div class="nav-links">
+      <a href="{{ url_for('dashboard') }}">Workspace</a>
+      <a class="active" href="{{ url_for('company_portal.companies_home') }}">Companies</a>
+      <a href="{{ url_for('social.feed') }}">Social Feed</a>
+      <form method="POST" action="{{ url_for('auth.logout') }}" class="nav-logout-form">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <button class="nav-logout-button" type="submit">Log out</button>
+      </form>
+    </div>
+  </nav>
+</header>
+
+<main class="container page-content">
+  <section class="page-heading">
+    <p class="eyebrow">ABOSTIFY · COMPANY WORKSPACES</p>
+    <h1>{% if company %}{{ company.name }}{% else %}Companies{% endif %}</h1>
+    <p>Discover organisations, request to join, and manage your company team.</p>
+  </section>
+
+  {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% for category, message in messages %}
+        <div class="notice {{ category }}">{{ message }}</div>
+      {% endfor %}
+    {% endif %}
+  {% endwith %}
+
+  {% if company %}
+    <section class="company-card">
+      <p class="eyebrow">COMPANY PROFILE</p>
+      <h2>{{ company.name }}</h2>
+      <p class="company-meta">
+        {% if company.industry %}{{ company.industry }}{% endif %}
+        {% if company.location %} · {{ company.location }}{% endif %}
+      </p>
+      {% if company.description %}<p>{{ company.description }}</p>{% endif %}
+      {% if company.website %}
+        <p><a href="{{ company.website }}" target="_blank" rel="noopener noreferrer">{{ company.website }}</a></p>
+      {% endif %}
+      <p class="company-small">Company ID: {{ company.slug }}</p>
+
+      {% if my_employee %}
+        <p><strong>Your permission role:</strong> {{ my_employee.role|title }}</p>
+        <p><strong>Your designation:</strong> {{ my_employee.designation or "Not assigned" }}</p>
+        <p><strong>Department:</strong> {{ my_employee.department or "Not assigned" }}</p>
+      {% else %}
+        {% set my_request = request_by_company.get(company.id) %}
+        {% if my_request and my_request.status == 'pending' %}
+          <div class="notice">Your join request is awaiting review.</div>
+        {% elif my_request and my_request.status == 'approved' %}
+          <div class="notice">Your request was approved. If your membership is not visible, contact the company administrator.</div>
+        {% else %}
+          <form class="company-form" method="POST" action="{{ url_for('company_portal.request_to_join', company_id=company.id) }}">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+            <label for="join-message">Message to HR (optional)</label>
+            <textarea id="join-message" name="message" maxlength="1000" placeholder="Introduce yourself or explain why you want to join"></textarea>
+            <button class="button button-primary" type="submit">Request to join</button>
+          </form>
+        {% endif %}
+      {% endif %}
+      <div class="company-actions">
+        <a class="button button-secondary" href="{{ url_for('company_portal.companies_home') }}">Browse companies</a>
+      </div>
+    </section>
+
+    {% if my_employee %}
+
+      <section class="company-section" id="phase2-workspace"
+               data-company-id="{{ company.id }}" data-role="{{ my_employee.role }}">
+        <h2>Company Operations</h2>
+        <p class="company-meta">Attendance, leave, documents and notifications.</p>
+        <div id="p2-message" class="notice" role="status" aria-live="polite" hidden></div>
+
+        <div class="company-layout">
+          <article class="company-card">
+            <h3>Team summary</h3>
+            <p>Total employees: <strong id="p2-total">—</strong></p>
+            <p>Active: <strong id="p2-active">—</strong></p>
+            <p>Suspended: <strong id="p2-suspended">—</strong></p>
+            <button class="button button-secondary" id="p2-refresh-summary" type="button">Refresh summary</button>
+          </article>
+
+          <article class="company-card">
+            <h3>My attendance</h3>
+            <p class="company-meta">Record today's check-in and check-out.</p>
+            <div class="company-actions">
+              <button class="button button-primary" id="p2-check-in" type="button">Check in</button>
+              <button class="button button-secondary" id="p2-check-out" type="button">Check out</button>
+              <button class="button button-secondary" id="p2-refresh-attendance" type="button">Refresh history</button>
+            </div>
+            <div class="company-table-wrap">
+              <table class="company-table">
+                <thead><tr><th>Date</th><th>Employee</th><th>In</th><th>Out</th><th>Status</th></tr></thead>
+                <tbody id="p2-attendance-list"><tr><td colspan="5">Loading…</td></tr></tbody>
+              </table>
+            </div>
+          </article>
+
+          <article class="company-card">
+            <h3>Leave management</h3>
+            <form id="p2-leave-form" class="company-form">
+              <label>Leave type
+                <select name="leave_type" required>
+                  <option value="casual">Casual</option>
+                  <option value="sick">Sick</option>
+                  <option value="annual">Annual</option>
+                  <option value="unpaid">Unpaid</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+              <label>Start date <input name="start_date" type="date" required></label>
+              <label>End date <input name="end_date" type="date" required></label>
+              <label>Reason <textarea name="reason" maxlength="1000" required></textarea></label>
+              <button class="button button-primary" type="submit">Submit leave request</button>
+            </form>
+            <div class="company-actions">
+              <button class="button button-secondary" id="p2-refresh-leaves" type="button">Refresh leaves</button>
+              <select id="p2-leave-filter" aria-label="Filter leave requests">
+                <option value="">All statuses</option>
+                <option value="pending">Pending</option>
+                <option value="approved">Approved</option>
+                <option value="rejected">Rejected</option>
+                <option value="cancelled">Cancelled</option>
+              </select>
+            </div>
+            <div id="p2-leave-list" aria-live="polite">Loading…</div>
+          </article>
+
+          <article class="company-card">
+            <h3>Company documents</h3>
+            <form id="p2-document-form" class="company-form">
+              <label>Choose file (maximum 5 MB)
+                <input type="file" name="file" required
+                       accept=".pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.png,.jpg,.jpeg,.ppt,.pptx">
+              </label>
+              <button class="button button-primary" type="submit">Upload document</button>
+            </form>
+            <button class="button button-secondary" id="p2-refresh-documents" type="button">Refresh documents</button>
+            <div id="p2-document-list" aria-live="polite">Loading…</div>
+          </article>
+
+          <article class="company-card">
+            <h3>Notifications</h3>
+            <p>Unread: <strong id="p2-unread-count">—</strong></p>
+            <div class="company-actions">
+              <button class="button button-secondary" id="p2-refresh-notifications" type="button">Refresh</button>
+              <button class="button button-secondary" id="p2-read-all" type="button">Mark all read</button>
+            </div>
+            <div id="p2-notification-list" aria-live="polite">Loading…</div>
+          </article>
+
+          <article class="company-card">
+            <h3>Company activity</h3>
+            <p class="company-meta">Activity feed connection.</p>
+            <button class="button button-secondary" id="p2-refresh-activity" type="button">Refresh activity</button>
+            <div id="p2-activity-list" aria-live="polite">Not loaded yet.</div>
+          </article>
+        </div>
+      </section>
+
+
+            <section class="company-section">
+        <h2>Employee directory</h2>
+        {% if members %}
+          <div class="company-table-wrap">
+            <table class="company-table">
+              <thead>
+                <tr>
+                  <th>Employee</th>
+                  <th>Role</th>
+                  <th>Designation</th>
+                  <th>Department</th>
+                  <th>Reporting manager</th>
+                  <th>Status</th>
+                  {% if can_manage %}<th>Manage</th>{% endif %}
+                </tr>
+              </thead>
+              <tbody>
+              {% for member in members %}
+                <tr>
+                  <td>
+                    {{ member.user.display_name or member.user.username }}<br>
+                    <span class="company-small">@{{ member.user.username }}</span>
+                  </td>
+                  <td>{{ member.role|title }}</td>
+                  <td>{{ member.designation or "—" }}</td>
+                  <td>{{ member.department or "—" }}</td>
+                  <td>
+                    {% if member.reporting_manager %}
+                      {{ member.reporting_manager.display_name or member.reporting_manager.username }}
+                    {% else %}—{% endif %}
+                  </td>
+                  <td>{{ member.status|title }}</td>
+                  {% if can_manage %}
+                  <td>
+                    {% if member.role != 'owner' and member.user_id != current_user.id
+                          and (current_user.id == company.owner_id or my_employee.role in ['owner', 'admin', 'hr'])
+                          and not (my_employee.role == 'hr' and member.role in ['admin', 'hr']) %}
+                      <details>
+                        <summary>Edit employee</summary>
+                        <form class="company-form" method="POST"
+                              action="{{ url_for('company_portal.edit_company_employee', company_id=company.id, employee_id=member.id) }}">
+                          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                          <label>Role
+                            <select name="role" required>
+                              {% if my_employee.role in ['owner', 'admin'] %}
+                                <option value="employee" {% if member.role == 'employee' %}selected{% endif %}>Employee</option>
+                                <option value="manager" {% if member.role == 'manager' %}selected{% endif %}>Manager</option>
+                                <option value="hr" {% if member.role == 'hr' %}selected{% endif %}>HR</option>
+                                <option value="admin" {% if member.role == 'admin' %}selected{% endif %}>Admin</option>
+                              {% else %}
+                                <option value="employee" {% if member.role == 'employee' %}selected{% endif %}>Employee</option>
+                                <option value="manager" {% if member.role == 'manager' %}selected{% endif %}>Manager</option>
+                              {% endif %}
+                            </select>
+                          </label>
+                          <label>Designation
+                            <input name="designation" maxlength="100" value="{{ member.designation or '' }}">
+                          </label>
+                          <label>Department
+                            <input name="department" maxlength="100" value="{{ member.department or '' }}">
+                          </label>
+                          <label>Reporting manager
+                            <select name="reporting_manager_id">
+                              <option value="">None</option>
+                              {% for candidate in members %}
+                                {% if candidate.status == 'active' and candidate.user_id != member.user_id %}
+                                  <option value="{{ candidate.user_id }}"
+                                    {% if member.reporting_manager_id == candidate.user_id %}selected{% endif %}>
+                                    {{ candidate.user.display_name or candidate.user.username }}
+                                  </option>
+                                {% endif %}
+                              {% endfor %}
+                            </select>
+                          </label>
+                          <button class="button button-primary" type="submit">Save changes</button>
+                        </form>
+                      </details>
+                      <form method="POST"
+                            action="{{ url_for('company_portal.change_company_employee_status', company_id=company.id, employee_id=member.id) }}"
+                            class="company-actions">
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                        {% if member.status == 'active' %}
+                          <button class="button button-secondary" name="status" value="suspended" type="submit">Suspend</button>
+                        {% else %}
+                          <button class="button button-primary" name="status" value="active" type="submit">Reactivate</button>
+                        {% endif %}
+                      </form>
+                    {% else %}
+                      <span class="company-small">Protected</span>
+                    {% endif %}
+                  </td>
+                  {% endif %}
+                </tr>
+              {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        {% else %}<p>No active employees yet.</p>{% endif %}
+      </section>
+    {% endif %}
+
+    {% if pending_requests %}
+      <section class="company-section">
+        <h2>Pending join requests <span class="company-small">({{ pending_requests|length }})</span></h2>
+        {% for join_request in pending_requests %}
+          <article class="company-card">
+            <h3>{{ join_request.user.display_name or join_request.user.username }}</h3>
+            <p class="company-meta">@{{ join_request.user.username }} · {{ join_request.user.email }}</p>
+            {% if join_request.message %}<p>{{ join_request.message }}</p>{% endif %}
+            <form class="company-form" method="POST" action="{{ url_for('company_portal.review_join_request', company_id=company.id, request_id=join_request.id) }}">
+              <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+              <label>Permission role
+                <select name="role">
+                  <option value="employee">Employee</option>
+                  <option value="manager">Manager</option>
+                  <option value="hr">HR</option>
+                  <option value="admin">Admin</option>
+                </select>
+              </label>
+              <label>Designation <input name="designation" maxlength="100" placeholder="e.g. Software Engineer"></label>
+              <label>Department <input name="department" maxlength="100" placeholder="e.g. Engineering"></label>
+              <label>Reporting manager
+                <select name="reporting_manager_id">
+                  <option value="">No reporting manager assigned</option>
+                  {% for member in members %}
+                    {% if member.user_id != join_request.user_id %}
+                      <option value="{{ member.user_id }}">{{ member.user.display_name or member.user.username }} · {{ member.role|title }}</option>
+                    {% endif %}
+                  {% endfor %}
+                </select>
+              </label>
+              <div class="company-actions">
+                <button class="button button-primary" name="decision" value="approve" type="submit">Approve request</button>
+                <button class="button button-secondary" name="decision" value="reject" type="submit">Reject</button>
+              </div>
+            </form>
+          </article>
+        {% endfor %}
+      </section>
+    {% endif %}
+
+  {% else %}
+    {% if my_companies %}
+      <section class="company-section">
+        <h2>Your companies</h2>
+        <div class="company-layout">
+          {% for item in my_companies %}
+            <article class="company-card">
+              <h3>{{ item.name }}</h3>
+              <p class="company-meta">{{ item.industry or "Industry not specified" }}{% if item.location %} · {{ item.location }}{% endif %}</p>
+              <p>{{ (item.description or "Company workspace")[:180] }}</p>
+              <a class="button button-primary" href="{{ url_for('company_portal.company_detail', slug=item.slug) }}">Open company</a>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    <section class="company-section">
+      <h2>Find a company</h2>
+      <form method="GET" action="{{ url_for('company_portal.companies_home') }}" class="company-inline company-form">
+        <input name="q" value="{{ search_query }}" maxlength="100" placeholder="Search by company, industry or location">
+        <button class="button button-primary" type="submit">Search</button>
+        {% if search_query %}<a class="button button-secondary" href="{{ url_for('company_portal.companies_home') }}">Clear</a>{% endif %}
+      </form>
+
+      <div style="margin-top:18px">
+        {% for item in companies %}
+          <article class="company-card">
+            <h3>{{ item.name }}</h3>
+            <p class="company-meta">
+              {{ item.industry or "Industry not specified" }}
+              {% if item.location %} · {{ item.location }}{% endif %}
+            </p>
+            <p>{{ (item.description or "No company description added.")[:220] }}</p>
+            {% if item.id in employee_company_ids %}
+              <a class="button button-primary" href="{{ url_for('company_portal.company_detail', slug=item.slug) }}">Open company</a>
+            {% else %}
+              {% set my_request = request_by_company.get(item.id) %}
+              {% if my_request and my_request.status == 'pending' %}
+                <span class="company-meta">Join request pending</span>
+                <a class="button button-secondary" href="{{ url_for('company_portal.company_detail', slug=item.slug) }}">View details</a>
+              {% else %}
+                <a class="button button-primary" href="{{ url_for('company_portal.company_detail', slug=item.slug) }}">View and request to join</a>
+              {% endif %}
+            {% endif %}
+          </article>
+        {% else %}
+          <p>No companies found. Try another search or register a company below.</p>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="company-card company-section">
+      <p class="eyebrow">BUILD YOUR ORGANISATION</p>
+      <h2>Register a company</h2>
+      <p>Create a company workspace. You become its owner and can review employee join requests.</p>
+      <form class="company-form" method="POST" action="{{ url_for('company_portal.register_company') }}">
+        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+        <label>Company name *
+          <input name="name" minlength="3" maxlength="150" required placeholder="e.g. Example Technologies">
+        </label>
+        <label>Industry
+          <input name="industry" maxlength="100" placeholder="e.g. IT Services">
+        </label>
+        <label>Website
+          <input name="website" maxlength="250" type="url" placeholder="https://example.com">
+        </label>
+        <label>Location
+          <input name="location" maxlength="150" placeholder="City, State">
+        </label>
+        <label>Description
+          <textarea name="description" maxlength="5000" placeholder="What does your company do?"></textarea>
+        </label>
+        <button class="button button-primary" type="submit">Create company workspace</button>
+      </form>
+    </section>
+  {% endif %}
+</main>
+  <script src="{{ url_for('static', filename='phase2.js') }}" defer></script>
+</body>
+</html>

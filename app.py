@@ -15,7 +15,14 @@ from productivity import productivity
 from messaging import messaging
 from community_api import community_api
 from business_api import business_api
+from company_portal import company_portal
+from phase2_api import phase2
+from phase2_attendance import attendance_api
+from phase2_documents import documents_api
+from phase2_notifications import notifications_api
 import extended_models
+import phase2_models
+import phase2_documents_models
 
 app = Flask(__name__)
 app.config.from_object(Config)
@@ -30,7 +37,8 @@ login_manager.init_app(app)
 
 for blueprint in (
     auth, profiles, social, productivity,
-    messaging, community_api, business_api,
+    messaging, community_api, business_api, company_portal,
+    phase2, attendance_api, documents_api, notifications_api,
 ):
     app.register_blueprint(blueprint)
 
