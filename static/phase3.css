@@ -132,3 +132,35 @@
     box-shadow: 0 2px 10px rgba(0,0,0,.04);
   }
 }
+
+
+/* Phase 3 responsive shell and mobile destinations */
+@media (min-width: 761px) {
+  body:has(.ab-nav) { padding-left: 248px; }
+  .ab-mobile-nav { display: none; }
+}
+.ab-mobile-nav { display: none; }
+@media (max-width: 760px) {
+  body:has(.ab-nav) { padding-left: 0; padding-bottom: 68px; }
+  .ab-mobile-nav {
+    position: fixed; z-index: 200; inset: auto 0 0;
+    display: flex; justify-content: space-around; align-items: center;
+    min-height: 58px; padding: 5px 8px;
+    background: var(--ui-surface, #fff);
+    border-top: 1px solid var(--ui-border, #e5e7eb);
+  }
+  .ab-mobile-nav a, .ab-mobile-more summary {
+    color: var(--ui-text, #34384b); text-decoration: none;
+    font-size: .82rem; font-weight: 650; padding: 10px 8px;
+    cursor: pointer; list-style: none;
+  }
+  .ab-mobile-more { position: relative; }
+  .ab-mobile-more-menu {
+    position: absolute; right: 0; bottom: 48px;
+    display: grid; min-width: 170px; padding: 8px;
+    background: var(--ui-surface, #fff);
+    border: 1px solid var(--ui-border, #ddd);
+    border-radius: 12px; box-shadow: 0 8px 28px #0002;
+  }
+  .ab-mobile-more-menu a { display: block; }
+}

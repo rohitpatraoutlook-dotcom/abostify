@@ -30,4 +30,20 @@
     <button type="submit">Log out</button>
   </form>
 </nav>
+
+<nav class="ab-mobile-nav" aria-label="Mobile navigation">
+  <a href="{{ url_for('dashboard') }}">Home</a>
+  <a href="{{ url_for('social.feed') }}">Feed</a>
+  <a href="{{ url_for('productivity_center') }}">Tasks</a>
+  <details class="ab-mobile-more">
+    <summary>More</summary>
+    <div class="ab-mobile-more-menu">
+      <a href="{{ url_for('company_portal.companies_home') }}">Companies</a>
+      <a href="{{ url_for('social.discover_people') }}">Discover people</a>
+      <a href="{{ url_for('social.create_post') }}">Create post</a>
+      <a href="{{ url_for('profiles.view', username=current_user.username) }}">My profile</a>
+      <a href="{{ url_for('profiles.edit') }}">Settings</a>
+    </div>
+  </details>
+</nav>
 {% endif %}
