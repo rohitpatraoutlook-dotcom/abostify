@@ -46,6 +46,39 @@
     .pc-list-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:15px}
     .pc-list-head h2{margin:0}
     @media(max-width:760px){.pc-shell{padding:0 13px 100px;margin-top:18px}.pc-hero{padding:23px 19px}.pc-stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.pc-stat{padding:14px}.pc-stat strong{font-size:24px}.pc-layout{grid-template-columns:1fr}.pc-panel{padding:15px}}
+
+    .p4-shell{margin:24px 0 30px;padding:22px;border:1px solid var(--ui-border,#e5e7eb);border-radius:22px;background:var(--ui-surface,#fff);color:var(--ui-text,#222)}
+    .p4-title{display:flex;justify-content:space-between;align-items:center;gap:14px}
+    .p4-title h2{font-size:25px;margin:5px 0}
+    .p4-title p,.p4-description{color:var(--ui-muted,#6b7280);line-height:1.6}
+    .p4-eyebrow{font-size:11px;font-weight:800;letter-spacing:1.5px;color:#7165dc}
+    .p4-scopes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:20px 0}
+    .p4-scope{display:grid;gap:7px;text-align:left;padding:16px;border:1px solid var(--ui-border,#e5e7eb);border-radius:15px;background:var(--ui-surface,#fff);color:var(--ui-text,#222);cursor:pointer}
+    .p4-scope.active{border-color:#6557d2;background:color-mix(in srgb,#6557d2 8%,var(--ui-surface,#fff));box-shadow:inset 0 0 0 1px #6557d2}
+    .p4-scope strong{font-size:15px}.p4-scope small{color:var(--ui-muted,#6b7280)}
+    .p4-icon{font-size:23px;color:#6557d2}
+    .p4-context{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+    .p4-context label{display:grid;gap:7px;min-width:min(100%,260px);font-size:13px;font-weight:700;flex:1}
+    .p4-context select,.p4-team-create input{width:100%;box-sizing:border-box;padding:11px;border:1px solid var(--ui-border,#ddd);border-radius:10px;background:var(--ui-surface,#fff);color:var(--ui-text,#222);font:inherit}
+    .p4-team-create{margin:16px 0;padding:16px;border:1px dashed var(--ui-border,#bbb);border-radius:14px}
+    .p4-team-create h3,.p4-create-panel h3,.p4-items-heading h3{margin:0 0 10px}
+    .p4-team-create p{font-size:13px;color:var(--ui-muted,#6b7280);line-height:1.6}
+    .p4-team-create-fields{display:grid;grid-template-columns:1fr 1.3fr auto;gap:9px}
+    .p4-work-area{display:grid;grid-template-columns:minmax(230px,.8fr) minmax(0,1.4fr);gap:16px;margin-top:20px}
+    .p4-create-panel,.p4-items-panel{min-width:0;padding:17px;border:1px solid var(--ui-border,#e5e7eb);border-radius:16px}
+    .p4-items{display:grid;gap:10px}
+    .p4-item{padding:14px;border:1px solid var(--ui-border,#e5e7eb);border-radius:13px;overflow-wrap:anywhere}
+    .p4-item h3{margin:10px 0 6px;font-size:16px}
+    .p4-item p{white-space:pre-wrap;line-height:1.55;color:var(--ui-muted,#6b7280);font-size:14px}
+    .p4-item-head{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}
+    .p4-pill{display:inline-block;margin:0 4px 4px 0;padding:4px 8px;border-radius:20px;background:var(--ui-surface-2,#f3f4f6);font-size:11px}
+    .p4-delete{border:1px solid #dc5555;border-radius:8px;padding:6px 9px;background:transparent;color:#dc5555;cursor:pointer}
+    .p4-empty{padding:25px 10px;text-align:center;color:var(--ui-muted,#6b7280);overflow-wrap:anywhere}
+    .p4-message{display:none;margin:12px 0;padding:11px 13px;border-radius:10px;background:#dcfce7;color:#166534;overflow-wrap:anywhere}
+    .p4-message.show{display:block}.p4-message.bad{background:#fee2e2;color:#991b1b}
+    @media(max-width:760px){.p4-shell{padding:14px;margin:18px 0}.p4-scopes{gap:7px}.p4-scope{padding:11px 9px}.p4-scope small{font-size:11px}.p4-work-area{grid-template-columns:1fr}.p4-team-create-fields{grid-template-columns:1fr}.p4-title h2{font-size:21px}}
+    @media(max-width:380px){.p4-scopes{grid-template-columns:1fr}.p4-scope{grid-template-columns:auto 1fr;align-items:center}.p4-scope small{grid-column:2}}
+
   </style>
 </head>
 <body>
@@ -58,6 +91,101 @@
     </section>
 
     <div id="pc-message" class="pc-message" role="status" aria-live="polite"></div>
+
+
+    <section id="p4-root" class="p4-shell">
+      <div class="p4-title">
+        <div>
+          <span class="p4-eyebrow">PHASE 4 · WORKSPACES</span>
+          <h2>Productivity Spaces</h2>
+          <p>Keep personal work private and collaborate in the right workspace.</p>
+        </div>
+        <button type="button" id="p4-refresh" class="pc-btn">↻ Refresh</button>
+      </div>
+
+      <div class="p4-scopes" role="group" aria-label="Choose productivity space">
+        <button type="button" class="p4-scope active" data-p4-scope="individual">
+          <span class="p4-icon">◉</span><strong>Individual</strong>
+          <small>Private to you</small>
+        </button>
+        <button type="button" class="p4-scope" data-p4-scope="company">
+          <span class="p4-icon">▦</span><strong>Company</strong>
+          <small>Company workspace</small>
+        </button>
+        <button type="button" class="p4-scope" data-p4-scope="team">
+          <span class="p4-icon">♧</span><strong>Teams</strong>
+          <small>Team members only</small>
+        </button>
+      </div>
+
+      <div id="p4-message" class="p4-message" role="status" aria-live="polite"></div>
+      <p id="p4-scope-description" class="p4-description">
+        Private space: only you can access your personal items.
+      </p>
+
+      <div class="p4-context">
+        <label id="p4-workspace-wrap" hidden>
+          Company workspace
+          <select id="p4-workspace"><option value="">Loading workspaces…</option></select>
+        </label>
+        <label id="p4-team-wrap" hidden>
+          Team
+          <select id="p4-team"><option value="">Choose team</option></select>
+        </label>
+      </div>
+
+      <div id="p4-create-team-wrap" class="p4-team-create" hidden>
+        <h3>Create a company team</h3>
+        <p>Teams must belong to a company workspace. Only authorized company workspace managers can create them.</p>
+        <div class="p4-team-create-fields">
+          <input id="p4-new-team-name" maxlength="100" placeholder="Team name">
+          <input id="p4-new-team-description" maxlength="500" placeholder="What does this team do?">
+          <button id="p4-create-team" type="button" class="pc-btn">+ Create team</button>
+        </div>
+      </div>
+
+      <div class="p4-work-area">
+        <div class="p4-create-panel">
+          <h3>Create an item</h3>
+          <form id="p4-form" class="pc-form">
+            <label>Type
+              <select id="p4-kind" name="kind">
+                <option value="task">Task</option>
+                <option value="goal">Goal</option>
+                <option value="note">Note</option>
+              </select>
+            </label>
+            <label>Title
+              <input name="title" required maxlength="200" placeholder="What needs to get done?">
+            </label>
+            <label>Description
+              <textarea name="description" maxlength="5000" placeholder="Add details or context"></textarea>
+            </label>
+            <label>Priority
+              <select name="priority">
+                <option value="medium">Medium</option>
+                <option value="low">Low</option>
+                <option value="high">High</option>
+                <option value="urgent">Urgent</option>
+              </select>
+            </label>
+            <label>Due date
+              <input name="due_date" type="date">
+            </label>
+            <button type="submit" class="pc-btn">+ Save item</button>
+          </form>
+        </div>
+
+        <div class="p4-items-panel">
+          <div class="p4-items-heading">
+            <h3 id="p4-heading">Your private items</h3>
+          </div>
+          <div id="p4-items" class="p4-items">
+            <div class="p4-empty">Loading…</div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="pc-stats">
       <div class="pc-stat"><span>All Tasks</span><strong id="stat-tasks">—</strong></div>
@@ -131,5 +259,6 @@
 
   <script src="{{ url_for('static', filename='app.js') }}"></script>
   <script src="{{ url_for('static', filename='productivity.js') }}"></script>
+  <script src="{{ url_for('static', filename='phase4-productivity.js') }}"></script>
 </body>
 </html>

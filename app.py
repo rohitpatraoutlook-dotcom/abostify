@@ -5,7 +5,7 @@ from flask import Flask, jsonify, render_template
 from flask_login import current_user, login_required
 from flask_wtf.csrf import CSRFProtect
 from sqlalchemy import inspect, text
-
+from phase4_productivity import phase4
 from config import Config
 from models import db, User, Post
 from auth import auth, login_manager
@@ -26,7 +26,7 @@ import phase2_documents_models
 
 app = Flask(__name__)
 app.config.from_object(Config)
-
+app.register_blueprint(phase4)
 app.config["MAX_CONTENT_LENGTH"] = 5 * 1024 * 1024
 app.config["UPLOAD_FOLDER"] = Path(app.static_folder) / "uploads" / "posts"
 app.config["UPLOAD_FOLDER"].mkdir(parents=True, exist_ok=True)
