@@ -8,28 +8,10 @@
   <title>Workspace | ABOSTIFY</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='phase3.css') }}">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
-      <div class="nav-links">
-        <a href="{{ url_for('home') }}">Home</a>
-        <a href="{{ url_for('academy_home') }}">Academy</a>
-        <a href="{{ url_for('social.feed') }}">Social Feed</a>
-        <a href="{{ url_for('social.discover_people') }}">Discover</a>
-        <a href="{{ url_for('social.create_post') }}">Create Post</a>
-        <a class="active" href="{{ url_for('dashboard') }}">Workspace</a>
-        <a href="{{ url_for('company_portal.companies_home') }}">Companies</a>
-        <a href="{{ url_for('profiles.view', username=user.username) }}">My Profile</a>
-        <a href="{{ url_for('profiles.edit') }}">Settings</a>
-        <form method="POST" action="{{ url_for('auth.logout') }}" class="nav-logout-form">
-          <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
-          <button class="nav-logout-button" type="submit">Log out</button>
-        </form>
-      </div>
-    </nav>
-  </header>
+{% include '_app_nav.html' %}
 
   <main class="container page-content">
     <section class="page-heading">

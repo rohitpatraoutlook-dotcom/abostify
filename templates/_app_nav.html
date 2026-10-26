@@ -1,0 +1,33 @@
+{% if current_user.is_authenticated %}
+<nav class="ab-nav" aria-label="Main navigation">
+  <a class="ab-brand" href="{{ url_for('dashboard') }}">
+    <span class="ab-brand-mark">A</span>
+    <span>ABOSTIFY</span>
+  </a>
+
+  <div class="ab-nav-group">
+    <span class="ab-nav-heading">WORKSPACE</span>
+    <a href="{{ url_for('dashboard') }}">Overview</a>
+    <a href="{{ url_for('productivity_center') }}">Productivity</a>
+    <a href="{{ url_for('company_portal.companies_home') }}">Companies</a>
+  </div>
+
+  <div class="ab-nav-group">
+    <span class="ab-nav-heading">COMMUNITY</span>
+    <a href="{{ url_for('social.feed') }}">Social Feed</a>
+    <a href="{{ url_for('social.discover_people') }}">Discover People</a>
+    <a href="{{ url_for('social.create_post') }}">Create Post</a>
+  </div>
+
+  <div class="ab-nav-group">
+    <span class="ab-nav-heading">YOUR ACCOUNT</span>
+    <a href="{{ url_for('profiles.view', username=current_user.username) }}">My Profile</a>
+    <a href="{{ url_for('profiles.edit') }}">Settings</a>
+  </div>
+
+  <form method="POST" action="{{ url_for('auth.logout') }}" class="ab-nav-logout">
+    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+    <button type="submit">Log out</button>
+  </form>
+</nav>
+{% endif %}
