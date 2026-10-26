@@ -5,9 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Profile Not Found | ABOSTIFY</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='phase3.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
 </head>
 <body>
+{% if current_user.is_authenticated %}
+{% include '_app_nav.html' %}
+{% endif %}
+
 <main class="auth-container">
     <section class="auth-card">
         <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>

@@ -5,6 +5,12 @@
     <span>ABOSTIFY</span>
   </a>
 
+  <button class="ab-nav-toggle" type="button"
+          onclick="document.body.classList.toggle('ab-sidebar-collapsed'); this.setAttribute('aria-expanded', document.body.classList.contains('ab-sidebar-collapsed') ? 'false' : 'true')"
+          aria-expanded="true" aria-label="Collapse or expand sidebar">
+    <span aria-hidden="true">☰</span> <span class="ab-toggle-label">Collapse menu</span>
+  </button>
+
   <div class="ab-nav-group">
     <span class="ab-nav-heading">WORKSPACE</span>
     <a href="{{ url_for('dashboard') }}">Overview</a>

@@ -7,6 +7,7 @@
   <title>Productivity Center | ABOSTIFY</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='phase3.css') }}">
   <style>
     .pc-shell{max-width:1200px;margin:32px auto;padding:0 20px 100px}
     .pc-hero{padding:30px;border-radius:24px;background:linear-gradient(125deg,#182b55,#5145bd 70%,#8b5cf6);color:white;margin-bottom:24px}
@@ -48,18 +49,7 @@
   </style>
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav container">
-      <a class="brand" href="{{ url_for('dashboard') }}">ABOSTIFY</a>
-      <div class="nav-links">
-        <a href="{{ url_for('dashboard') }}">Dashboard</a>
-        <a href="{{ url_for('social.feed') }}">Social Feed</a>
-        <a href="{{ url_for('social.discover_people') }}">Discover</a>
-        <a href="{{ url_for('profiles.view', username=current_user.username) }}">My Profile</a>
-        <a href="{{ url_for('auth.logout') }}">Logout</a>
-      </div>
-    </nav>
-  </header>
+  {% include '_app_nav.html' %}
 
   <main class="pc-shell">
     <section class="pc-hero">

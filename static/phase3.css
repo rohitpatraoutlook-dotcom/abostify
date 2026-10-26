@@ -164,3 +164,40 @@
   }
   .ab-mobile-more-menu a { display: block; }
 }
+
+/* Phase 3: collapsible desktop sidebar */
+.ab-nav {
+  transition: width .2s ease, padding .2s ease;
+}
+.ab-nav-toggle {
+  display: block;
+  width: 100%;
+  padding: 9px 10px;
+  border: 1px solid var(--ui-border, #ddd);
+  border-radius: 9px;
+  background: transparent;
+  color: var(--ui-text, #34384b);
+  text-align: left;
+  cursor: pointer;
+}
+@media (min-width: 761px) {
+  body.ab-sidebar-collapsed { padding-left: 76px; }
+  body.ab-sidebar-collapsed .ab-nav {
+    width: 76px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  body.ab-sidebar-collapsed .ab-nav-group,
+  body.ab-sidebar-collapsed .ab-nav-logout {
+    display: none;
+  }
+  body.ab-sidebar-collapsed .ab-brand > span:last-child {
+    display: none;
+  }
+}
+
+@media (min-width: 761px) {
+  body.ab-sidebar-collapsed .ab-toggle-label {
+    display: none;
+  }
+}

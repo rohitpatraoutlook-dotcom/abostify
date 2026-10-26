@@ -6,17 +6,10 @@
     <title>Create Post | ABOSTIFY</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='ui.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='phase3.css') }}">
 </head>
 <body>
-    <header class="site-header">
-        <nav class="nav container">
-            <a class="brand" href="{{ url_for('home') }}">ABOSTIFY</a>
-            <div class="nav-links">
-                <a href="{{ url_for('social.feed') }}">Social Feed</a>
-                <a href="{{ url_for('dashboard') }}">Dashboard</a>
-            </div>
-        </nav>
-    </header>
+    {% include '_app_nav.html' %}
 
     <main class="container page-content">
         <section class="page-heading">
